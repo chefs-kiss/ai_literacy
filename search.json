@@ -95,7 +95,11 @@
     "href": "labs/lab0.html",
     "title": "Lab 0",
     "section": "",
-    "text": "Lab Group: You and one other person are to work together to complete this lab assignment.\nPython Notebook: Please download the Python Notebook lab0_policing.ipynb here. You and your partner can work on a single file, then upload it to both of your websites."
+    "text": "Lab Group: You and one other person are to work together to complete this lab assignment.\nPython Notebook: Please download the Python Notebook lab0_policing.ipynb here. You and your partner can work on a single file, then upload it to both of your websites.",
+    "crumbs": [
+      "Labs",
+      "Lab0"
+    ]
   },
   {
     "objectID": "course_information/syllabus.html",
