@@ -7,6 +7,13 @@
     "text": "Datasets\nSlides"
   },
   {
+    "objectID": "standards/std_EDA.html",
+    "href": "standards/std_EDA.html",
+    "title": "Course Title",
+    "section": "",
+    "text": "Practice questions around EDA topic."
+  },
+  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
@@ -16,6 +23,76 @@
       "Course Information",
       "Schedule"
     ]
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#daily-structure",
+    "href": "slides/00-intro-ml.html#daily-structure",
+    "title": "Welcome to ML!",
+    "section": "Daily Structure",
+    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "title": "Welcome to ML!",
+    "section": "Themes: what, why, and how",
+    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#show-and-tell",
+    "href": "slides/00-intro-ml.html#show-and-tell",
+    "title": "Welcome to ML!",
+    "section": "Show and tell",
+    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#course-website",
+    "href": "slides/00-intro-ml.html#course-website",
+    "title": "Welcome to ML!",
+    "section": "Course website",
+    "text": "Course website\n\nvizdata.org\n\n\naka “the one link to rule them all”"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#lectures",
+    "href": "slides/00-intro-ml.html#lectures",
+    "title": "Welcome to ML!",
+    "section": "Lectures",
+    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#labs",
+    "href": "slides/00-intro-ml.html#labs",
+    "title": "Welcome to ML!",
+    "section": "Labs",
+    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#quizzes",
+    "href": "slides/00-intro-ml.html#quizzes",
+    "title": "Welcome to ML!",
+    "section": "Quizzes",
+    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#announcements",
+    "href": "slides/00-intro-ml.html#announcements",
+    "title": "Welcome to ML!",
+    "section": "Announcements",
+    "text": "Announcements\n\nSent via email"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
+    "href": "slides/00-intro-ml.html#this-weeks-tasks",
+    "title": "Welcome to ML!",
+    "section": "This week’s tasks",
+    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
+  },
+  {
+    "objectID": "course_information/schedule.html",
+    "href": "course_information/schedule.html",
+    "title": "Course Title",
+    "section": "",
+    "text": "placeholder"
   },
   {
     "objectID": "index.html",
@@ -38,5 +115,12 @@
       "Course Information",
       "Home"
     ]
+  },
+  {
+    "objectID": "standards/standards_overview.html",
+    "href": "standards/standards_overview.html",
+    "title": "Course Title",
+    "section": "",
+    "text": "General information around standards and FAQ."
   }
 ]
