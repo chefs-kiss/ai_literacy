@@ -46,7 +46,7 @@ website:
 
 format:
   html:
-    theme: vapor
+    theme: brite #vapor
     # css: styles.css
     toc: true
 
