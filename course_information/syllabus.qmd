@@ -104,10 +104,12 @@ Friday, Jan 30 from 1:00 - 3:00 P.M.
 Any final attempt on standards will take place during our final time. If you successfully passed each standard, you
 do not have to attend the final exam. Any student with S or I for three or more standards will be ineligible for a
 final grade greater than a B- in the course.
-Final Grade Scale
+
+### Final Grade Scale
 97 ≤ A+ ≤ 100 87 ≤ B+ ≤ 90 77 ≤ C+ ≤ 80 67 ≤ D+ ≤ 70
 93 ≤ A ≤ 97 83 ≤ B ≤ 87 73 ≤ C ≤ 77 63 ≤ D ≤ 67
 90 ≤ A- ≤ 93 80 ≤ B- ≤ 83 70 ≤ C- ≤ 73 60 ≤ D- ≤ 63
+
 Explanations of each letter grade range can be found at https://catalog.stolaf.edu/academic-regulations-procedures/grades/
 
 ## Syllabus Changes
