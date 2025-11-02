@@ -1,0 +1,220 @@
+# Syllabus
+CSCI 200B Interim 2026
+Special Topics: Machine Learning
+Morning Sessions: 10:40-12:40 in RNS 203
+Afternoon Sessions: 1-3 in RNS 203
+
+## General Information
+*Mission*: This is a welcoming, inclusive, encouraging, and failure-tolerant class. <br>
+*Instructor*: Kim Mandery <br>
+*E-mail*: mander1@stolaf.edu <br>
+*Office*: RMS 407<br>
+
+*Textbook*: Introduction to Statistical Learning with Python (ISL-P). This book is free and online.<br>
+
+## Course Description
+It has become increasingly common to use machine learning algorithms to analyze data,
+draw conclusions, and build models, without direct human instruction. These algorithms have been used in a wide
+variety of applications, including Netflix recommendations, predicting healthcare outcomes, criminal justice, and
+many more. In this course, we’ll explore several common machine learning algorithms, learning how they work, and
+applying them to real datasets. We will cover the strengths and limitations of machine learning algorithms. We
+will also explore real-world applications of machine learning, and discuss the ethical and societal consequences of
+the use of these algorithms.
+
+## Course Goals
+Through the lens of machine learning, we will: <br>
+    -   develop and interpret applications of algorithms to domain use-cases
+    -   develop working software that satisfies coding best practices
+    -   work effectively, both individually and in teams
+    -   communicate information effectively to both technical and non-technical audiences
+
+*Course Schedule*: The schedule for this course is available [here](course_information/schedule). This document is likely to be 
+updated throughout the semester, and will be announced in class if it is. 
+
+*Active Learning and Engagement*: I expect you to take an active role in class each day, participating positively,
+wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health
+days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing
+you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit
+your class dean as they are a great resource.
+
+# Course Breakdown
+## Readings and Reflections
+(3pt * 10 → 30 pt): Weekly reading assignments are due at 11:59pm (midnight) on
+the days indicated in the course schedule (typically Sundays). These readings consist of textbook passages from
+Introduction to Statistical Learning (ISL-P), as well as articles on ethics and/or domain use-cases. The reflections
+will be posted on Moodle and are graded based off completion. These will be used to gauge the difficulty of the
+material and guide certain aspects of the lecture. Late work: Submissions submitted after the deadline will receive
+no credit.
+
+## Homework Assignments 
+(5pt * 9 → 45 pt): Weekly homework assignments are due at the start of class on
+the days indicated in the course schedule (typically Mondays). These homework assignments consist of exercises
+to complete by hand (rather than programming), to reinforce your understanding of the concepts. Collaboration
+on homework is encouraged, and can be beneficial. However, remember that simply sharing answers is considered
+academic dishonesty, and is counterproductive, as it will not help you learn the material. Late work: Submissions
+one day late will receive a minus 1 point late penalty; submissions between one day and one week late will receive
+a minus 3 point late penalty. Submissions more than one week late will receive no credit.
+
+## Lab Assignments 
+(5pt * 7 → 35 pt): We will have labs associated with every module.
+These are due before we take the corresponding module quiz. See the course schedule for more details. 
+These assignments consist of programming exercises to practice applying the techniques we cover. 
+Typically, these assignments will be completed by filling in missing code into Jupyter notebooks 
+using Google Colab, and then submitting your completed notebook. 
+Each exercise will be graded all-or-nothing, with no partial credit. 
+Late work: Submissions one day late will receive a minus 1 point late penalty; 
+submissions between one day and one week late will receive a minus 3 point late penalty. 
+Submissions more than one week late will receive no credit.
+
+## Semester Project
+(60 pts): Towards the end of the course, you will complete a final project where you apply the concepts
+covered in the course to a topic of your choice. The final project may be completed individually or in a group of
+at most three students. It will be divided into the following components (a more detailed rubric will be available
+later on in the semester): <br>
+• Plan, Implementation, and Submission. You will submit a plan for your project using the machine learning
+workflow, and implement the workflow using coding best practices. Your final code workbook will be submitted
+to Moodle prior to your presentation day.
+• Peer Evaluations and Workdays. We will have several project workdays in class where you will be asked to
+critique group projects in small groups, as well as give constructive feedback of all projects during our two
+presentation days. After you present your own project, you will complete a self reflection to assess what you
+did well, what you could improve upon, and the most important learning you discovered along the way.
+• Presentation Day. You will give a five-minute presentation on your project to the class.
+Late Work: Late penalties for each component will be included in the instructions for that component. Late
+submissions for some components may not receive credit.
+
+## Standards based Quizzes 
+(8pt * 9 → 72 pt): There will be five (5) quizzes or mini-exams over the course of
+the semester that will be assessed using standards-based grading. Each quiz will contain between 2-4 standards,
+covering in total 16 standards. You will be given three attempts to pass each standard. The first attempt will be
+during a quiz as indicated in the course schedule. There will be two retake days for any second attempts. All final
+attempts for standards will take place during our final exam time.
+The standards are graded on an 8-point scale and binned into four categories:
+P - proficient (8) R - small revision needed S - not satisfactory (4) I - incomplete (0)
+Revisions must be handed in during class on the days indicated on the schedule. Standards with an R that hand
+in a fully correct solution will be bumped up to a P. Otherwise it will get bumped down to an S.
+
+## Extra Credit
+You can earn 2pt of extra credit for every CS-related event you attend (up to three events total).
+You must fill out the EC form on Moodle to earn credit for the event. An additional 1pt will be added to any selfie
+taken during the event with either the presenter, poster, or other student(s) attending (you must get permission of
+all folks in the selfie beforehand).
+## Final Exam
+The final exam is during the assigned period:
+Friday, Jan 30 from 1:00 - 3:00 P.M.
+Any final attempt on standards will take place during our final time. If you successfully passed each standard, you
+do not have to attend the final exam. Any student with S or I for three or more standards will be ineligible for a
+final grade greater than a B- in the course.
+Final Grade Scale
+97 ≤ A+ ≤ 100 87 ≤ B+ ≤ 90 77 ≤ C+ ≤ 80 67 ≤ D+ ≤ 70
+93 ≤ A ≤ 97 83 ≤ B ≤ 87 73 ≤ C ≤ 77 63 ≤ D ≤ 67
+90 ≤ A- ≤ 93 80 ≤ B- ≤ 83 70 ≤ C- ≤ 73 60 ≤ D- ≤ 63
+Explanations of each letter grade range can be found at https://catalog.stolaf.edu/academic-regulations-procedures/grades/
+
+## Syllabus Changes
+All course information provided in this syllabus is subject to change and/or elimination.
+Changes will only be made when the instructor feels they are in the best interest of the class. It is the responsibility
+of every student to attend class, check e-mail, and communicate with the instructor to be informed and understand
+these changes.
+Most importantly HAVE FUN – I am really looking forward to this semester!
+
+# ML Core Standards
+Adopted from ACMstandards, the standards are grouped into nine categories that replicate a typical ML workflow.
+
+## Workflow
+definition and examples of a broad variety of machine learning tasks: supervised learning (classification,regression), unsupervised learning (clustering); ability to identify, construct, and critique ML workflows.
+
+## EDA 
+understanding of statistical measures, distributions, and tests; exploration of data to guide workflow design
+and model selection. 
+
+## Data
+ data preprocessing (importance and pitfalls); handling missing values (imputing, flag-as-missing, implications); encoding categorical variables and real-valued data; normalization and standardization.
+
+## Selection
+ importance of understanding what your model is actually doing, where its pitfalls or shortcomings
+are, and the implications of its decisions; no free lunch (no one learner can solve all problems); representational
+design decisions have consequences; sources of error and undecidability in machine learning. 
+
+## Algorithms
+ fundamentals of understanding how common ML algorithms work (including but not limited to:
+clustering, tree-based, regression-based, ensemble, neural nets, deep learning); ability to explain algorithms and
+their associated terms to a non-technical audience (including but not limited to: objective function, gradient
+descent, regularization, entropy)
+
+## Training
+ separation of train, validation, and test sets; tuning the parameters of a machine learning model with
+a validation set; cross validation; overfitting problem / controlling solution complexity (regularization, pruning –
+intuition only); the bias(underfitting) - variance (overfitting) tradeoff.
+
+## Evaluation
+ performance metrics for classifiers; estimation of test performance on held-out data; other metrics for
+classification (e.g., error, precision, recall); performance metrics for regressors; confusion matrix;
+
+## Ethics
+ focus on real data, scenarios, and case studies; bias present in datasets, algorithms, evaluation; privacy;
+fairness; ethical matrix
+
+# Policies and Resources
+The mission of this course is to make everyone feel welcome, not only in our classroom, but also in the field of
+computer science. If there is any reason you do not feel welcome in this class, please talk to me. If anything is said
+to you that makes you feel uncomfortable, please talk to me. If there is any life event that is interfering with your
+learning in this class, please talk to me. I may not be able to solve all your problems, but I can direct you to the
+right resources on campus.
+
+## Inclusivity and Community
+In keeping with St. Olaf College’s mission statement, this class strives to be
+an inclusive and antiracist learning community, respecting and promoting those of differing backgrounds and beliefs. As a community, we will be to be respectful to all citizens in this class, regardless of race, ethnicity, religion,
+gender, or sexual orientation. This course affirms people of all gender expressions and gender identities. If you
+prefer to be called a different name or pronoun than what is on the class roster, please let me know.
+
+## Illness and Community Standards
+Out of respect for our learning community, if you are experiencing any
+symptoms of an illness, do not come to class or my office. Please contact me before class time to let me know of
+your absence.
+## Cell Phone Policy and Classroom Atmosphere
+You are expected to contribute to a positive classroom
+atmosphere, which includes arriving on time, not being disruptive, being respectful, actively involving yourself
+in class, and silencing and putting away cell phones. There may come a time where we use technology in class
+– during this time you can use a laptop, tablet, or your phone if you do not have the other options available to
+you. At any other times, however, I do not want to see your phone out. I’ll ask you to put them away if they show up.
+## Mental and Physical Health
+I greatly value your experience in this class, and it is my duty to facilitate a
+safe, caring, and productive learning environment. I recognize that you may experience a range of emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your learning. If
+you are experiencing such issues, please do not hesitate to see me– I am here to listen. We can also discuss what
+further resources might be available to you.
+## Academic Accommodations
+I am committed to supporting the learning of all students in my class. If you
+have already registered with Disability and Access (DAC) and have your letter of accommodations, please meet
+with me as soon as possible to discuss, plan, and implement your accommodations in the course. If you have or
+think you have a disability (learning, sensory, physical, chronic health, mental health or attentional), please contact
+Disability and Access staff at 507-786-3288 or by visiting https://wp.stolaf.edu/academic-support/dac.
+## Multilingual Students
+I am committed to making course content accessible to all students. If English is
+not your first language and this causes you concern about the course, please speak with me. Students who would
+like extra support with writing or speaking in English can also contact the language specialist (berryag@stolaf.edu)
+in CAAS.
+## Managing stress, anxiety, and other issues
+I greatly value your experience in this class, and it is my duty
+to facilitate a safe, caring, and productive learning environment. I recognize that you may experience a range of
+emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your
+learning. If you are experiencing such issues, please do not hesitate to come see me – I am here to listen. We can
+also discuss what further resources might be available to you.
+## Plagiarism & Academic Integrity
+Plagiarism, the unacknowledged appropriation of another person’s words
+or ideas, is a serious academic offense. It is imperative that you hand in work that is your own, and that
+cites or gives credit to others whenever you draw from their work. This includes citing prompts when using genAI tools or an internet search. Please see St.Olaf’s statements on academic integrity and plagiarism
+at: https://wp.stolaf.edu/thebook/academic/integrity/. See also the description of St.Olaf’s honor system at:
+https://wp.stolaf.edu/honorcouncil/.
+## Communication Expectations:
+• Instructor/Student Expectations: I check my email frequently, and attempt to respond to questions within 24
+hours. It should not be expected that I check my email after 9 PM, on Saturdays, or regularly during breaks.
+• E-mail Etiquette: If you have multiple questions, fewer emails with more information per email is preferred.
+Please include the following when sending an email: course number with section number, a description of
+your question(s) within the subject line, a greeting and your instructors preferred name (mine is Kim), and a
+sign-off using your preferred name (this is what you want others to refer to you in class by). Add screenshots
+of your work for clarity.
+## The St. Olaf Honor System
+The St. Olaf Honor System has been in place at St. Olaf College since 1911.
+All tests, quizzes, and examinations of any kind are taken under the St. Olaf Honor System. Each student is
+responsible for adhering to all principles of the Honor System regardless of the individual circumstances associated
+with their assessment environment.
