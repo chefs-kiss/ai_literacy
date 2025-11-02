@@ -1,0 +1,9 @@
+---
+title: "Labs"
+---
+
+## Overview
+Stuff about labs
+
+## List
+[Lab 0](labs/lab0.ipynb) 
