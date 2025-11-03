@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>pa8_pipeline_with_cookies – Machine Learning</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c480acf56a2108335092ccc4c123f373.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/chefs-kiss/ML_J2026" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./course_information/schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./course_information/support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://github.com/chefs-kiss/ML_J2026/discussions" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Forum</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./homework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semester Project</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./project/project_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./project/PC1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PC1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#task-2-outlining-a-workflow" id="toc-task-2-outlining-a-workflow" class="nav-link" data-scroll-target="#task-2-outlining-a-workflow">Task 2: Outlining a workflow</a></li>
+  <li><a href="#task-3-implementing-the-workflow" id="toc-task-3-implementing-the-workflow" class="nav-link" data-scroll-target="#task-3-implementing-the-workflow">Task 3: Implementing the workflow</a>
+  <ul class="collapse">
+  <li><a href="#q16-data-driven-insights" id="toc-q16-data-driven-insights" class="nav-link" data-scroll-target="#q16-data-driven-insights">Q16: Data-Driven Insights</a>
+  <ul class="collapse">
+  <li><a href="#insight-1" id="toc-insight-1" class="nav-link" data-scroll-target="#insight-1">✏Insight 1</a></li>
+  <li><a href="#insight-2" id="toc-insight-2" class="nav-link" data-scroll-target="#insight-2">✏Insight 2</a></li>
+  <li><a href="#insight-3" id="toc-insight-3" class="nav-link" data-scroll-target="#insight-3">✏Insight 3</a></li>
+  <li><a href="#strategy-1" id="toc-strategy-1" class="nav-link" data-scroll-target="#strategy-1">✏Strategy 1</a></li>
+  <li><a href="#strategy-2" id="toc-strategy-2" class="nav-link" data-scroll-target="#strategy-2">✏ Strategy 2</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<p><a href="https://colab.research.google.com/github/chefs-kiss/ML_J2026/blob/main/PA8_Pipeline_with_Cookies.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p>Name:</p>
+<p>Who you worked with:</p>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>The goals of this project are to:</p>
+<ul>
+<li><p>Outline and implement a full machine learning workflow.</p></li>
+<li><p>Explore data-driven decision-making through analysis of cookie recipes.</p></li>
+<li><p>Apply techniques we’ve seen from class, and be able to comfortably navigate documentation</p></li>
+</ul>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>For this programming assignment, you will come up with and implement a workflow to determine the attributes that make a cookie delicious. Based on historical data of 5K cookies regarding baked_temp, sugar_index among others, the authors of <a href="https://github.com/albertoabreu91/Cookies_project/tree/master?tab=readme-ov-file">Cookie Monster</a> collected the dataset we’d like to use. The authors started a workflow but didn’t get very far — now it’s your turn to complete a proper ML workflow! Our goal is to expand upon the outlined workflow (see ReadMe in repo) in order to answer an interesting question about this data. The dataset we’ll be using can be found by clicking the data folder and locating the dataset <code>cookies.csv</code>.</p>
+</section>
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<p>Here is the suggested schedule for working on this project: - Monday: Read through project instructions, run code for Task 0. - Tuesday: Complete Tasks 1-2. - Wednesday: Complete Tasks 3. - Thursday: Complete Task 4.</p>
+<p>This project is due on Thursday, 4/17, by 11:59pm.</p>
+<p>#Task1: Cookie Data</p>
+<p>We’d like to be able to bring our data in to try to understand it.</p>
+<p>Link to repo: <a href="https://github.com/albertoabreu91/Cookies_project">link</a></p>
+<p>##💻 Q1: Read in data</p>
+<p>Your goal is to use the pandas method <code>read_csv</code> to read in the <code>cookies.csv</code> data from the repo. To find the url for this dataset, go to the data folder, click on <code>cookies.csv</code>, then click the button <code>Raw</code> on the right. You should be brought to a new window containing the dataset. Copy and paste the url into <code>read_csv</code> below (hint: url should begin with <code>raw.githubusercontent.com</code>).</p>
+<p>If you are unsure how to use <code>read_csv</code> look at previous PAs/workbooks, or use the pandas doc.</p>
+<div id="cell-5" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>cookies <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/albertoabreu91/Cookies_project/refs/heads/master/data/cookies.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:330}}" data-outputid="794f839c-41b8-48c5-e785-256ccaf4cb04">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>cookies.head(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div id="df-e1b87bae-4923-4bc2-a0eb-85a9723b4076" class="colab-df-container">
+    <div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">sugar to flour ratio</th>
+<th data-quarto-table-cell-role="th">sugar index</th>
+<th data-quarto-table-cell-role="th">bake temp</th>
+<th data-quarto-table-cell-role="th">chill time</th>
+<th data-quarto-table-cell-role="th">calories</th>
+<th data-quarto-table-cell-role="th">density</th>
+<th data-quarto-table-cell-role="th">pH</th>
+<th data-quarto-table-cell-role="th">grams baking soda</th>
+<th data-quarto-table-cell-role="th">bake time</th>
+<th data-quarto-table-cell-role="th">quality</th>
+<th data-quarto-table-cell-role="th">butter type</th>
+<th data-quarto-table-cell-role="th">weight</th>
+<th data-quarto-table-cell-role="th">diameter</th>
+<th data-quarto-table-cell-role="th">mixins</th>
+<th data-quarto-table-cell-role="th">crunch factor</th>
+<th data-quarto-table-cell-role="th">aesthetic appeal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>0.25</td>
+<td>9.5</td>
+<td>300</td>
+<td>15.0</td>
+<td>136.0</td>
+<td>0.99367</td>
+<td>8.10</td>
+<td>0.44</td>
+<td>12.1</td>
+<td>8</td>
+<td>melted</td>
+<td>15.2</td>
+<td>7</td>
+<td>raisins</td>
+<td>1.30</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>0.23</td>
+<td>3.3</td>
+<td>520</td>
+<td>34.0</td>
+<td>113.0</td>
+<td>0.99429</td>
+<td>8.16</td>
+<td>0.48</td>
+<td>8.4</td>
+<td>7</td>
+<td>melted</td>
+<td>12.4</td>
+<td>7</td>
+<td>raisins</td>
+<td>1.71</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>0.18</td>
+<td>1.9</td>
+<td>360</td>
+<td>33.0</td>
+<td>106.0</td>
+<td>0.98746</td>
+<td>8.21</td>
+<td>0.83</td>
+<td>14.0</td>
+<td>9</td>
+<td>melted</td>
+<td>9.4</td>
+<td>7</td>
+<td>nuts, chocolate</td>
+<td>1.78</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>0.18</td>
+<td>10.5</td>
+<td>490</td>
+<td>41.0</td>
+<td>124.0</td>
+<td>0.99630</td>
+<td>8.14</td>
+<td>0.35</td>
+<td>10.5</td>
+<td>7</td>
+<td>melted</td>
+<td>12.2</td>
+<td>7</td>
+<td>chocolate</td>
+<td>1.59</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>0.24</td>
+<td>2.4</td>
+<td>770</td>
+<td>6.0</td>
+<td>33.0</td>
+<td>0.99740</td>
+<td>8.09</td>
+<td>0.57</td>
+<td>9.4</td>
+<td>5</td>
+<td>cubed</td>
+<td>19.8</td>
+<td>7</td>
+<td>nuts, oats, chocolate</td>
+<td>1.30</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e1b87bae-4923-4bc2-a0eb-85a9723b4076')" title="Convert this dataframe to an interactive table." style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-e1b87bae-4923-4bc2-a0eb-85a9723b4076 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-e1b87bae-4923-4bc2-a0eb-85a9723b4076');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-062889da-3b22-4c4b-906b-aae702fc5b86">
+  <button class="colab-df-quickchart" onclick="quickchart('df-062889da-3b22-4c4b-906b-aae702fc5b86')" title="Suggest charts" style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-062889da-3b22-4c4b-906b-aae702fc5b86 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+</div>
+</div>
+<p>##✏ Q2: Data Dictionary</p>
+<p>Once you have the data, copy-paste the data dictionary from the repo below.</p>
+<p>##💻 Q3: Data observations</p>
+<p>For each feature in the data dictionary, we would like to add 1-2 observations about its distribution (e.g., <code>sugar_index</code> is right-skewed, etc.). Add the code to do this below. Hint: this only requires one line, so what method gives us information about the distribution of features?</p>
+<p>This step is to help organize and highlight the types of data cleaning that may be important later on. You can add your observations to the data dictionary above.</p>
+</section>
+<section id="task-2-outlining-a-workflow" class="level1">
+<h1>Task 2: Outlining a workflow</h1>
+<p>The authors of the repo <a href="https://github.com/albertoabreu91/Cookies_project">Cookies Project</a> did some preliminary outlining of a workflow. We’d like to take that workflow and build off of it.</p>
+<p>For each of the items below, take inspiration from what the authors outlined but bring in your own twist.</p>
+<p>##✏ Q4: Goal</p>
+<p>What will be your goal in working with this data set? Will you choose to do regression or classification? Who would be interested in this type of analysis?</p>
+<p>##✏ Q5: EDA</p>
+<p>What kinds of exploratory data analysis will you do?</p>
+<p>##✏ Q6: Data Cleaning</p>
+<p>What data cleaning will you need to do to prepare the data set? Will you implement methods from <code>sklearn.preprocessing</code> or use your own?</p>
+<p>##✏ Q7: Model Selection</p>
+<p>Which machine learning algorithms will you use to train models (pick three)? Why are you choosing these algorithms?</p>
+<p>##✏ Q8: Model Training</p>
+<p>How will you attempt to optimize your models?</p>
+<p>##✏ Q9: Model Evaluation</p>
+<p>How will you analyze the accuracy of your models? Approximately what do you think will be “good” accuracy rates for your chosen task?</p>
+</section>
+<section id="task-3-implementing-the-workflow" class="level1">
+<h1>Task 3: Implementing the workflow</h1>
+<p>Now that you have an outline, let’s put it to code! You should use the workbooks we covered in class to help you, along with referencing the sk-learn documentation.</p>
+<p>##💻 Q10: Pull in relevant methods</p>
+<p>Add the methods required to implement your workflow below. It will be helpful to reference the slide decks/workbooks, and sk-learn docs.</p>
+<div id="cell-19" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> Pipeline</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#import whatever models or preprocessing you want to use here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>##💻 Q11: EDA</p>
+<p>Implement EDA, beyond what was done for Q3.</p>
+<div id="cell-21" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#eda</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>##💻 Q12: Data Cleaning</p>
+<p>Implement data cleaning (like encoding), then split into X (feature set) and y (target).</p>
+<p>Note: if you’d like to use <code>StandardScaler</code> or <code>OneHotEncoder</code> you’ll want to add these to the pipeline in the next step.</p>
+<div id="cell-23" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#data cleaning steps</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="cell-24" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#example of splitting</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#X = cookies[[]]</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#y = cookies[]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>##💻 Q13:Model Selection</p>
+<p>Below is an outline of a pipeline. You’ll want to add this to a code chunk below, and fill it in according to your outline from Task2. If you choose to use preprocessing steps from <code>sk-learn</code> you’ll want to add those steps to <code>Pipeline</code>. Some models we’ve covered in depth are <code>LogisticRegression</code>, <code>RandomForestClassifier</code>, <code>KNeighborsClassifier</code>, but you are free to use whatever you’d like to.</p>
+<pre><code>pipe = Pipeline(steps=[('classifier', 'passthrough')])
+
+seed=42
+param_grid = [
+    {'classifier' : [],
+     'classifier_param1' : [],
+     'classifier_param1' : []},
+    {'classifier' : [],
+     'classifier_param3' : [],
+     'classifier_param4' : []}
+]
+</code></pre>
+<p>##💻 Q14: Model Training</p>
+<p>Below is code that implements cross validation using the pipeline and <code>GridSearchCV</code>.</p>
+<p>Edit this to suit the workflow you have outlined in Task 2. For example, would it make more sense to use <code>RandomizedSearchCV</code>, or a different metric than <code>accuracy</code>, or a different number of folds in CV?</p>
+<div id="cell-27" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>grid_search <span class="op">=</span> GridSearchCV(pipe, param_grid<span class="op">=</span>param_grid, n_jobs<span class="op">=-</span><span class="dv">1</span>, cv<span class="op">=</span><span class="dv">10</span>, scoring<span class="op">=</span><span class="st">'accuracy'</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>grid_search.fit(X, y)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"tuned hyperparameters and best model:"</span>,grid_search.best_params_)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"accuracy :"</span>,grid_search.best_score_)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This will output the best algorithm and hyperparameter choices for the cookies dataset. Now it’s time to interpret this model and discuss evaluation</p>
+<p>##✏ Q15: Model Evaluation</p>
+<p>Interpret the best fit model.</p>
+<p>#Task 4: Telling a compeling story</p>
+<p>After all the modeling and evaluation, it’s time to zoom out and ask “why did we do all of this in the first place?”</p>
+<p>This task helps you reflect on the “ah-ha!” moments that came from your data exploration and modeling. These insights form the foundation of a compelling data story — one that others (even outside this class) could find persuasive or thought-provoking.</p>
+<p>Our goal with this task is to help pinpoint a few insights from your analysis that stood out, surprised you, or challenged your assumptions. These will form the heart of your data narrative.</p>
+<section id="q16-data-driven-insights" class="level2">
+<h2 class="anchored" data-anchor-id="q16-data-driven-insights">Q16: Data-Driven Insights</h2>
+<p>Use these guiding questions to articulate your key findings:</p>
+<ul>
+<li><p>Which features mattered the most in predicting cookie quality?</p></li>
+<li><p>Was there anything unexpected in your EDA or model results?</p></li>
+<li><p>Did your modeling reveal any relationships you didn’t initially consider?</p></li>
+<li><p>What changes to the dataset (e.g., filtering, feature engineering) helped improve your results the most?</p></li>
+<li><p>If someone asked you “what makes a cookie great?”, how would you answer using evidence?</p></li>
+</ul>
+<p>Write your three insights below. Be specific and support with evidence from your workflow.</p>
+<section id="insight-1" class="level3">
+<h3 class="anchored" data-anchor-id="insight-1">✏Insight 1</h3>
+</section>
+<section id="insight-2" class="level3">
+<h3 class="anchored" data-anchor-id="insight-2">✏Insight 2</h3>
+</section>
+<section id="insight-3" class="level3">
+<h3 class="anchored" data-anchor-id="insight-3">✏Insight 3</h3>
+<p>##✏ Q17: Framing a Data Story Good data stories go beyond charts. They interpret the findings and engage the audience. Who would care about this finding? What action or change does this insight suggest? What visual or informative result from your data best expresses this idea?</p>
+<p>Read through the following resources, and identify two strategies you found useful. Think of a way you could incorportate it into this analysis.</p>
+<ul>
+<li>Communicating a Data Story (<a href="https://the.datastory.guide/hc/en-us/articles/360003648756-How-to-Communicate-The-Story-in-your-Data">link</a>)</li>
+<li>Creating Compelling Stories (<a href="https://the.datastory.guide/hc/en-us/articles/360003653396-Techniques-for-Propelling-a-Story-Forward">link</a>)</li>
+</ul>
+</section>
+<section id="strategy-1" class="level3">
+<h3 class="anchored" data-anchor-id="strategy-1">✏Strategy 1</h3>
+</section>
+<section id="strategy-2" class="level3">
+<h3 class="anchored" data-anchor-id="strategy-2">✏ Strategy 2</h3>
+<p>##✏ Q18: Data story pitch</p>
+<p>Write a short (4-5 sentence) data story pitch as if you were sharing your results in one of the scenarios below.</p>
+<p>An example pitch is given for each scenario. Use these examples to tailor to your specific results.</p>
+<ul>
+<li><p>Scenario 1: you’re presenting to the <strong>CEO of a mid-sized cookie company</strong> looking to improve product quality and customer satisfaction. &gt; “Our model shows that cookies with lower baked temps and more sugar consistently score higher in quality. These two features accounted for approximately 72% of the variance. By reducing the baking temp slightly, your company could produce more satisfying cookies without changing core ingredients”</p></li>
+<li><p>Scenario 2: you’re presenting to a group of <strong>recipe developers</strong> who are passionate about technique and ingredient optimization. &gt; “Our analysis revealed that using oat flour combined with low moisture content resulted in higher quality cookies. This effect was most pronounced when baking below 340°F. This could inspire a new cookie line that emphasizes chewy, rich textures without added fats.”</p></li>
+<li><p>Scenario 3: you’re demoing this project at a <strong>machine learning showcase</strong> where you’re evaluated on both your technical process and communication. &gt; “We evaluated three models — Logistic Regression, Random Forest, and KNN — and found that Random Forest gave the highest accuracy at 86%. Key features included sugar_index and baked_temp, which showed strong non-linear relationships with cookie quality. Our pipeline is easily adaptable for predicting quality in other baked goods.”</p></li>
+</ul>
+<p>#Bringing it all together</p>
+<p>Now that you’ve crafted your own pitch, let’s see how this process might look outside of the classroom.</p>
+<p>In professional settings, data work usually starts not with a dataset—but with a problem. A product manager, business analyst, or client might come to you and say something like: “We’re seeing declining ratings for our cookies—can you figure out why?” or “We want to develop a low-cost but high-quality recipe. What tradeoffs can we make?”</p>
+<p>From there, your job becomes about framing the right question, identifying the most relevant data (which might not exist yet!!), and shaping a workflow around the decision-making needs of that audience. In contrast, your classroom workflow started with a dataset and built up to a pitch — in practice, it often happens in reverse.</p>
+<p>In real-world projects, you rarely get a perfectly clean dataset up front. Stakeholders might change their minds halfway through. You often need to balance accuracy with speed, interpretability, or budget. This means workflows are often messier: you may prototype a model quickly to explore feasibility before refining, or spend more time understanding what metrics truly matter to decision-makers (e.g., do they care more about accuracy, cost reduction, or customer experience?).</p>
+<p>Applying this type of workflow in the real world relies just as much—if not more—on your adaptability and communication skills as it does on your technical abilities. Success often depends on how well you can navigate shifting goals, collaborate with stakeholders, and translate insights into meaningful action.</p>
+<p>#✏ Q19: Reflection</p>
+<p>What did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.</p>
+<p>#Grading</p>
+<p>For each of the following accomplishments, there is a breakdown of points which total to 20. The fraction of points earned out of 20 will be multiplied by 5 to get your final score (e.g.&nbsp;17 points earned will be 17/20 * 5 → 4.25) * (1pt) Task1 Q1: Correctly pulls in <code>cookies.csv</code> * (1pt) Task1 Q2: Has data dictionary * (2pt) Task1 Q3: Expands upon data dictionary with EDA insights * (1pt) Task2 Q4: The project goal is clearly articulated and provides specific context for the workflow steps, including what is being predicted and why it matters. * (2pt) Task2 Q5-Q9: At least half of the workflow outline includes clear, relevant, and actionable steps that show an understanding of ML processes (e.g., specific methods for EDA, cleaning, or model choice). * (1pt) Task2 Q5-Q9: At least 75% of the workflow outline includes well-defined and appropriate steps that logically contribute to the overall goal and modeling approach. * (1pt) Task2 Q5-Q9: All parts of the workflow outline contain clearly stated, technically appropriate steps that are directly aligned with the project’s goal. * ( 1pt) Task2 Q7: The selected models are appropriate for the dataset and task, and the reasoning reflects a thoughtful connection between model characteristics (e.g., interpretability, ability to handle feature types, performance) and the data’s structure and/or prediction goals. * (1pt) Task3 Q10-14: At least half of the code demonstrates clear alignment with the outlined workflow, including appropriate use of methods for EDA, preprocessing, modeling, or evaluation * (1pt) Task3 Q10-14: At least 75% of the code demonstrates clear alignment with the outlined workflow, including appropriate use of methods for EDA, preprocessing, modeling, or evaluation * (1pt) Task3 Q10-14: All code is clearly written, technically sound, and thoughtfully implements each step of the workflow with appropriate use of sklearn tools and data handling. * (1pt) Task3 Q13: The pipeline is well-structured, includes necessary preprocessing/modeling steps, and is flexible enough to support model selection and tuning. * (1pt) Task3 Q15: The best-fit model is clearly interpreted, with reference to performance metrics and insights from feature importance or model behavior. * (1pt) Task4 Q16: At least two insights are clearly articulated, specific, and supported with evidence from EDA, modeling, or feature engineering steps. The response shows a good understanding of the data and connects analysis to the project question. * (1pt) Task4Q17: All three insights are clearly articulated, specific, and supported with evidence from EDA, modeling, or feature engineering steps. The response shows a good understanding of the data and connects analysis to the project question. * (1pt) Task4 Q17: Strategies for creating a compelling story are applicable * (1pt) Task4 Q18: Pitch is orignial, compelling, and reflective of the analysis * (1pt) Q19: Thoughtfully reflected on the assignment</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/chefs-kiss\.github\.io\/ML_J2026\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
