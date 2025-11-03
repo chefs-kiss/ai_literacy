@@ -552,6 +552,20 @@
     "text": "Part 2: Viz 2"
   },
   {
+    "objectID": "01-EDA/EDA1.html#this-week",
+    "href": "01-EDA/EDA1.html#this-week",
+    "title": "EDA1: Exploring Data",
+    "section": "This Week",
+    "text": "This Week"
+  },
+  {
+    "objectID": "01-EDA/EDA1.html#warm-up-describe-this-data",
+    "href": "01-EDA/EDA1.html#warm-up-describe-this-data",
+    "title": "EDA1: Exploring Data",
+    "section": "Warm-up: Describe this Data",
+    "text": "Warm-up: Describe this Data\nImagine you’ve just been this random sample of a dataset:\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\n\n\n\n\n205\nChinstrap\nDream\n50.7\n19.7\n203.0\n4050.0\nMale\n\n\n42\nAdelie\nDream\n36.0\n18.5\n186.0\n3100.0\nFemale\n\n\n127\nAdelie\nTorgersen\n41.5\n18.3\n195.0\n4300.0\nMale\n\n\n33\nAdelie\nDream\n40.9\n18.9\n184.0\n3900.0\nMale\n\n\n339\nGentoo\nBiscoe\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n253\nGentoo\nBiscoe\n59.6\n17.0\n230.0\n6050.0\nMale\n\n\n\n\n\n\n\nWe would like to unpack the stories that this data might tell. How many different ways can we describe or summarize this data—both its overall shape and its finer details?"
+  },
+  {
     "objectID": "01-EDA/std-EDA.html",
     "href": "01-EDA/std-EDA.html",
     "title": "Machine Learning",
