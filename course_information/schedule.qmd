@@ -1,9 +1,14 @@
 ---
 title: "Schedule"
 ---
+Notes: <br>
+A sessions: two morning lectures, followed by afternoon homework.<br>
+B sessions: one morning lecture, morning lab, followed by afternoon quiz.<br>
+
 
 | **week** | **dow** | **date** | **session** | **prepare**                                                                                                                | **topic**                      | **materials**                                                                                    |
 |:--------:|:-------:|----------|:-----------:|----------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------------------------------------------------------------------------------------------|
 |     1    |    M    |  Jan 5   |      Z      | read the syllabus                                                                                                          | Intro to ML <br> Using GitHub       | 👩🏻‍🏫[intro to ml](/slides/00-intro-ml.html) <br> 👩🏻‍🏫[github websites](/slides/00-github.html) <br> 💻[Lab0](/labs/lab0.html) |
 |          |    T    |    Jan 6 |      A      | 📚 [gg-book - grammar](https://ggplot2-book.org/mastery.html) <br> 📚 [socviz](https://socviz.co/lookatdata.html#lookatdata) | EDA: graphs                    | 👩🏻‍🏫[EDA1](/slides/01-eda.html) <br> 📝[HW1](/homework/hw1.html) <br> ☑️[PC1](/project/pc1.html)                           |
 |          |    W    |    Jan 7 |      B      | 📋 [EDA Standard](/standards/std_EDA.html)                                                              | EDA: statistics <br> Quiz: EDA | 👩🏻‍🏫[EDA2](/slides/02-eda.html) <br> 💻 [Lab1](/labs/lab1.html)                                                           |
+

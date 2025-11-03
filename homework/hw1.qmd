@@ -1,5 +1,5 @@
 # Homework 1: Exploring Data 
-Due: Monday, Feb 17th at start of class <br>
+Due: start of class on the day indicated on the syllabus <br>
 Complete the following exercises. Remember to explain your answers.<br>
 
 ## Looking at Data
