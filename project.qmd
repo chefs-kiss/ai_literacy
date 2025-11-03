@@ -3,7 +3,15 @@
 # Overview
 
 # Project Check-ins
-### [PC1](project/PC1.qmd)
+PC1: Find three data sets that you're interested in. Include link to dataset.
+PC2: Select one dataset and do some background research. Make sure your data is accessible on a git repo.
+PC3: Do EDA on your selected dataset.
+PC4: What is the goal of the model you plan to build? Has something similar been done with this type of data?
+PC5: Clean up your data. Create good data visualizations.
+PC6: Plan out your modeling workflow: what models would you like to use, what evaluation are you doing? Start building your presentation.
+PC7: Initial modeling building. Continue building presentation.
+PC8: Do intial model evaluation. How did your model fair?
+PC9: Final model building. Finalize presentation.
 
 # Schedule
 

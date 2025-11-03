@@ -6,3 +6,10 @@ title: "Course Materials"
 
 [Slides](slides/)
 
+[Homework](homework/)
+
+[Labs](labs/)
+
+[Standards](standards/)
+
+[Course Information](course_information/)

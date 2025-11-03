@@ -13,7 +13,6 @@ a. The following questions ask you to choose three models for your workflow:
    i. Before we select any models, we'd like to get a **baseline model** for comparison purposes. What is this baseline model called? Explain how it works (non-technical).  
 
    ii. We'd like to pick a **simple model** for our workflow. Will this model have *higher bias or higher variance*? Explain why.  
-   \vfill \vfill \vfill
 
    iii. We'd like to pick a more **complex model** for our workflow. Will this model have *higher bias or higher variance*? Explain why.  
 
