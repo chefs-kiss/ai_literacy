@@ -49,102 +49,34 @@
     "text": "✏ Question 7: Continued evaluation\nEven if a model has high accuracy, it may not be the best choice for our given situation.\n\nDescribe why this may be.\nWhat would be a solution for this problem?\n\n#Task 3: Evaluation Metrics\nIn this task, we will evaluate the performance of the models using different evaluation metrics such as accuracy, precision, recall, and F1 score.\n\nfrom sklearn.metrics import precision_score, recall_score, f1_score\n\n# Train and evaluate model\nmodels = [(null_model, \"null model\"), (basic_model, \"basic model\"), (complex_model, \"complex model\")]\nfor model_type in models:\n  y_pred = model_type[0].predict(X_test)\n  # Evaluate\n  print(f\"{model_type[1]}: {model_type[0]}\")\n  print(\"Accuracy:\", round(accuracy_score(y_test, y_pred),3))\n  print(\"Precision:\", round(precision_score(y_test, y_pred),3))\n  print(\"Recall:\", round(recall_score(y_test, y_pred),3))\n  print(\"F1 Score:\", round(f1_score(y_test, y_pred),3), \"\\n\")\n\n##Questions 8-11: Interpret Metrics\nFor each model, interpret the following evaluation metrics:\n##✏ Question 8: Accuracy\nNull model:\nBasic model:\nComplex model:\n##✏ Question 9: Precision\nNull model:\nBasic model:\nComplex model:\n##✏ Question 10: Recall\nNull model:\nBasic model:\nComplex model:\n##✏ Question 11: Which is the best Once you have interpreted all of metrics, we’d like to choose which model is the best given the problem. You’ll need to consider the trade-offs between precision, recall, and accuracy and how that impacts the model’s suitability for real-world application, especially in a healthcare context.\n\nDiscuss which of the models is the best performing.\n\n#Task 4: Ethical Matrix and Audit\nIn this task, you will create an ethical matrix to audit the algorithms you have been working with. The goal is to analyze the broader implications of your machine learning model and how it might affect different stakeholders. Following the guidelines outlined in class, your ethical audit should include key questions that explore the potential harms, benefits, fairness, and accountability of the algorithm.\n##✏ Question 12: Define the key stakeholders\nIn any algorithmic system, there are various stakeholders who will be affected by the decisions made by the model. For example, one stakeholder is the patient being screened for breast cancer.\n\nAdd at least three more stakeholders:\n\n##Questions 13-15: Identify the ethical dimensions\nFor each stakeholder, consider the potential benefits and harms of using the model. Also, think about the ethical principles of fairness and accountability.\nThe main issues we’ve covered in class are listed below: * Benefits: What positive outcomes might each stakeholder experience if the model is deployed? * Harms: What potential negative consequences might arise for each stakeholder? Could the model cause harm or lead to incorrect conclusions? * Fairness: Is the model equally fair to all stakeholders, especially those from under-represented or vulnerable groups? Does the model avoid reinforcing bias? * Accountability: Who is responsible if the model makes a mistake? What steps should be taken if the model’s predictions are inaccurate or harmful?\nIf you decide to consider different issues, make sure to update the text boxes below to account for that. For example, if you want to consider something like medical advances you might replace the issue fairness with medical advances.\n##✏ Question 13:\nStakeholder1:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 14:\nStakeholder2:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 15:\nStakeholder3:\nBenefits:\nHarms:\nFairness:\nAccountability:\n##✏ Question 16: Mitigating Harm\nBased on your matrix, come up with two concrete actions that can be taken to mitigate potential harms. Example action: we’d like to ensure the model is interpretable for healthcare providers so they can understand and trust its predictions. This means we’d need to choose a model that is less complex but still robust enough to give good results.\n\nFirst option:\nSecond option:"
   },
   {
-    "objectID": "slides/00-intro-ml.html#daily-structure",
-    "href": "slides/00-intro-ml.html#daily-structure",
-    "title": "Welcome to ML!",
-    "section": "Daily Structure",
-    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
-    "title": "Welcome to ML!",
-    "section": "Themes: what, why, and how",
-    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#show-and-tell",
-    "href": "slides/00-intro-ml.html#show-and-tell",
-    "title": "Welcome to ML!",
-    "section": "Show and tell",
-    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#course-website",
-    "href": "slides/00-intro-ml.html#course-website",
-    "title": "Welcome to ML!",
-    "section": "Course website",
-    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#lectures",
-    "href": "slides/00-intro-ml.html#lectures",
-    "title": "Welcome to ML!",
-    "section": "Lectures",
-    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#labs",
-    "href": "slides/00-intro-ml.html#labs",
-    "title": "Welcome to ML!",
-    "section": "Labs",
-    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#quizzes",
-    "href": "slides/00-intro-ml.html#quizzes",
-    "title": "Welcome to ML!",
-    "section": "Quizzes",
-    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#announcements",
-    "href": "slides/00-intro-ml.html#announcements",
-    "title": "Welcome to ML!",
-    "section": "Announcements",
-    "text": "Announcements\n\nSent via email"
-  },
-  {
-    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
-    "href": "slides/00-intro-ml.html#this-weeks-tasks",
-    "title": "Welcome to ML!",
-    "section": "This week’s tasks",
-    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
-  },
-  {
-    "objectID": "PA8_Pipeline_with_Cookies.html",
-    "href": "PA8_Pipeline_with_Cookies.html",
-    "title": "Task 2: Outlining a workflow",
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Homework",
     "section": "",
-    "text": "Name:\nWho you worked with:"
+    "text": "Stuff about homework",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
-    "objectID": "PA8_Pipeline_with_Cookies.html#objectives",
-    "href": "PA8_Pipeline_with_Cookies.html#objectives",
-    "title": "Task 2: Outlining a workflow",
-    "section": "Objectives",
-    "text": "Objectives\nThe goals of this project are to:\n\nOutline and implement a full machine learning workflow.\nExplore data-driven decision-making through analysis of cookie recipes.\nApply techniques we’ve seen from class, and be able to comfortably navigate documentation"
+    "objectID": "homework.html#overview",
+    "href": "homework.html#overview",
+    "title": "Homework",
+    "section": "",
+    "text": "Stuff about homework",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
-    "objectID": "PA8_Pipeline_with_Cookies.html#overview",
-    "href": "PA8_Pipeline_with_Cookies.html#overview",
-    "title": "Task 2: Outlining a workflow",
-    "section": "Overview",
-    "text": "Overview\nFor this programming assignment, you will come up with and implement a workflow to determine the attributes that make a cookie delicious. Based on historical data of 5K cookies regarding baked_temp, sugar_index among others, the authors of Cookie Monster collected the dataset we’d like to use. The authors started a workflow but didn’t get very far — now it’s your turn to complete a proper ML workflow! Our goal is to expand upon the outlined workflow (see ReadMe in repo) in order to answer an interesting question about this data. The dataset we’ll be using can be found by clicking the data folder and locating the dataset cookies.csv."
-  },
-  {
-    "objectID": "PA8_Pipeline_with_Cookies.html#schedule",
-    "href": "PA8_Pipeline_with_Cookies.html#schedule",
-    "title": "Task 2: Outlining a workflow",
-    "section": "Schedule",
-    "text": "Schedule\nHere is the suggested schedule for working on this project: - Monday: Read through project instructions, run code for Task 0. - Tuesday: Complete Tasks 1-2. - Wednesday: Complete Tasks 3. - Thursday: Complete Task 4.\nThis project is due on Thursday, 4/17, by 11:59pm.\n#Task1: Cookie Data\nWe’d like to be able to bring our data in to try to understand it.\nLink to repo: link\n##💻 Q1: Read in data\nYour goal is to use the pandas method read_csv to read in the cookies.csv data from the repo. To find the url for this dataset, go to the data folder, click on cookies.csv, then click the button Raw on the right. You should be brought to a new window containing the dataset. Copy and paste the url into read_csv below (hint: url should begin with raw.githubusercontent.com).\nIf you are unsure how to use read_csv look at previous PAs/workbooks, or use the pandas doc.\n\nimport pandas as pd\ncookies = pd.read_csv(\"https://raw.githubusercontent.com/albertoabreu91/Cookies_project/refs/heads/master/data/cookies.csv\")\n\n\ncookies.head(5)\n\n\n    \n\n\n\n\n\n\nsugar to flour ratio\nsugar index\nbake temp\nchill time\ncalories\ndensity\npH\ngrams baking soda\nbake time\nquality\nbutter type\nweight\ndiameter\nmixins\ncrunch factor\naesthetic appeal\n\n\n\n\n0\n0.25\n9.5\n300\n15.0\n136.0\n0.99367\n8.10\n0.44\n12.1\n8\nmelted\n15.2\n7\nraisins\n1.30\n3\n\n\n1\n0.23\n3.3\n520\n34.0\n113.0\n0.99429\n8.16\n0.48\n8.4\n7\nmelted\n12.4\n7\nraisins\n1.71\n3\n\n\n2\n0.18\n1.9\n360\n33.0\n106.0\n0.98746\n8.21\n0.83\n14.0\n9\nmelted\n9.4\n7\nnuts, chocolate\n1.78\n3\n\n\n3\n0.18\n10.5\n490\n41.0\n124.0\n0.99630\n8.14\n0.35\n10.5\n7\nmelted\n12.2\n7\nchocolate\n1.59\n3\n\n\n4\n0.24\n2.4\n770\n6.0\n33.0\n0.99740\n8.09\n0.57\n9.4\n5\ncubed\n19.8\n7\nnuts, oats, chocolate\n1.30\n3\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n\n  \n\n\n    \n        \n    \n\n  \n\n\n\n  \n\n\n    \n  \n\n\n##✏ Q2: Data Dictionary\nOnce you have the data, copy-paste the data dictionary from the repo below.\n##💻 Q3: Data observations\nFor each feature in the data dictionary, we would like to add 1-2 observations about its distribution (e.g., sugar_index is right-skewed, etc.). Add the code to do this below. Hint: this only requires one line, so what method gives us information about the distribution of features?\nThis step is to help organize and highlight the types of data cleaning that may be important later on. You can add your observations to the data dictionary above."
-  },
-  {
-    "objectID": "PA8_Pipeline_with_Cookies.html#q16-data-driven-insights",
-    "href": "PA8_Pipeline_with_Cookies.html#q16-data-driven-insights",
-    "title": "Task 2: Outlining a workflow",
-    "section": "Q16: Data-Driven Insights",
-    "text": "Q16: Data-Driven Insights\nUse these guiding questions to articulate your key findings:\n\nWhich features mattered the most in predicting cookie quality?\nWas there anything unexpected in your EDA or model results?\nDid your modeling reveal any relationships you didn’t initially consider?\nWhat changes to the dataset (e.g., filtering, feature engineering) helped improve your results the most?\nIf someone asked you “what makes a cookie great?”, how would you answer using evidence?\n\nWrite your three insights below. Be specific and support with evidence from your workflow.\n\n✏Insight 1\n\n\n✏Insight 2\n\n\n✏Insight 3\n##✏ Q17: Framing a Data Story Good data stories go beyond charts. They interpret the findings and engage the audience. Who would care about this finding? What action or change does this insight suggest? What visual or informative result from your data best expresses this idea?\nRead through the following resources, and identify two strategies you found useful. Think of a way you could incorportate it into this analysis.\n\nCommunicating a Data Story (link)\nCreating Compelling Stories (link)\n\n\n\n✏Strategy 1\n\n\n✏ Strategy 2\n##✏ Q18: Data story pitch\nWrite a short (4-5 sentence) data story pitch as if you were sharing your results in one of the scenarios below.\nAn example pitch is given for each scenario. Use these examples to tailor to your specific results.\n\nScenario 1: you’re presenting to the CEO of a mid-sized cookie company looking to improve product quality and customer satisfaction. &gt; “Our model shows that cookies with lower baked temps and more sugar consistently score higher in quality. These two features accounted for approximately 72% of the variance. By reducing the baking temp slightly, your company could produce more satisfying cookies without changing core ingredients”\nScenario 2: you’re presenting to a group of recipe developers who are passionate about technique and ingredient optimization. &gt; “Our analysis revealed that using oat flour combined with low moisture content resulted in higher quality cookies. This effect was most pronounced when baking below 340°F. This could inspire a new cookie line that emphasizes chewy, rich textures without added fats.”\nScenario 3: you’re demoing this project at a machine learning showcase where you’re evaluated on both your technical process and communication. &gt; “We evaluated three models — Logistic Regression, Random Forest, and KNN — and found that Random Forest gave the highest accuracy at 86%. Key features included sugar_index and baked_temp, which showed strong non-linear relationships with cookie quality. Our pipeline is easily adaptable for predicting quality in other baked goods.”\n\n#Bringing it all together\nNow that you’ve crafted your own pitch, let’s see how this process might look outside of the classroom.\nIn professional settings, data work usually starts not with a dataset—but with a problem. A product manager, business analyst, or client might come to you and say something like: “We’re seeing declining ratings for our cookies—can you figure out why?” or “We want to develop a low-cost but high-quality recipe. What tradeoffs can we make?”\nFrom there, your job becomes about framing the right question, identifying the most relevant data (which might not exist yet!!), and shaping a workflow around the decision-making needs of that audience. In contrast, your classroom workflow started with a dataset and built up to a pitch — in practice, it often happens in reverse.\nIn real-world projects, you rarely get a perfectly clean dataset up front. Stakeholders might change their minds halfway through. You often need to balance accuracy with speed, interpretability, or budget. This means workflows are often messier: you may prototype a model quickly to explore feasibility before refining, or spend more time understanding what metrics truly matter to decision-makers (e.g., do they care more about accuracy, cost reduction, or customer experience?).\nApplying this type of workflow in the real world relies just as much—if not more—on your adaptability and communication skills as it does on your technical abilities. Success often depends on how well you can navigate shifting goals, collaborate with stakeholders, and translate insights into meaningful action.\n#✏ Q19: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading\nFor each of the following accomplishments, there is a breakdown of points which total to 20. The fraction of points earned out of 20 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/20 * 5 → 4.25) * (1pt) Task1 Q1: Correctly pulls in cookies.csv * (1pt) Task1 Q2: Has data dictionary * (2pt) Task1 Q3: Expands upon data dictionary with EDA insights * (1pt) Task2 Q4: The project goal is clearly articulated and provides specific context for the workflow steps, including what is being predicted and why it matters. * (2pt) Task2 Q5-Q9: At least half of the workflow outline includes clear, relevant, and actionable steps that show an understanding of ML processes (e.g., specific methods for EDA, cleaning, or model choice). * (1pt) Task2 Q5-Q9: At least 75% of the workflow outline includes well-defined and appropriate steps that logically contribute to the overall goal and modeling approach. * (1pt) Task2 Q5-Q9: All parts of the workflow outline contain clearly stated, technically appropriate steps that are directly aligned with the project’s goal. * ( 1pt) Task2 Q7: The selected models are appropriate for the dataset and task, and the reasoning reflects a thoughtful connection between model characteristics (e.g., interpretability, ability to handle feature types, performance) and the data’s structure and/or prediction goals. * (1pt) Task3 Q10-14: At least half of the code demonstrates clear alignment with the outlined workflow, including appropriate use of methods for EDA, preprocessing, modeling, or evaluation * (1pt) Task3 Q10-14: At least 75% of the code demonstrates clear alignment with the outlined workflow, including appropriate use of methods for EDA, preprocessing, modeling, or evaluation * (1pt) Task3 Q10-14: All code is clearly written, technically sound, and thoughtfully implements each step of the workflow with appropriate use of sklearn tools and data handling. * (1pt) Task3 Q13: The pipeline is well-structured, includes necessary preprocessing/modeling steps, and is flexible enough to support model selection and tuning. * (1pt) Task3 Q15: The best-fit model is clearly interpreted, with reference to performance metrics and insights from feature importance or model behavior. * (1pt) Task4 Q16: At least two insights are clearly articulated, specific, and supported with evidence from EDA, modeling, or feature engineering steps. The response shows a good understanding of the data and connects analysis to the project question. * (1pt) Task4Q17: All three insights are clearly articulated, specific, and supported with evidence from EDA, modeling, or feature engineering steps. The response shows a good understanding of the data and connects analysis to the project question. * (1pt) Task4 Q17: Strategies for creating a compelling story are applicable * (1pt) Task4 Q18: Pitch is orignial, compelling, and reflective of the analysis * (1pt) Q19: Thoughtfully reflected on the assignment"
+    "objectID": "homework.html#list",
+    "href": "homework.html#list",
+    "title": "Homework",
+    "section": "List",
+    "text": "List\nHW 1",
+    "crumbs": [
+      "Homework"
+    ]
   },
   {
     "objectID": "index.html",
@@ -418,97 +350,165 @@
     "text": "Group Members:\n\nTask1: Understanding the data\n\nFollow the link https://github.com/washingtonpost/data-police-shootings to read about the data. Write a three sentence summary of what is included in this data, and where it comes from. This dataset allows only a small number of categories for race, and the dataset fails to recognize that some people are multiracial. This is a weakness of the dataset. Include at least one other observation that may be a weakness of the data\n\n\nWritten Answer\n\n\nYou can view csv by running the code chunk below.\n\n\nimport pandas as pd\n\nfatal_police_shootings_data = pd.read_csv('https://raw.githubusercontent.com/washingtonpost/data-police-shootings/refs/heads/master/v2/fatal-police-shootings-data.csv')\n\nfatal_police_shootings_data.head(10)\n\n\n    \n\n\n\n\n\n\nid\ndate\nthreat_type\nflee_status\narmed_with\ncity\ncounty\nstate\nlatitude\nlongitude\nlocation_precision\nname\nage\ngender\nrace\nrace_source\nwas_mental_illness_related\nbody_camera\nagency_ids\n\n\n\n\n0\n3\n2015-01-02\npoint\nnot\ngun\nShelton\nMason\nWA\n47.246826\n-123.121592\nnot_available\nTim Elliot\n53.0\nmale\nA\nnot_available\nTrue\nFalse\n73\n\n\n1\n4\n2015-01-02\npoint\nnot\ngun\nAloha\nWashington\nOR\n45.487421\n-122.891696\nnot_available\nLewis Lee Lembke\n47.0\nmale\nW\nnot_available\nFalse\nFalse\n70\n\n\n2\n5\n2015-01-03\nmove\nnot\nunarmed\nWichita\nSedgwick\nKS\n37.694766\n-97.280554\nnot_available\nJohn Paul Quintero\n23.0\nmale\nH\nnot_available\nFalse\nFalse\n238\n\n\n3\n8\n2015-01-04\npoint\nnot\nreplica\nSan Francisco\nSan Francisco\nCA\n37.762910\n-122.422001\nnot_available\nMatthew Hoffman\n32.0\nmale\nW\nnot_available\nTrue\nFalse\n196\n\n\n4\n9\n2015-01-04\npoint\nnot\nother\nEvans\nWeld\nCO\n40.383937\n-104.692261\nnot_available\nMichael Rodriguez\n39.0\nmale\nH\nnot_available\nFalse\nFalse\n473\n\n\n5\n11\n2015-01-04\nattack\nnot\ngun\nGuthrie\nLogan\nOK\n35.876991\n-97.423454\nnot_available\nKenneth Joe Brown\n18.0\nmale\nW\nnot_available\nFalse\nFalse\n101\n\n\n6\n13\n2015-01-05\nshoot\ncar\ngun\nChandler\nMaricopa\nAZ\n33.327887\n-111.840959\nnot_available\nKenneth Arnold Buck\n22.0\nmale\nH\nnot_available\nFalse\nFalse\n195\n\n\n7\n15\n2015-01-06\npoint\nnot\ngun\nAssaria\nSaline\nKS\n38.703755\n-97.563904\nnot_available\nBrock Nichols\n35.0\nmale\nW\nnot_available\nFalse\nFalse\n490\n\n\n8\n16\n2015-01-06\naccident\nnot\nunarmed\nBurlington\nDes Moines\nIA\n40.809250\n-91.118875\nnot_available\nAutumn Steele\n34.0\nfemale\nW\nnot_available\nFalse\nTrue\n287\n\n\n9\n17\n2015-01-06\npoint\nnot\nreplica\nKnoxville\nAllegheny\nPA\n40.412936\n-79.991408\nnot_available\nLeslie Sapp III\n47.0\nmale\nB\nnot_available\nFalse\nFalse\n26254\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n\n  \n\n\n    \n        \n    \n\n  \n\n\n\n  \n\n\n    \n  \n\n\n\nList out some of the columns that are contained in this csv.\n\nWritten Answer\n\nFor each of those columns, give some examples for the data in that column, and what they mean. For example, some examples of values in the first column id are 22, 325, and 140.\n\nWritten Answer\n\nIn order to compare the representation of black people among the subjects of fatal police shootings to their representation in the general population, we need to know the percent of the United States population which is black. You can find this by googling ’racial demographics of the United States‘. Include a citation with the organization and url.\n\nWritten Answer\n\n\n\n\nTask2: Reading data into a dict\nRun the code chunk below. This will select some of the features from the dataset, and put it into a Python dictionary.\n\npolicing = fatal_police_shootings_data[['id', 'name', 'date', 'armed_with', 'age', 'gender', 'race', 'state']]\npolicing_dict = policing.set_index('id').to_dict(orient='index')\n\n\nWhat information from the original csv is stored in policing_dict? What information from the original csv do we use as the keys in policing_dict? What is the type of the values in policing_dict? Hint: use type(dict[key]).\n\n\nStudent Answer Hint: create a code chunk with type(dict[key]) to find the data type of the values in our dictionary\n\n\n\nTask3: Using the database\n\nFinding a particular record: Find the record of the fatal police shooting with ID number 1694. If you’ve followed current events in the past few years, there should be a familiar name here.\n\n\nStudent Answer Add policing_dict[1694] to a code chunk\n\n\nDisplaying data from a single record: Print the name and state of the individual with ID number 1694.\n\nStudent Answer\n\nDisplaying data from multiple records: The following code will display the entire dictionary using a for loop:\n\nfor person,data in policing dict.items():\nprint(policing dict[person])\nAdd an if statement to the for loop to filter out only individuals from Minnesota. This means you’ll need to check the state for each person and only print data if the state is Minnesota.\n\nStudent Answer\n\n\n\nTask4: Summarizing our data\n\nCreating a new dictionary as a subset: Instead of displaying all the information, let’s create a new dictionary that only contains inviduals from Minnesota. The syntax for this is: key:values for key, values in dict.items() if condition where condition is what you’re filtering on and dict is your dictionary. Name this new dictionary MN_selection.\n\n\nStudent Answer\n\n\nCreating summarization functions: We’d like to create a function that takes in our database dictionary and returns a dictionary with counts of occurrences of each race among subjects of fatal police shootings. The keys in this dictionary should be races, and the corresponding values should be the number of subjects of that race.\n\n\nStudent Answer The starter code for this function is below:\n\n\ndef get_race_counts(database:dict)-&gt;dict:\n  race_counts = {}\n  for person, data in database.items():\n    #add logic to populate race counts\n\n\n  return race_counts\n\n\nUsing a summarization function: Print the fraction of fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of fatal police shootings with a black subject, by the total number of fatal police shootings.\n\n\nStudent Answer Note: using get, len, and round may be helpful.\n\n\nHow does the proportion of black subjects in fatal police shootings compare to the proportion of black people in the United States population?\n\n\nStudent Answer\n\n\n\nTask5: Comparing Summarizations\n\nCreate a new dictionary called unarmed_selection, which is built using dictionary comprehension on the original dictionary policing_dict. This dictionary should have the same structure as policing dict, except it will only contain entries for fatal police shootings where the subject was unarmed.\n\n\nStudent Answer\n\n\nCreate a new dictionary, called unarmed race counts, which is created using the get_race_counts function on the dictionary unarmed_selection. The purpose of this dictionary will be to count the number of occurrences of each race among subjects of fatal police shootings, including only those where the subject is unarmed.\n\n\nStudent Answer\n\n\nPrint the fraction of unarmed fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of unarmed fatal police shootings with a black subject (you can get this from the dictionary unarmed race counts), by the total number of unarmed fatal police shootings.\n\n\nStudent Answer\n\n\nHow does the proportion of black subjects in fatal police shootings where the subject is unarmed compare to the proportion of black people in the United States population? How does it compare to the proportion of black subjects in all police shootings?\n\n\nStudent Answer\n\n\n\nTask6: Trends over time\n\nCreating a list of a single feature: Let’s now take a look at creating a list with our data. Using the code below, edit it so that only dates are shown (hint: do something to data). Now, get rid of anything that isn’t the year (use some string slicing). Name this list year_col, which contains only the year for each record in our database.\n\n\nStudent Answer Edit [data for person, data in policing dict.items()]\n\n\nCreating counts from a list: Summarize the list you just created into a dictionary where each key is a single year and the value is the count of that year in our database. Note: If you do this with dictionary comprehension use the list method count and set(year col).\n\n\nStudent Answer\n\n\nHow do the number of fatal police shootings change over time? Do you notice any patterns or trends?\n\n\nStudent Answer\n\n\n\nTask7: More stories to be told\nSources: * U.S. Crime and Arrest Data (FBI UCR) * U.S. Demographic Data (Census Bureau) * Police Departments’ Use of Force Data (BJS) * Pew Research on Policing * Other relevant sources (Reddit, social media, etc.)\n\nList at least two sources you found informative. Include the organization, url, and brief description of the information the source contains. This source could be an additional dataset, or it could be a result of an analysis done. Our goal is to try to link the insights from the previous tasks to other insights found elsewhere.\n\n\nStudent Answer\n\n\nCome up with at least three questions/insights that could supplement the analysis you have done so far. These questions should address some aspects of the following:\n\n\nvalidation: how can the data from these sources support or challenge the findings you’ve already made about racial disparities in fatal police shootings?\nexpansion: how can additional data be used to expand upon the analysis in new areas, or further explore systemic issues related to police shootings?\ncomparisons: how do the findings from these sources compare to the conclusion you’ve drawn from other tasks? Are there any contradictions or surprising findings?\n\n\nStudent Answer\n\n\n\nTask8: Reflection\n\nWrite a reflection (at least five sentences) on what you learned from this project. This can include your reaction to the results of the project, as well as the process of working with the data.\n\n\nStudent Answer\n\nWhen your group is done, each partner must submit a link to their workbook to Moodle. Make sure the link you shared is public."
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html",
-    "href": "PA1_EDA_with_Titanic.html",
-    "title": "Task 2: Critique the analysis",
+    "objectID": "PA8_Pipeline_with_Cookies.html",
+    "href": "PA8_Pipeline_with_Cookies.html",
+    "title": "Task 2: Outlining a workflow",
     "section": "",
-    "text": "Name:\nWho you worked with:\n##Objectives The goals of this project are to: * Understand the process of exploratory data analysis (EDA), statistical tests, and visualizations. * Develop the ability to critique and improve code generated by a language model (like ChatGPT or DeepSeek). * Create two publication-style visualizations that tell a story.\n##Overview This project is designed to reinforce some of the concepts we have learned while exploring data. For Task 1, you are to generate Python code to analyze and summarize the Titanic dataset given a prompt for a genAI model. For Task 2, you will critique the generated program by identifying three areas of improvement. For Task 3, you will implement the improvements you identified. For Task 4, you will create two publication-style visualizations that tell a story. For Task 5, you will reflect on this assignment.\n##Schedule Here is the suggested schedule for working on this project: * By Thursday, 2/13, read through the project instructions. * By Sunday, 2/16, complete Tasks 1-2 of the project, and start Task 3 of the project. * By Tuesday, 2/18, complete Task 3 of the project, and start Task 4. * By Wednesday, 2/19, complete Tasks 4-5 and check your solutions against the rubric (included at the end of these instructions), and submit your files through moodle.\nThis project is due on Thursday, 2/20, by 11:59pm.\n#Task 1: Generate an analysis\nUse the following prompt in ChatGPT to generate Python code for analyzing the Titanic dataset:\nmodel used:"
+    "text": "Name:\nWho you worked with:"
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-generate-code",
-    "href": "PA1_EDA_with_Titanic.html#part-1-generate-code",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Generate Code",
-    "text": "Part 1: Generate Code\nAdd the output to a code chunk below.\nIf your code does not initially run, you may want to comment some of it out and return to it during Task2."
+    "objectID": "PA8_Pipeline_with_Cookies.html#objectives",
+    "href": "PA8_Pipeline_with_Cookies.html#objectives",
+    "title": "Task 2: Outlining a workflow",
+    "section": "Objectives",
+    "text": "Objectives\nThe goals of this project are to:\n\nOutline and implement a full machine learning workflow.\nExplore data-driven decision-making through analysis of cookie recipes.\nApply techniques we’ve seen from class, and be able to comfortably navigate documentation"
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-outline-analysis",
-    "href": "PA1_EDA_with_Titanic.html#part-2-outline-analysis",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Outline Analysis",
-    "text": "Part 2: Outline Analysis\nWith the program that was generated, fill in the methods taken for each of the points below (keep it general). Some examples have been filled in for you.\nOnce you have listed these out, add a quick explaination for why this step was done (i.e. what did it accomplish? what do you know about the data now?)\nSteps taken below:\n\nBasic statistics:\n\n\nhead\ndescribe\nisnull + sum\n\n\nVisualizations:\n\n\nsns.boxplot\n\n\nStatistical tests:\n\n\nstats.ttest_ind"
+    "objectID": "PA8_Pipeline_with_Cookies.html#overview",
+    "href": "PA8_Pipeline_with_Cookies.html#overview",
+    "title": "Task 2: Outlining a workflow",
+    "section": "Overview",
+    "text": "Overview\nFor this programming assignment, you will come up with and implement a workflow to determine the attributes that make a cookie delicious. Based on historical data of 5K cookies regarding baked_temp, sugar_index among others, the authors of Cookie Monster collected the dataset we’d like to use. The authors started a workflow but didn’t get very far — now it’s your turn to complete a proper ML workflow! Our goal is to expand upon the outlined workflow (see ReadMe in repo) in order to answer an interesting question about this data. The dataset we’ll be using can be found by clicking the data folder and locating the dataset cookies.csv."
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-questions-to-consider",
-    "href": "PA1_EDA_with_Titanic.html#part-1-questions-to-consider",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Questions to consider",
-    "text": "Part 1: Questions to consider\nSome initial questions to consider are listed below. Add three more questions you may want to consider when looking over EDA, visualizations, and code in general.\nExample questions: * Is the choice of statistical test appropriate for the analysis? * Are there interpretations of statistical tests beyond p-value? * Are the visualizations clear, informative, and easy to interpret? * Are there any redundancies or areas where the code could be simplified?\nAdditional questions to consider:"
+    "objectID": "PA8_Pipeline_with_Cookies.html#schedule",
+    "href": "PA8_Pipeline_with_Cookies.html#schedule",
+    "title": "Task 2: Outlining a workflow",
+    "section": "Schedule",
+    "text": "Schedule\nHere is the suggested schedule for working on this project: - Monday: Read through project instructions, run code for Task 0. - Tuesday: Complete Tasks 1-2. - Wednesday: Complete Tasks 3. - Thursday: Complete Task 4.\nThis project is due on Thursday, 4/17, by 11:59pm.\n#Task1: Cookie Data\nWe’d like to be able to bring our data in to try to understand it.\nLink to repo: link\n##💻 Q1: Read in data\nYour goal is to use the pandas method read_csv to read in the cookies.csv data from the repo. To find the url for this dataset, go to the data folder, click on cookies.csv, then click the button Raw on the right. You should be brought to a new window containing the dataset. Copy and paste the url into read_csv below (hint: url should begin with raw.githubusercontent.com).\nIf you are unsure how to use read_csv look at previous PAs/workbooks, or use the pandas doc.\n\nimport pandas as pd\ncookies = pd.read_csv(\"https://raw.githubusercontent.com/albertoabreu91/Cookies_project/refs/heads/master/data/cookies.csv\")\n\n\ncookies.head(5)\n\n\n    \n\n\n\n\n\n\nsugar to flour ratio\nsugar index\nbake temp\nchill time\ncalories\ndensity\npH\ngrams baking soda\nbake time\nquality\nbutter type\nweight\ndiameter\nmixins\ncrunch factor\naesthetic appeal\n\n\n\n\n0\n0.25\n9.5\n300\n15.0\n136.0\n0.99367\n8.10\n0.44\n12.1\n8\nmelted\n15.2\n7\nraisins\n1.30\n3\n\n\n1\n0.23\n3.3\n520\n34.0\n113.0\n0.99429\n8.16\n0.48\n8.4\n7\nmelted\n12.4\n7\nraisins\n1.71\n3\n\n\n2\n0.18\n1.9\n360\n33.0\n106.0\n0.98746\n8.21\n0.83\n14.0\n9\nmelted\n9.4\n7\nnuts, chocolate\n1.78\n3\n\n\n3\n0.18\n10.5\n490\n41.0\n124.0\n0.99630\n8.14\n0.35\n10.5\n7\nmelted\n12.2\n7\nchocolate\n1.59\n3\n\n\n4\n0.24\n2.4\n770\n6.0\n33.0\n0.99740\n8.09\n0.57\n9.4\n5\ncubed\n19.8\n7\nnuts, oats, chocolate\n1.30\n3\n\n\n\n\n\n    \n\n  \n    \n\n  \n    \n  \n    \n\n  \n\n    \n  \n\n\n\n  \n\n\n    \n        \n    \n\n  \n\n\n\n  \n\n\n    \n  \n\n\n##✏ Q2: Data Dictionary\nOnce you have the data, copy-paste the data dictionary from the repo below.\n##💻 Q3: Data observations\nFor each feature in the data dictionary, we would like to add 1-2 observations about its distribution (e.g., sugar_index is right-skewed, etc.). Add the code to do this below. Hint: this only requires one line, so what method gives us information about the distribution of features?\nThis step is to help organize and highlight the types of data cleaning that may be important later on. You can add your observations to the data dictionary above."
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-improvements",
-    "href": "PA1_EDA_with_Titanic.html#part-2-improvements",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Improvements",
-    "text": "Part 2: Improvements\nUsing all the questions above, list out three improvements that you would like to implement.\nFor each improvement, describe when this would occur (e.g. visualizations, statistical tests), why you would like to implement it, and what additional information is gained by doing so (i.e. what was the purpose of doing it?)\nImprovements:"
+    "objectID": "PA8_Pipeline_with_Cookies.html#q16-data-driven-insights",
+    "href": "PA8_Pipeline_with_Cookies.html#q16-data-driven-insights",
+    "title": "Task 2: Outlining a workflow",
+    "section": "Q16: Data-Driven Insights",
+    "text": "Q16: Data-Driven Insights\nUse these guiding questions to articulate your key findings:\n\nWhich features mattered the most in predicting cookie quality?\nWas there anything unexpected in your EDA or model results?\nDid your modeling reveal any relationships you didn’t initially consider?\nWhat changes to the dataset (e.g., filtering, feature engineering) helped improve your results the most?\nIf someone asked you “what makes a cookie great?”, how would you answer using evidence?\n\nWrite your three insights below. Be specific and support with evidence from your workflow.\n\n✏Insight 1\n\n\n✏Insight 2\n\n\n✏Insight 3\n##✏ Q17: Framing a Data Story Good data stories go beyond charts. They interpret the findings and engage the audience. Who would care about this finding? What action or change does this insight suggest? What visual or informative result from your data best expresses this idea?\nRead through the following resources, and identify two strategies you found useful. Think of a way you could incorportate it into this analysis.\n\nCommunicating a Data Story (link)\nCreating Compelling Stories (link)\n\n\n\n✏Strategy 1\n\n\n✏ Strategy 2\n##✏ Q18: Data story pitch\nWrite a short (4-5 sentence) data story pitch as if you were sharing your results in one of the scenarios below.\nAn example pitch is given for each scenario. Use these examples to tailor to your specific results.\n\nScenario 1: you’re presenting to the CEO of a mid-sized cookie company looking to improve product quality and customer satisfaction. &gt; “Our model shows that cookies with lower baked temps and more sugar consistently score higher in quality. These two features accounted for approximately 72% of the variance. By reducing the baking temp slightly, your company could produce more satisfying cookies without changing core ingredients”\nScenario 2: you’re presenting to a group of recipe developers who are passionate about technique and ingredient optimization. &gt; “Our analysis revealed that using oat flour combined with low moisture content resulted in higher quality cookies. This effect was most pronounced when baking below 340°F. This could inspire a new cookie line that emphasizes chewy, rich textures without added fats.”\nScenario 3: you’re demoing this project at a machine learning showcase where you’re evaluated on both your technical process and communication. &gt; “We evaluated three models — Logistic Regression, Random Forest, and KNN — and found that Random Forest gave the highest accuracy at 86%. Key features included sugar_index and baked_temp, which showed strong non-linear relationships with cookie quality. Our pipeline is easily adaptable for predicting quality in other baked goods.”\n\n#Bringing it all together\nNow that you’ve crafted your own pitch, let’s see how this process might look outside of the classroom.\nIn professional settings, data work usually starts not with a dataset—but with a problem. A product manager, business analyst, or client might come to you and say something like: “We’re seeing declining ratings for our cookies—can you figure out why?” or “We want to develop a low-cost but high-quality recipe. What tradeoffs can we make?”\nFrom there, your job becomes about framing the right question, identifying the most relevant data (which might not exist yet!!), and shaping a workflow around the decision-making needs of that audience. In contrast, your classroom workflow started with a dataset and built up to a pitch — in practice, it often happens in reverse.\nIn real-world projects, you rarely get a perfectly clean dataset up front. Stakeholders might change their minds halfway through. You often need to balance accuracy with speed, interpretability, or budget. This means workflows are often messier: you may prototype a model quickly to explore feasibility before refining, or spend more time understanding what metrics truly matter to decision-makers (e.g., do they care more about accuracy, cost reduction, or customer experience?).\nApplying this type of workflow in the real world relies just as much—if not more—on your adaptability and communication skills as it does on your technical abilities. Success often depends on how well you can navigate shifting goals, collaborate with stakeholders, and translate insights into meaningful action.\n#✏ Q19: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading\nFor each of the following accomplishments, there is a breakdown of points which total to 20. The fraction of points earned out of 20 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/20 * 5 → 4.25) * (1pt) Task1 Q1: Correctly pulls in cookies.csv * (1pt) Task1 Q2: Has data dictionary * (2pt) Task1 Q3: Expands upon data dictionary with EDA insights * (1pt) Task2 Q4: The project goal is clearly articulated and provides specific context for the workflow steps, including what is being predicted and why it matters. * (2pt) Task2 Q5-Q9: At least half of the workflow outline includes clear, relevant, and actionable steps that show an understanding of ML processes (e.g., specific methods for EDA, cleaning, or model choice). * (1pt) Task2 Q5-Q9: At least 75% of the workflow outline includes well-defined and appropriate steps that logically contribute to the overall goal and modeling approach. * (1pt) Task2 Q5-Q9: All parts of the workflow outline contain clearly stated, technically appropriate steps that are directly aligned with the project’s goal. * ( 1pt) Task2 Q7: The selected models are appropriate for the dataset and task, and the reasoning reflects a thoughtful connection between model characteristics (e.g., interpretability, ability to handle feature types, performance) and the data’s structure and/or prediction goals. * (1pt) Task3 Q10-14: At least half of the code demonstrates clear alignment with the outlined workflow, including appropriate use of methods for EDA, preprocessing, modeling, or evaluation * (1pt) Task3 Q10-14: At least 75% of the code demonstrates clear alignment with the outlined workflow, including appropriate use of methods for EDA, preprocessing, modeling, or evaluation * (1pt) Task3 Q10-14: All code is clearly written, technically sound, and thoughtfully implements each step of the workflow with appropriate use of sklearn tools and data handling. * (1pt) Task3 Q13: The pipeline is well-structured, includes necessary preprocessing/modeling steps, and is flexible enough to support model selection and tuning. * (1pt) Task3 Q15: The best-fit model is clearly interpreted, with reference to performance metrics and insights from feature importance or model behavior. * (1pt) Task4 Q16: At least two insights are clearly articulated, specific, and supported with evidence from EDA, modeling, or feature engineering steps. The response shows a good understanding of the data and connects analysis to the project question. * (1pt) Task4Q17: All three insights are clearly articulated, specific, and supported with evidence from EDA, modeling, or feature engineering steps. The response shows a good understanding of the data and connects analysis to the project question. * (1pt) Task4 Q17: Strategies for creating a compelling story are applicable * (1pt) Task4 Q18: Pitch is orignial, compelling, and reflective of the analysis * (1pt) Q19: Thoughtfully reflected on the assignment"
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-updated-prompt",
-    "href": "PA1_EDA_with_Titanic.html#part-1-updated-prompt",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Updated Prompt",
-    "text": "Part 1: Updated Prompt\nYou may find that you will have to iteratively update the prompt to get the exact output you’re looking for. Once you have a final prompt that implements all of the improvements, add it to the text box below"
+    "objectID": "slides/00-intro-ml.html#daily-structure",
+    "href": "slides/00-intro-ml.html#daily-structure",
+    "title": "Welcome to ML!",
+    "section": "Daily Structure",
+    "text": "Daily Structure\n\nA Days:\n\ntwo morning lectures\nafternoon homework and project check\n\nB Days:\n\none morning lecture\none morning Lab\nafternoon standard quiz"
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-updated-code",
-    "href": "PA1_EDA_with_Titanic.html#part-2-updated-code",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Updated Code",
-    "text": "Part 2: Updated Code\nNow add the outputted code generated from the updated prompt below."
+    "objectID": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "href": "slides/00-intro-ml.html#themes-what-why-and-how",
+    "title": "Welcome to ML!",
+    "section": "Themes: what, why, and how",
+    "text": "Themes: what, why, and how\n\nWhat: the plot\n\nblah\n\n\n\n\nHow: the process\n\nblah\n\n\n\n\n\nWhy: the theory\n\nTie together “how” and “what”"
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-1-viz-1",
-    "href": "PA1_EDA_with_Titanic.html#part-1-viz-1",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 1: Viz 1",
-    "text": "Part 1: Viz 1"
+    "objectID": "slides/00-intro-ml.html#show-and-tell",
+    "href": "slides/00-intro-ml.html#show-and-tell",
+    "title": "Welcome to ML!",
+    "section": "Show and tell",
+    "text": "Show and tell\n\n\nForm a small group (2-4 people) with people sitting around you\nFirst, introduce yourselves to each other – name (and proper pronunciation of name), year, major, where are you from, etc."
   },
   {
-    "objectID": "PA1_EDA_with_Titanic.html#part-2-viz-2",
-    "href": "PA1_EDA_with_Titanic.html#part-2-viz-2",
-    "title": "Task 2: Critique the analysis",
-    "section": "Part 2: Viz 2",
-    "text": "Part 2: Viz 2"
+    "objectID": "slides/00-intro-ml.html#course-website",
+    "href": "slides/00-intro-ml.html#course-website",
+    "title": "Welcome to ML!",
+    "section": "Course website",
+    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
   },
   {
-    "objectID": "homework.html",
-    "href": "homework.html",
-    "title": "Homework",
+    "objectID": "slides/00-intro-ml.html#lectures",
+    "href": "slides/00-intro-ml.html#lectures",
+    "title": "Welcome to ML!",
+    "section": "Lectures",
+    "text": "Lectures\n\nIn person\nAttendance is required\nA little bit of everything:\n\nTraditional lecture\nLive coding + demos\nShort exercises\nDiscussions"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#labs",
+    "href": "slides/00-intro-ml.html#labs",
+    "title": "Welcome to ML!",
+    "section": "Labs",
+    "text": "Labs\n\nOccurs every other day in the morning (check schedule for 💻)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#quizzes",
+    "href": "slides/00-intro-ml.html#quizzes",
+    "title": "Welcome to ML!",
+    "section": "Quizzes",
+    "text": "Quizzes\n\nOccurs every other day in the afternoon (check schedule for 📄)"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#announcements",
+    "href": "slides/00-intro-ml.html#announcements",
+    "title": "Welcome to ML!",
+    "section": "Announcements",
+    "text": "Announcements\n\nSent via email"
+  },
+  {
+    "objectID": "slides/00-intro-ml.html#this-weeks-tasks",
+    "href": "slides/00-intro-ml.html#this-weeks-tasks",
+    "title": "Welcome to ML!",
+    "section": "This week’s tasks",
+    "text": "This week’s tasks\n\nCreate a GitHub account if you don’t have one\nRead the syllabus\nPost on Discussion board\nComplete the readings"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html",
+    "href": "PA3_Classification_with_Fashion_MNIST.html",
+    "title": "Task 0: Data Exploration",
     "section": "",
-    "text": "Stuff about homework",
-    "crumbs": [
-      "Homework"
-    ]
+    "text": "Name:\nWho you worked with:"
   },
   {
-    "objectID": "homework.html#overview",
-    "href": "homework.html#overview",
-    "title": "Homework",
-    "section": "",
-    "text": "Stuff about homework",
-    "crumbs": [
-      "Homework"
-    ]
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#objectives",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#objectives",
+    "title": "Task 0: Data Exploration",
+    "section": "Objectives",
+    "text": "Objectives\nThe goals of this project are to: - Perform EDA, PCA, and visualize the data - Implement K-means clustering - Evaluate the clustering results against the true labels - Thoughtfully interpret and discuss the results"
   },
   {
-    "objectID": "homework.html#list",
-    "href": "homework.html#list",
-    "title": "Homework",
-    "section": "List",
-    "text": "List\nHW 1",
-    "crumbs": [
-      "Homework"
-    ]
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#overview",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#overview",
+    "title": "Task 0: Data Exploration",
+    "section": "Overview",
+    "text": "Overview\nIn this assignment, you will explore the Fashion MNIST dataset, which contains grayscale images of 10 different clothing items. You will focus on applying unsupervised learning techniques, specifically K-means clustering, to see if the algorithm can naturally identify patterns that correspond to different clothing categories. You will also critically evaluate the performance of clustering against the ground truth labels and reflect on the limitations of the algorithm."
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#schedule",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#schedule",
+    "title": "Task 0: Data Exploration",
+    "section": "Schedule",
+    "text": "Schedule\nHere is the suggested schedule for working on this project: - Weekend: Read through project instructions, complete Task 0. - Tuesday: Complete Tasks 1-2. - Wednesday: Complete Tasks 3-4. - Thursday: Complete Task 5.\nThis project is due on Thursday, 3/6, by 11:59pm."
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#explore-the-data",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#explore-the-data",
+    "title": "Task 0: Data Exploration",
+    "section": "Explore the data",
+    "text": "Explore the data\nLet’s explore the format of the dataset before training the model. The following shows there are 60,000 images, with each image represented as 28 x 28 pixels:\n\nX.shape\n\nLikewise, there are 60,000 labels:\n\nlen(y)\n\n###💻 Question1: Is The Data Balanced?\nLet’s take a look at how many of each type of clothing article we have.\nBelow is the dataframe of our target.\nAdd a new line of code that takes y_df and finds the counts of each class.\nIs our dataset balanced?\n\ny_df = pd.DataFrame(y)\n#add code here\n\n###✏ Question2: Image Flattening\nOur images are flattened from a 28×28 image to 784 features. What spatial information might be lost in this process? How could this impact our clustering results?\n##PCA\nIt would take a very long time to generate pairplots for 700+ features. Instead, we’ll use principal component analysis (PCA) for dimensionality reduction, so that we can visualize a projection of the data. Here, we reduce the data to a few dimensions.\n\nfrom sklearn.decomposition import PCA\n\npca = PCA(n_components=9)\npca.fit(X)\nprojection = pca.transform(X)\nprojection_df = pd.DataFrame(projection)\n\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nplt.figure()\nsns.pairplot(projection_df)\nplt.show()\n\n###✏ Question3: PCA plots How do the different shapes of these plots (such as nugget-shaped, normal, or multi-modal) help us understand the characteristics of clothing categories? For example, do they show variations in style within a category, or do they highlight differences between categories?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-1-closest-centroid",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#task-1-closest-centroid",
+    "title": "Task 0: Data Exploration",
+    "section": "Task 1: Closest Centroid",
+    "text": "Task 1: Closest Centroid\nFirst, you’ll implement a function that takes an array of data points and an array of centroids, and returns an array giving the index of the closest centroid to each data point. Note that the shapes should be:\n\ndata has shape \\((N, D)\\), where \\(N\\) is the number of datapoints and \\(D\\) is the dimensionality of each datapoint.\ncentroids has shape \\((k, D)\\), where \\(k\\) is the number of centroids, and \\(D\\) is the dimensionality of each datapoint.\nclosest_centroids (the return value) has shape \\((N,)\\), where \\(N\\) is the number of datapoints.\n\nThe code below has been outlined in such a way that only basic programming logic needs to be used. You may find that using numpy methods helpful when calculating the Euclidean.\nHint: since we have high-dimensional data you can use np.sum((point - centroid) ** 2) to find the sum of squared differences when you do the distance calculation.\n\nimport numpy as np\n\ndef closest_centroid(data, centroids):\n    # init to store the closest centroid index for each data point\n    closest_centroids = []\n\n    # looping through each data point\n    for point in data:\n        min_distance = float('inf')  #init min distance to huge number like infinity\n        closest_centroid_index = -1\n\n        # counter for centroid index\n        i = 0\n\n        # looping through each centroid to compute the distance to the data point\n\n            # calculate the Euclidean distance\n\n\n            # if the distance is smaller than the minimum (min_distance) found so far, update the closest centroid (closest_centroid_index)\n\n\n            # increment the counter by 1\n\n        # appending the index of the closest centroid to the result list\n        closest_centroids.append(closest_centroid_index)\n\n    # return the list of closest centroid indices\n    return np.array(closest_centroids)\n\nThe code chunks below will test your functions. If you run both and no errors occur, your function works as expected.\n\n# testing your function\ndata = np.array([[-2,2], [-1, 2], [-1,1], [1,1], [1,2], [2,2]])\ncentroids = np.array([[-3,3], [3,3]])\nassert(np.array_equal(closest_centroid(data, centroids), np.array([0,0,0,1,1,1])))\n\n\ndata = train_data[:10]  # First 10 images\ncentroids = train_data[121:123]  # Images at index 121 and 123 as centroids\nclosest_centroid(data, centroids)\n#assert(np.array_equal(closest_centroid(data, centroids), np.array([1, 1, 0, 0, 0, 1, 0, 1, 0, 0])))\n\n###✏ Question4: Dimensionality and Distances\nIn high-dimensional spaces like our 784-dimensional images, how does distance calculation become problematic? (This is related to what we call the “curse of dimensionality”)\n###✏ Question5: Computational Costs\nIf we apply this function to all 60,000 images, it will be computationally expensive. How might you modify the approach to make it more efficient for large datasets? For example, we may consider only a subset of the data rather than all 60k images.\n###✏ Question6: Dealing with Ties\nWhat would happen if two centroids were equally distant from a data point? How does your function handle this case, and is this approach appropriate?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-2-recompute-centroids",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#task-2-recompute-centroids",
+    "title": "Task 0: Data Exploration",
+    "section": "Task 2: Recompute Centroids",
+    "text": "Task 2: Recompute Centroids\nNext, you’ll define a function that recomputes centroids once each data point has been assigned to a cluster. This function takes an array of datapoints and an array giving the cluster assignments. The index of each centroid should correspond to its cluster number. Note that the shapes should be:\n\ndata has shape \\((N, D)\\), where \\(N\\) is the number of datapoints and \\(D\\) is the dimensionality of each datapoint.\nlabels has shape \\((N,)\\), where \\(N\\) is the number of datapoints.\ncentroids (the return value) has shape \\((k, D)\\), where \\(k\\) is the number of centroids, and \\(D\\) is the dimensionality of each datapoint.\n\n\nimport numpy as np\n\ndef compute_centroids(data, labels):\n    # getting the number of clusters\n    k = np.max(labels) + 1 #adding one since we start counting at 0 not 1\n\n    # init to store the new centroids\n    new_centroids = []\n\n    # looping through each cluster\n    for i in range(k):\n        # get the data points(data) assigned to cluster i (check if labels are equal to i)\n        cluster_points = #\n\n        # compute the mean (use np.mean) of the data points in the cluster (cluster_points)\n        new_centroid = #\n\n        # append the new centroid to our new centroid list\n        new_centroids.append(new_centroid)\n\n    # convert new_centroids into a numpy array and return\n    return #\n\nThe code chunks below will test your functions. If you run both and no errors occur, your function works as expected.\n\n# testing your function\ndata = np.array([[-2,2], [-1, 2], [-1,1], [1,1], [1,2], [2,2]])\nlabels = np.array([0,0,0,0,1,1])\nassert(np.array_equal(compute_centroids(data, labels), np.array([[-.75, 1.5], [1.5, 2]])))\n\n\ndata = train_data[:10]  # Take the first 10 images for testing\nlabels = np.array([1, 0, 1, 1, 1, 0, 1, 0, 1, 1])  # Example labels (clusters)\nassert(np.array_equal(compute_centroids(data, labels)[0][5:7], np.array([0.6666667 , 0.33333334], dtype='float32')))\n\n###✏ Question7: Centroid as an Image\nA centroid is the mean of all points in a cluster. For image data, what does this “average image” actually represent visually? Would it still look like a recognizable piece of clothing?\n###✏ Question8: Mean vs Median\nThe mean minimizes the sum of squared distances to all points. What if we used the median instead? How might this change our clusters and when might this be beneficial?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#task-3-implement-k-means",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#task-3-implement-k-means",
+    "title": "Task 0: Data Exploration",
+    "section": "Task 3: Implement \\(k\\)-Means",
+    "text": "Task 3: Implement \\(k\\)-Means\nNow, that you’ve seen how the various components of the algorithm are created, we’re going to switch gears and create a model.\nUsually when we have a ton of data, we have methods to make it easier on our algorithms (and machines) to create the clusters. For our purposes, we’re going to take only three of the types of clothing and do k-means on this subset of data. This will help us as we eventually want to also investigate the clusters to see what is going on.\nWith large data, that also means that the process of choosing the actual best k take a bit of time. Instead, we’re going to use some domain knowledge (we’re choosing 3 articles of clothing in our subset) and use that to pick our k value.\n\ndataset = np.column_stack((X, y))\narticles = [y_names.index(\"Coat\"), y_names.index(\"Bag\"), y_names.index(\"Sneaker\")]\nsubset = dataset[np.isin(dataset[:, -1], articles)]\nX_subset = subset[:, :-1]\ny_subset = subset[:,-1:]\n\n\nfrom sklearn.cluster import KMeans\nfrom sklearn.metrics import silhouette_score\n\nkmeans = KMeans(n_clusters=3, random_state = 42)\nkmeans.fit(X_subset)\nsilhouette_score(X_subset, kmeans.labels_)\n\n###✏ Question9: Subset Article Choices Our subset currently cointains Coat, Bag, and Sneaker. What if instead we had selected only footwear items: Sandal, Sneaker, Ankle boot? What clustering challenges might arise when items are similar? How might this affect our silhouette score compared to clustering with an unrelated subset?\n###✏ Question10: Silhouette Score\nThe silhouette score measures how well-separated clusters are. What would a perfect silhouette score be, and what does our current score suggest about our clusters?"
+  },
+  {
+    "objectID": "PA3_Classification_with_Fashion_MNIST.html#finding-particular-images",
+    "href": "PA3_Classification_with_Fashion_MNIST.html#finding-particular-images",
+    "title": "Task 0: Data Exploration",
+    "section": "Finding particular images",
+    "text": "Finding particular images\nYou can further invesitgate by using the function below find_pic which will take the class label (items from row_0 in the matrix above) and the cluster label (items from col_0 in the matrix above) and return the first image that meets that criteria.\n\ndef find_pic(article_type, cluster_label):\n  \"\"\"This function takes in y label (article_type) and the cluster it belongs\n  to (cluster_label) and will show that image\"\"\"\n  valid_indices = np.where((y_subset.flatten() == article_type) & (kmeans.labels_ == cluster_label))[0]\n  chosen_index = np.random.choice(valid_indices)\n  print(chosen_index)\n  plt.figure(figsize=(3, 3))\n  plt.imshow(X_subset[chosen_index].reshape(28, 28), cmap='gray')\n  plt.title(f'Label: {article_type}, Cluster: {cluster_label}')\n  plt.show()\n\n\nfind_pic(4,0)\n\n\nfind_pic(4,1)\n\n\nfind_pic(4,2)\n\n###✏ Question11: Labels\nWhat does the row values 4, 7, 8 mean in the context of our data?\n###💻 Question12: Identifying Clothing\nIs the model generally grouping items according to their true class? Which clothing article type seems easiest for the algorithm to identify? Which is most confused? You can use the find_pic function above if that is helpful.\n###💻 Question13: Visual Inspection\nConsider the shapes of our articles of clothing. What visual features might cause the algorithm to group certain articles together despite having different labels? Use the function above to find at least two pieces of evidence in the data to support your claim. Add your code below.\n###✏ Question14: Clusters\nFor each cluster: * which of the labels appear in the cluster? * is there a label that occurs significantly more frequently than the others?\nWhere does the algorithm have difficulty? Why do you think this is happening?\n#Reflection\nTake a moment to reflect on the assingment\n##✏ Question 15: Reflection\nWhat did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.\n#Grading For each of the following accomplishments, there is a breakdown of points which total to 21. The fraction of points earned out of 21 will be multiplied by 5 to get your final score (e.g. 17 points earned will be 17/21 * 5 → 4.05) * (1pt) Task0 q1: Identified counts and discussed if balanced. * (1pt) Task0 q2: Identified at least one concern of flattening images * (1pt) Task0 q3: Discussed distributions of features * (2pt) Task1: Function closest_centroid runs as expected * (1pt) Task1 q4: Correctly states why dimensions matter when calculating distances * (1pt) Task1 q5: At least one approach to save on computational costs is discussed. * (1pt) Task1 q6: Discusses ties and offers a solution * (2pt) Task2: Function recompute_centroid runs as expected * (1pt) Task2 q7: Correctly explains what “average image” means * (1pt) Task2 q8: Discusses mean vs median appropriately * (1pt) Task3 q9: Discusses subsets and their influence on the accuracy of the model * (1pt) Task3 q10: Interprets the silhouette score * (1pt) Task4 q11: Indentifies what each label means in the context of the dataset * (2pt) Task4 q12: Interprets the confusion matrix for articles of clothing (rows) * (1pt) Task4 q13: Used the function find_pic to support the claims * (2pt) Task4 q14: Interprets the confusion matrix for clusters (columns) * (1pt) Task5 q15: You have reflected on the assignment"
   },
   {
     "objectID": "labs.html",
