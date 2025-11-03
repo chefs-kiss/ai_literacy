@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -182,8 +211,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#homework-1-exploring-data" id="toc-homework-1-exploring-data" class="nav-link active" data-scroll-target="#homework-1-exploring-data">Homework 1: Exploring Data</a>
+  <ul class="collapse">
+  <li><a href="#looking-at-data" id="toc-looking-at-data" class="nav-link" data-scroll-target="#looking-at-data">Looking at Data</a></li>
+  <li><a href="#explaining-statistics" id="toc-explaining-statistics" class="nav-link" data-scroll-target="#explaining-statistics">Explaining statistics</a></li>
+  <li><a href="#exploring-statistics" id="toc-exploring-statistics" class="nav-link" data-scroll-target="#exploring-statistics">Exploring statistics</a></li>
+  <li><a href="#interpretting-statistical-tests" id="toc-interpretting-statistical-tests" class="nav-link" data-scroll-target="#interpretting-statistical-tests">Interpretting Statistical Tests</a></li>
+  <li><a href="#additional-problems-not-assigned" id="toc-additional-problems-not-assigned" class="nav-link" data-scroll-target="#additional-problems-not-assigned">Additional Problems [not assigned]</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -191,9 +233,108 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>resting place for HW1</p>
+<section id="homework-1-exploring-data" class="level1">
+<h1>Homework 1: Exploring Data</h1>
+<p>Due: Monday, Feb 17th at start of class <br> Complete the following exercises. Remember to explain your answers.<br></p>
+<section id="looking-at-data" class="level2">
+<h2 class="anchored" data-anchor-id="looking-at-data">Looking at Data</h2>
+<ol type="1">
+<li>For this exercise, you will use the titanic dataset <span class="math inline">\(\href{https://www.kaggle.com/competitions/titanic}{(see:https://www.kaggle.com/competitions/titanic)}\)</span>. You may have to sign-in using your Google account to view the data. Use the train.csv dataset on the Data tab to inform your answers below. You can also find the csv <a href="../data/titanic_train.csv">here</a>
+<ol type="a">
+<li>Give an example of a record. What does it represent? <br></li>
+<li>Suppose you are using this dataset to train a model that will use a passenger class, sex, age, and fare to predict whether or not they will survive. <br>
+<ol type="i">
+<li>Is this a classification task or a regression task? Explain your answer. <br></li>
+<li>What are the features? Explain your answer. <br></li>
+<li>What are the targets? Explain your answer. <br></li>
+<li>We call a model a null model if it predicts all observations (regardless of any features selected) as the target variable. For this dataset, the null model is a model that would label all records in our data as survived. What would be the accuracy of this null model’s predictions? <br></li>
+</ol></li>
+<li>Would you expect a model using passenger class, sex, age, and fare to predict whether or not a passenger would survive to give a better accuracy than the null model? Explain why or why not. <br></li>
+</ol></li>
+</ol>
+</section>
+<section id="explaining-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="explaining-statistics">Explaining statistics</h2>
+<ol start="2" type="1">
+<li>In your own (non-technical) words, explain what each of the following summary statistics measures: <br>
+<ol type="a">
+<li>mean:<br></li>
+<li>median:<br></li>
+<li>standard deviation:<br></li>
+<li>mode:<br></li>
+</ol></li>
+</ol>
+</section>
+<section id="exploring-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-statistics">Exploring statistics</h2>
+<ol start="3" type="1">
+<li>You are given the following sets of five numbers, each with a mean and median of 3. <span class="math display">\[
+\text{SetA: } \{1,2,3,4,5\} \qquad
+\text{SetB: } \{3,3,3,3,3\} \qquad
+\text{SetC: } \{1,1,3,5,5\}
+\]</span> For each of the examples below, give a brief explanation for each of the choices made.
+<ol type="a">
+<li>What is true about the sum of all numbers for each set? Which measure tells us why this is occurring? <br><br>
+</li>
+<li>Order the sets from smallest standard deviation to largest. Explain (non-technical, no math) why this is.<br><br>
+</li>
+<li>Create a set where the mean is 3, but the median is 4. Keep all numbers in the set between 0 and 5. <br><br>
+</li>
+<li>Do part c again, but where the median is 0. Why must this set contain numbers higher than 5? <br></li>
+</ol></li>
+</ol>
+</section>
+<section id="interpretting-statistical-tests" class="level2">
+<h2 class="anchored" data-anchor-id="interpretting-statistical-tests">Interpretting Statistical Tests</h2>
+<ol start="4" type="1">
+<li><p>For this exercise, you will use the titanic dataset to understand the relationships between different variables and draw meaningful conclusions using statistical tests. Your task is to use the given information to understand what each test is doing. You will then fill in the missing information for selecting a feature pair for each statistical test, forming hypotheses, and interpreting the results.</p>
+<ol type="a">
+<li>t-test
+<ol type="i">
+<li>Features used:</li>
+<li>What the test is doing: <em>It’s checking if the average age of survivors differs significantly from the average age of non-survivors</em></li>
+<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>):</li>
+<li>Alternative Hypothesis (<span class="math inline">\(H_1\)</span>):</li>
+<li>How to interpret this test:</li>
+<li>What to do if test is significant: <em>If the result is significant, you could explore further by examining the age distribution for each group (survivors vs.&nbsp;non-survivors). You could create visualizations to check if the distribution is skewed or if there are specific age ranges that were more likely to survive.</em></li>
+</ol></li>
+<li>chi-square test
+<ol type="i">
+<li>Features used:</li>
+<li>What the test is doing:</li>
+<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>):</li>
+<li>Alternative Hypothesis (<span class="math inline">\(H_1\)</span>): <em>There is a significant association between passenger class and survival status</em></li>
+<li>How to interpret this test:</li>
+<li>What to do if test is significant:</li>
+</ol></li>
+<li>correlation test
+<ol type="i">
+<li>Features used: <em>age and fare</em></li>
+<li>What the test is doing:</li>
+<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>):</li>
+<li>Alternative Hypothesis (<span class="math inline">\(H_1\)</span>):</li>
+<li>How to interpret this test: <em>If the p-value is small, you reject the null hypothesis and conclude that there is a significant linear relationship between age and fare. If the correlation coefficient is close to 1 or -1, the relationship is strong, while a coefficient near 0 indicates no significant relationship.</em></li>
+<li>What to do if test is significant:</li>
+</ol></li>
+</ol></li>
+</ol>
+</section>
+<section id="additional-problems-not-assigned" class="level2">
+<h2 class="anchored" data-anchor-id="additional-problems-not-assigned">Additional Problems [not assigned]</h2>
+<ul>
+<li><p>Give an example of a set of five numbers with a mean of 3. Demonstrate that your setof numbers has this property, by computing the relevant summary statistics.</p></li>
+<li><p>Give an example of a set of five numbers with a mean of 3, and a very small standard deviation. Demonstrate that your set of numbers has this property, by computing the relevant summary statistics.</p></li>
+<li><p>Give an example of a set of five numbers with a mean of 3, and a very large standard deviation. Demonstrate that your set of numbers has this property, by computing the relevant summary statistics.</p></li>
+<li><p>Give an example of a set of five numbers with a mean of 3 and a median of 4. Demonstrate that your set of numbers has this property, by computing the relevant summary statistics.</p></li>
+<li><p>Give an example of a set of five numbers with a mean of 3 and a median of 0. Demonstrate that your set of numbers has this property, by computing the relevant summary statistics.</p></li>
+<li><p>Give an example of a set of 10 numbers with a mean of 5 and a symmetric distribution. Demonstrate that your set of numbers has this property, by computing the relevant summary statistics and making a dot plot.</p></li>
+<li><p>Give an example of a set of 10 numbers with a mean of 5 and a left-skewed distribution.Demonstrate that your set of numbers has this property, by computing the relevantsummary statistics and making a dot plot.</p></li>
+<li><p>Give an example of a set of 10 numbers with a mean of 5 and a right-skewed distribution. Demonstrate that your set of numbers has this property, by computing the relevant summary statistics and making a dot plot.</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
