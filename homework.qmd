@@ -5,5 +5,5 @@ title: "Homework"
 ## Overview
 Stuff about homework
 
-### [HW 1](homework/hw1.qmd) 
-### [HW 2](homework/hw2.qmd) 
+### [HW: EDA](01-EDA/hw-EDA.qmd.qmd) 
+### [HW 2](02-EVL/HW-EVL.qmd.qmd) 
