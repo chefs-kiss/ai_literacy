@@ -4,42 +4,42 @@ css: ../styles.css
 ---
 
 
-# Week 1 (Jan 5 - 9)
+## Week 1 (Jan 5 - 9)
 
 | **dow** | **date**  | **prepare**       | **topic**              | **materials**                                                                                   |
-|:-------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
+|:------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
 | M       | Jan 5     | 📖[syllabus](syllabus.qmd){.badge .bg-light}     | INTRO                  |  👩🏻‍🏫 [INTRO](){.badge .bg-light} 💻 [Lab: Intro](){.badge .bg-light}  ☑️ [PC0](){.badge .bg-light}                 |
 | T       | Jan 6     | 📖[readings](../01-EDA/rr-EDA.qmd.qmd){.badge .bg-light}     | EDA                    | 👩🏻‍🏫 [EDA1](){.badge .bg-light} [EDA2](){.badge .bg-light}  📝 [HW:EDA](){.badge .bg-light}                 |
 | W       | Jan 7     | 📓[EDA study guide](../01-EDA/std-EDA.qmd0){.badge .bg-light}     | EDA                    | 👩🏻‍🏫 [EDA3](){.badge .bg-light} 💻 [Lab:EDA](){.badge .bg-light}  ☑️ [PC1](){.badge .bg-light}        |
 | Th      | Jan 8     | 📖[readings](../02-EVL/rr-EVL.qmd){.badge .bg-light}     | [EDA Quiz]{.badge .bg-info} <br> EVL      | 👩🏻‍🏫 [EVL1](){.badge .bg-light} [EVL2](){.badge .bg-light}  📝 [HW:EVL](){.badge .bg-light}                |
 | F       | Jan 9     | 📓[EDA study guide](){.badge .bg-light}      | EVL                    | 👩🏻‍🏫 [EVL3](){.badge .bg-light}  💻 [Lab:EVL](){.badge .bg-light}  ☑️ [PC2](){.badge .bg-light}                                             |
 
-# Week 2 (Jan 12 - 16)
+## Week 2 (Jan 12 - 16)
 
 | **dow** | **date**  | **prepare**       | **topic**              | **materials**                                                                                   |
-|:-------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
-| M       | Jan 12    | 📖[readings](){.badge .bg-light}      | [EVL Quiz]{.badge .bg-info} <br> CLS      | 👩🏻‍🏫 [CLS1]() <br> 👩🏻‍🏫 [CLS2]() <br> 📝 [HW:CLS]()                                          |
-| T       | Jan 13    | 📓[CLS Quiz](){.badge .bg-light}     | CLS <br> [Quiz Retakes]{.badge .bg-light}  | 👩🏻‍🏫 [CLS3]() <br> 💻 [Lab:CLS]() <br> ☑️ [PC3]()                                             |
-| W       | Jan 14    | 📖[readings](){.badge .bg-light}      | [CLS Quiz]{.badge .bg-info} <br> DATA     | 👩🏻‍🏫 [DATA1]() <br> 👩🏻‍🏫 [DATA2]() <br> 📝 [HW:DATA]() <br> ☑️ [PC4]()                        |
-| Th      | Jan 15    | 📓[DATA Quiz](){.badge .bg-light}   | DATA                   | 👩🏻‍🏫 [DATA3]() <br> 💻 [Lab:DATA]() <br> ☑️ [PC4]()                                           |
-| F       | Jan 16    | 📖[readings](){.badge .bg-light}    | [DATA Quiz]{.badge .bg-info} <br> MOD     | 👩🏻‍🏫 [TREE1]() <br> 👩🏻‍🏫 [TREE2]() <br> 📝 [HW:TREE]()                                        |
+|:------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
+| M       | Jan 12    | 📖[readings](){.badge .bg-light}      | [EVL Quiz]{.badge .bg-info} <br> CLS      | 👩🏻‍🏫 [CLS1](){.badge .bg-light} [CLS2](){.badge .bg-light}  📝 [HW:CLS](){.badge .bg-light}      |
+| T       | Jan 13    | 📓[CLS study guide](){.badge .bg-light}     | CLS <br> [Quiz Retakes]{.badge .bg-light}  | 👩🏻‍🏫 [CLS3](){.badge .bg-light} 💻 [Lab:CLS](){.badge .bg-light}  ☑️ [PC3](){.badge .bg-light}                        |
+| W       | Jan 14    | 📖[readings](){.badge .bg-light}      | [CLS Quiz]{.badge .bg-info} <br> DATA     | 👩🏻‍🏫 [DATA1](){.badge .bg-light}  [DATA2](){.badge .bg-light}  📝 [HW:DATA](){.badge .bg-light}  ☑️ [PC4](){.badge .bg-light}             |
+| Th      | Jan 15    | 📓[DATA study guide](){.badge .bg-light}   | DATA                   | 👩🏻‍🏫 [DATA3](){.badge .bg-light} 💻 [Lab:DATA](){.badge .bg-light}  ☑️ [PC4](){.badge .bg-light}              |
+| F       | Jan 16    | 📖[readings](){.badge .bg-light}    | [DATA Quiz]{.badge .bg-info} <br> MOD     | 👩🏻‍🏫 [TREE1](){.badge .bg-light}  [TREE2](){.badge .bg-light}  📝 [HW:TREE](){.badge .bg-light}                     |
 
-# Week 3 (Jan 19 - 23)
-
-| **dow** | **date**  | **prepare**       | **topic**              | **materials**                                                                                   |
-|:-------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
-| M       | Jan 19    |                  | MOD <br> [Quiz Retakes]{.badge .bg-light}  | 👩🏻‍🏫 [KNN]() <br> 💻 [Lab:TREE]() <br> ☑️ [PC5]()                                             |
-| T       | Jan 20    |                  | [TREE Quiz]{.badge .bg-info} <br> MOD     | 👩🏻‍🏫 [LIN1]() <br> 👩🏻‍🏫 [LIN2]() <br> 📝 [HW:LIN]()                                         |
-| W       | Jan 21    |                  | MOD                    | 👩🏻‍🏫 [SVM]() <br> 💻 [Lab:MOD Part 1]() <br> ☑️ [PC6]()                                        |
-| Th      | Jan 22    |                  | [LIN Quiz]{.badge .bg-info} <br> ENS      | 👩🏻‍🏫 [ENS1]() <br> 👩🏻‍🏫 [ENS2]() <br> 📝 [HW:ENS]()                                         |
-| F       | Jan 23    |                  | ENS <br> [Quiz Retakes]{.badge .bg-light}  | 👩🏻‍🏫 [ENS3]() <br> 💻 [Lab:MOD Part 2]() <br> ☑️ [PC7]()                                        |
-
-# Week 4 (Jan 26 - 30)
+## Week 3 (Jan 19 - 23)
 
 | **dow** | **date**  | **prepare**       | **topic**              | **materials**                                                                                   |
-|:-------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
-| M       | Jan 26    |                  | [ENS Quiz]{.badge .bg-info} <br> NN       | 👩🏻‍🏫 [NN1]() <br> 👩🏻‍🏫 [NN2]() <br> 📝 [HW:NN]()                                             |
-| T       | Jan 27    |                  | NN                     | 👩🏻‍🏫 [NN3]() <br> 💻 [Lab:NN]() <br> ☑️ [PC8]()                                               |
-| W       | Jan 28    |                  | [NN Quiz]{.badge .bg-info} <br> DL        | 👩🏻‍🏫 [DL1]() <br> 💻 [DL2]()                                                                |
-| Th      | Jan 29    |                  | [DL Quiz]{.badge .bg-info} <br> Last Day       |  ☑️ [PC9]()                                                                |
+|:------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
+| M       | Jan 19    |                  | MOD <br> [Quiz Retakes]{.badge .bg-light}  | 👩🏻‍🏫 [KNN](){.badge .bg-light}  💻 [Lab:TREE](){.badge .bg-light}  ☑️ [PC5](){.badge .bg-light}                               |
+| T       | Jan 20    |                  | [TREE Quiz]{.badge .bg-info} <br> MOD     | 👩🏻‍🏫 [LIN1](){.badge .bg-light}  [LIN2](){.badge .bg-light}  📝 [HW:LIN](){.badge .bg-light}                             |
+| W       | Jan 21    |                  | MOD                    | 👩🏻‍🏫 [SVM]() <br> 💻 [Lab:MOD Part 1](){.badge .bg-light}  ☑️ [PC6](){.badge .bg-light}                  |
+| Th      | Jan 22    |                  | [LIN Quiz]{.badge .bg-info} <br> ENS      | 👩🏻‍🏫 [ENS1](){.badge .bg-light} [ENS2](){.badge .bg-light}  📝 [HW:ENS](){.badge .bg-light}                        |
+| F       | Jan 23    |                  | ENS <br> [Quiz Retakes]{.badge .bg-light}  | 👩🏻‍🏫 [ENS3](){.badge .bg-light}  💻 [Lab:MOD Part 2](){.badge .bg-light}  ☑️ [PC7](){.badge .bg-light}                        |
+
+## Week 4 (Jan 26 - 30)
+
+| **dow** | **date**  | **prepare**       | **topic**              | **materials**                                                                                   |
+|:------:|:---------:|:-----------------|:----------------------|:------------------------------------------------------------------------------------------------|
+| M       | Jan 26    |                  | [ENS Quiz]{.badge .bg-info} <br> NN       | 👩🏻‍🏫 [NN1](){.badge .bg-light}  [NN2](){.badge .bg-light}  📝 [HW:NN](){.badge .bg-light}                        |
+| T       | Jan 27    |                  | NN                                | 👩🏻‍🏫 [NN3](){.badge .bg-light}  💻 [Lab:NN](){.badge .bg-light}  ☑️ [PC8](){.badge .bg-light}                             |
+| W       | Jan 28    |                  | [NN Quiz]{.badge .bg-info} <br> DL        | 👩🏻‍🏫 [DL1](){.badge .bg-light}  💻 [DL2](){.badge .bg-light}                                           |
+| Th      | Jan 29    |                  | [DL Quiz]{.badge .bg-info} <br> Last Day       |  ☑️ [PC9](){.badge .bg-light}                              |
 | F       | Jan 30    |                  | Presentations <br> [Quiz Retakes]{.badge .bg-info} |                                                                                              |

@@ -5,10 +5,8 @@ title: "Labs"
 ## Overview
 Stuff about labs
 
-### [Lab 1](labs/lab1.ipynb) 
-### [Lab 2](labs/lab2.ipynb) 
-### [Lab 3](labs/lab3.ipynb) 
-### [Lab 4](labs/lab4.ipynb) 
-### [Lab 5](labs/lab5.ipynb) 
-### [Lab 6](labs/lab6.ipynb) 
-### [Lab 7](labs/lab78.ipynb) 
+### [Lab: Intro](/00-INTRO/lab-python.ipynb) 
+This lab uses Python dictionaries to look at national policing with regard to Black Americans. 
+
+### [Lab: EDA](/01-EDA/lab-EDA.ipynb) 
+This lab uses Titanic data to use basic EDA techniques.

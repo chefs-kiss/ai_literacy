@@ -5,5 +5,8 @@ title: "Homework"
 ## Overview
 Stuff about homework
 
-### [HW: EDA](01-EDA/hw-EDA.qmd.qmd) 
-### [HW 2](02-EVL/HW-EVL.qmd.qmd) 
+### [HW: EDA](/01-EDA/hw-EDA.qmd) 
+This homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.
+
+### [HW: EVL](/02-EVL/hw-EVL.qmd) 
+This homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.
