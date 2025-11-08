@@ -4,13 +4,16 @@
 
 # Project Check-ins
 ### PC0
-Fork project site and deploy via GitPages
+Fork project site and deploy via GitPages. <br>
+[slides](https://docs.google.com/presentation/d/1w4r-Mw5UwrtyO_MZVt09wR5SqS1AaABt8Z-ZnkdRElU/edit?slide=id.g3a19ca68852_0_50#slide=id.g3a19ca68852_0_50)
 
 ### PC1
-Find three data sets that you're interested in. Include link to dataset.
+Find three data sets that you're interested in. Include link to dataset. <br>
+[slides](https://docs.google.com/presentation/d/1w4r-Mw5UwrtyO_MZVt09wR5SqS1AaABt8Z-ZnkdRElU/edit?slide=id.g3a19ca68852_0_100#slide=id.g3a19ca68852_0_100)
 
 ### PC2
-Select one dataset and do some background research. Make sure your data is accessible on a git repo.
+Select one dataset and do some background research. Make sure your data is accessible on a git repo. <br>
+[slides](https://docs.google.com/presentation/d/1w4r-Mw5UwrtyO_MZVt09wR5SqS1AaABt8Z-ZnkdRElU/edit?slide=id.g3a19ca68852_0_117#slide=id.g3a19ca68852_0_117)
 
 ### PC3
 Do EDA on your selected dataset.
