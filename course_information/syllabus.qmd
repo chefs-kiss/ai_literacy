@@ -38,56 +38,54 @@ you to miss classes often, please speak with me as this may be evident of a poss
 your class dean as they are a great resource.
 
 # Course Breakdown
-## Readings and Reflections
-(3pt * 10 → 30 pt): Weekly reading assignments are due at 11:59pm (midnight) on
-the days indicated in the course schedule (typically Sundays). These readings consist of textbook passages from
-Introduction to Statistical Learning (ISL-P), as well as articles on ethics and/or domain use-cases. The reflections
-will be posted on Moodle and are graded based off completion. These will be used to gauge the difficulty of the
-material and guide certain aspects of the lecture. Late work: Submissions submitted after the deadline will receive
-no credit.
+## Readings 
+(optional): Each module has selected readings related to the content covered in class, consisting of textbook passages from
+Introduction to Statistical Learning (ISL-P), as well as articles on ethics and/or domain use-cases. 
+In a typical semester-long course, these readings would be required. In our four-week course, these _readings are optional_. 
+If you find that you have questions on a particular topic, check out the readings to find related information.
+
+## Article Reviews
+(5pt * 3 → 15 pt): In place of readings, you will be required to find three (3) articles related to machine learning, and complete a review on each.
+The article reviews are due before the final exam, though it is recommended to finish them as early as possible.
+Fill out this article review [doc] and submit a pdf.
+
 
 ## Homework Assignments 
-(5pt * 9 → 45 pt): Weekly homework assignments are due at the start of class on
-the days indicated in the course schedule (typically Mondays). These homework assignments consist of exercises
-to complete by hand (rather than programming), to reinforce your understanding of the concepts. Collaboration
-on homework is encouraged, and can be beneficial. However, remember that simply sharing answers is considered
-academic dishonesty, and is counterproductive, as it will not help you learn the material. Late work: Submissions
-one day late will receive a minus 1 point late penalty; submissions between one day and one week late will receive
-a minus 3 point late penalty. Submissions more than one week late will receive no credit.
+(5pt * 9 → 45 pt): We will have a homework assignment for each module that we cover, which will be due at the start of class of the following class.
+These homework assignments consist of exercises to complete by hand (rather than programming), to reinforce your understanding of the concepts. 
+Collaboration on homework is encouraged, though you are responsible for understanding the computations as you will be assessed on similar
+questions during your quizzes. <br>
+Late work: Due to the short turn-around on turning homework in and taking the module quiz, _no late work will be accepted_.
 
 ## Lab Assignments 
-(5pt * 7 → 35 pt): We will have labs associated with every module.
-These are due before we take the corresponding module quiz. See the course schedule for more details. 
+(5pt * 7 → 35 pt): We will have labs associated with every module and you are encouraged to work on labs with one other person. 
+Only one partner needs to submit the lab for the group.
+Labs are due before we take the corresponding quiz. 
 These assignments consist of programming exercises to practice applying the techniques we cover. 
 Typically, these assignments will be completed by filling in missing code into Jupyter notebooks 
 using Google Colab, and then submitting your completed notebook. 
 Each exercise will be graded all-or-nothing, with no partial credit. 
-Late work: Submissions one day late will receive a minus 1 point late penalty; 
-submissions between one day and one week late will receive a minus 3 point late penalty. 
-Submissions more than one week late will receive no credit.
+Late work: Due to the short turn-around on turning labs in and taking the module quiz, _no late work will be accepted_.
 
 ## Semester Project
-(60 pts): Towards the end of the course, you will complete a final project where you apply the concepts
-covered in the course to a topic of your choice. The final project may be completed individually or in a group of
-at most three students. It will be divided into the following components (a more detailed rubric will be available
-later on in the semester): <br>
-• Plan, Implementation, and Submission. You will submit a plan for your project using the machine learning
+(60 pts): Over the entirty of this course, you will complete a *personal* project where you apply the concepts covered in the course to a topic of your choice. 
+It will be divided into the following components (a more detailed rubric will be available later on in the semester): <br>
+ - Plan, Implementation, and Submission. You will submit a plan for your project using the machine learning
 workflow, and implement the workflow using coding best practices. Your final code workbook will be submitted
 to Moodle prior to your presentation day.
-• Peer Evaluations and Workdays. We will have several project workdays in class where you will be asked to
+ - Peer Evaluations and Workdays. We will have several project workdays in class where you will be asked to
 critique group projects in small groups, as well as give constructive feedback of all projects during our two
 presentation days. After you present your own project, you will complete a self reflection to assess what you
 did well, what you could improve upon, and the most important learning you discovered along the way.
-• Presentation Day. You will give a five-minute presentation on your project to the class.
+ - Presentation Day. You will give a five-minute presentation on your project to the class.
 Late Work: Late penalties for each component will be included in the instructions for that component. Late
 submissions for some components may not receive credit.
 
 ## Standards based Quizzes 
-(8pt * 9 → 72 pt): There will be five (5) quizzes or mini-exams over the course of
-the semester that will be assessed using standards-based grading. Each quiz will contain between 2-4 standards,
-covering in total 16 standards. You will be given three attempts to pass each standard. The first attempt will be
-during a quiz as indicated in the course schedule. There will be two retake days for any second attempts. All final
-attempts for standards will take place during our final exam time.
+(8pt * 9 → 72 pt): Each module will have a quiz that will be assessed using standards-based grading. 
+Each quiz will contain between 1-2 questions called standards. You will be given three attempts to pass each standard. The first attempt will be
+during the module quiz as indicated in the course schedule. The second attempt will be during the retake day associated with each module (see schedule). 
+All final attempts for standards will take place during our final exam time.
 The standards are graded on an 8-point scale and binned into four categories:
 P - proficient (8) R - small revision needed S - not satisfactory (4) I - incomplete (0)
 Revisions must be handed in during class on the days indicated on the schedule. Standards with an R that hand

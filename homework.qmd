@@ -3,7 +3,7 @@ title: "Homework"
 ---
 
 ## Overview
-Stuff about homework
+Homeworks are due at the start of the next class.
 
 ### [HW: EDA](/01-EDA/hw-EDA.qmd) 
 This homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.
