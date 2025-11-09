@@ -12,6 +12,7 @@ format:
     smaller: true
     progress: true
     highlight-style: tango
+    #self-contained: true
 jupyter: python3
 ---
 
@@ -508,6 +509,7 @@ plt.show()
 
 Density estimation smooths the histogram. 
 Bandwidth parameter controls smoothness
+
 
 ---
 
