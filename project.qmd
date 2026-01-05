@@ -42,12 +42,10 @@ There are nine progress checks during the semester, each worth 4 points (see the
 To receive full credit for a progress check, you must check in with your instructor before leaving class on the day of the check.
 
 ### PC0
-Fork project site and deploy via GitPages. <br>
-[slides](https://docs.google.com/presentation/d/1w4r-Mw5UwrtyO_MZVt09wR5SqS1AaABt8Z-ZnkdRElU/edit?slide=id.g3a19ca68852_0_50#slide=id.g3a19ca68852_0_50)
+Read over the project, taking a look at deadlines and deliverables. Then start to look at datasets you're interested in. Share any additional datasources you think would be interesting with your instructor.
 
 ### PC1
 Identify three data sets that you're interested in. If you include a data set not on the list above, you need to check with your instructor. Include links to each dataset. <br>
-[slides](https://docs.google.com/presentation/d/1w4r-Mw5UwrtyO_MZVt09wR5SqS1AaABt8Z-ZnkdRElU/edit?slide=id.g3a19ca68852_0_100#slide=id.g3a19ca68852_0_100)
 
 ### PC2
 Select one dataset and do some background research. Make sure your data is accessible on a git repo. 
@@ -58,7 +56,6 @@ Additionally, this could involve combining multiple data sources, or gathering d
 project requires you to gather your own data, please discuss this with your instructor before beginning, so
 that we can make sure you have a realistic plan to gather enough data. 
 
-[slides](https://docs.google.com/presentation/d/1w4r-Mw5UwrtyO_MZVt09wR5SqS1AaABt8Z-ZnkdRElU/edit?slide=id.g3a19ca68852_0_117#slide=id.g3a19ca68852_0_117)
 
 ### PC3
 Perform some exploratory data analysis. 
