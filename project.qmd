@@ -57,7 +57,8 @@ Read over the project, taking a look at deadlines and deliverables. Then start t
 a requirement to find an outside datasource and post on the Forum under ["Places to find additional data sources"](https://mdl.stolaf.edu/mod/forum/discuss.php?d=134318)
 
 ### PC1
-Identify three data sets that you're interested in. If you include a data set not on the list above, you need to check with your instructor. Include links to each dataset. <br>
+Identify three data sets that you're interested in. 
+Include a link, a two sentence description, and the reasoning behind selection for each dataset. Post on the Forum under ["Three datasets of interest"](https://mdl.stolaf.edu/mod/forum/discuss.php?d=134509) <br>
 
 ### PC2
 
@@ -69,6 +70,7 @@ Next, make sure your data is accessible on a git repo somewhere so you can get s
 Depending on your project, this might be as simple as locating a git repo that has your data set, 
 or it might require you to upload the dataset to your personal git repo.
 
+Submit link to colab workbook to Moodle submission.
 
 ### PC3
 Perform some exploratory data analysis using your workbook.
