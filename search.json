@@ -133,11 +133,11 @@
     ]
   },
   {
-    "objectID": "course_information/schedule.html#week-1-jan-5---9",
-    "href": "course_information/schedule.html#week-1-jan-5---9",
+    "objectID": "course_information/schedule.html",
+    "href": "course_information/schedule.html",
     "title": "Machine Learning",
-    "section": "Week 1 (Jan 5 - 9)",
-    "text": "Week 1 (Jan 5 - 9)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 5\n📖 syllabus\nINTRO\n👩🏻‍🏫 INTRO ☑️PC0 🍽️ 💻Lab: Intro\n\n\nT\nJan 6\n📖 readings\nEDA\n👩🏻‍🏫EDA1 👩🏻‍🏫EDA2 🍽️ QUIZ INTRO 📝HW:EDA\n\n\nW\nJan 7\n📓EDA standards\nEDA\n👩🏻‍🏫EDA3 ☑️PC1 🍽️ 💻Lab:EDA 😵‍💫 TA help  7:30-8:30\n\n\nTh\nJan 8\n📖 readings\nEVL\n👩🏻‍🏫EVL1 👩🏻‍🏫EVL2 🍽️ QUIZ EDA 📝HW:EVL\n\n\nF\nJan 9\n📓EVL standards\nEVL\n👩🏻‍🏫EVL3 ☑️PC2 🍽️ 💻Lab:EVL\n\n\nSu\nJan 11\n\n\n📰  article  review 😵‍💫 TA help  8:00-9:00",
+    "section": "",
+    "text": "Note: Days that are bolded will be help asynchronously. Student will work through the material at their own pace, and schedule a time to meet with their lab partner (if needed). ## Week 1 (Jan 5 - 9)",
     "crumbs": [
       "Course Information",
       "Schedule"
