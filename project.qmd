@@ -70,7 +70,7 @@ Next, make sure your data is accessible on a git repo somewhere so you can get s
 Depending on your project, this might be as simple as locating a git repo that has your data set, 
 or it might require you to upload the dataset to your personal git repo.
 
-Submit link to colab workbook to Moodle submission.
+Submit the link to your colab workbook to the [Moodle submission](https://mdl.stolaf.edu/mod/assign/view.php?id=526599).
 
 ### PC3
 Perform some exploratory data analysis using your workbook.
