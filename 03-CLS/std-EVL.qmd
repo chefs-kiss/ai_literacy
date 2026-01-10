@@ -16,7 +16,7 @@ You should be able to:
 - Interpret clustering results and identify which clusters are related to ground truths
 - Calculate and interpret silhouette coefficients
 - Define intra vs inter cluster and when to use these types of calculations
-- Interpret cluster evaluation charts
+- Identify good choices for cluster size $k$
 
 ## Study Tips
 
