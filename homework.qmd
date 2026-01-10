@@ -8,3 +8,6 @@ This homework goes over looking at summary tables for a dataset, explaining stat
 
 ### [HW: EVL](/02-EVL/hw-EVL.qmd) 
 This homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.
+
+### [HW: CLS](/03-CLS/hw-CLS.qmd) 
+This homework breaks down the calculations used in clustering algorithms.
