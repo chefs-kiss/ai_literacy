@@ -131,7 +131,7 @@
     "href": "course_information/schedule.html#week-2-jan-12---16",
     "title": "Machine Learning",
     "section": "Week 2 (Jan 12 - 16)",
-    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS2 QUIZ EVL 📝HW:CLS\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 💻Lab:CLS Quiz Retakes: EDA + EVL 😵‍💫 TA help  8:00-9:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 QUIZ CLS 📝HW:DATA\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n👩🏻‍🏫DATA3 ☑️PC4 💻Lab:DATA 😵‍💫 TA help  8:00-9:00\n\n\nF\nJan 16\n📖 readings\nMOD\n👩🏻‍🏫TREE1 👩🏻‍🏫TREE2 QUIZ DATA 📝HW:TREE\n\n\n\nOver the weekend, complete an article review",
+    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS3 QUIZ EVL 📝HW:CLS\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 💻Lab:CLS Quiz Retakes: EDA + EVL 😵‍💫 TA help  8:00-9:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 QUIZ CLS 📝HW:DATA\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n👩🏻‍🏫DATA3 ☑️PC4 💻Lab:DATA 😵‍💫 TA help  8:00-9:00\n\n\nF\nJan 16\n📖 readings\nMOD\n👩🏻‍🏫TREE1 👩🏻‍🏫TREE2 QUIZ DATA 📝HW:TREE\n\n\n\nOver the weekend, complete an article review",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -864,6 +864,17 @@
     "title": "Machine Learning",
     "section": "Lab: EVL",
     "text": "Lab: EVL\nIn this lab, we will explore the Wisconsin Breast Cancer dataset and focus on key aspects of model evaluation and resampling techniques. We will comment on the complexity of chosen models in a developed workflow, discuss resampling techniques, as well as the implications on various evaluation metrics. The lab finishes with auditing the algorithms using the ethical matrix framework discussed in class. Click to view Colab Notebook",
+    "crumbs": [
+      "Materials",
+      "Labs"
+    ]
+  },
+  {
+    "objectID": "labs.html#lab-cls",
+    "href": "labs.html#lab-cls",
+    "title": "Machine Learning",
+    "section": "Lab: CLS",
+    "text": "Lab: CLS\nIn this lab, we will be working with image data and exploring how decisions made in the modeling workflow impact results for our clustering models. There are a selection of open-ended questions (give your best guess on these) along with implementing some aspects of the clustering algorithm with functions that you build. Click to view Colab Notebook",
     "crumbs": [
       "Materials",
       "Labs"
