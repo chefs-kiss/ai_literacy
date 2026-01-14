@@ -21,18 +21,18 @@
     "text": "Accountable algorithms describes principles for investigating algorithms and holding them accountable. \nAlgorithm guidance expands off of the accountable algorithms article to show some real-world examples. This is a bit long, so skim as needed. Pay attention to the real-world examples."
   },
   {
-    "objectID": "04-DATA/rr-DATA.html",
-    "href": "04-DATA/rr-DATA.html",
-    "title": "DATA readings",
+    "objectID": "04-DATA/hw_DATA.html",
+    "href": "04-DATA/hw_DATA.html",
+    "title": "Machine Learning",
     "section": "",
-    "text": "DATA readings\nThe following excerpts are from a data wrangling in Python resource. When reading keep an eye out for some of the methods used (some of which you’ve likely seen already), and general ideas of how to begin working with data (it’s okay if you don’t understand every single example). We’ll cover more specific applications in class.\nWorking with a Pandas DataFrame describes how to look at and access features and entries inside a pandas DataFrame.\nReading in data via read_csv aalks through different ways to grab data. We’ll mainly pull csvs from a url (often via git repo), so skim this one.\nData exploring walks through some of the basics of EDA (some of this may look familiar to code from previous PAs).\nData summarization walks through how to do some summarization and transformations common in data cleaning.\nAdditional Pandas content\nCheatsheets: numpy, pandas, reshaping, text data"
+    "text": "For the following calculations, you can reuse the functions you build in your in-class workbooks."
   },
   {
     "objectID": "homework.html",
     "href": "homework.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Homeworks are due at the start of the next class.\n\nHW: EDA\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\nHW: EVL\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.\n\n\nHW: CLS\nThis homework breaks down the calculations used in clustering algorithms.",
+    "text": "Homeworks are due at the start of the next class.\n\nHW: EDA\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\nHW: EVL\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.\n\n\nHW: CLS\nThis homework breaks down the calculations used in clustering algorithms.\n\n\nHW: DATA\nThis homework walks through the data cleaning steps and thought process using AirBnB data.",
     "crumbs": [
       "Materials",
       "Homework"
@@ -131,7 +131,7 @@
     "href": "course_information/schedule.html#week-2-jan-12---16",
     "title": "Machine Learning",
     "section": "Week 2 (Jan 12 - 16)",
-    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS3 QUIZ EVL 📝HW:CLS\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 💻Lab:CLS Quiz Retakes: EDA + EVL 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 QUIZ CLS 📝HW:DATA\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n👩🏻‍🏫DATA3 ☑️PC4 💻Lab:DATA 😵‍💫 TA help  7:00-8:00\n\n\nF\nJan 16\n📖 readings\nMOD\n👩🏻‍🏫TREE1 👩🏻‍🏫TREE2 QUIZ DATA 📝HW:TREE\n\n\n\nOver the weekend, complete an article review",
+    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS3 QUIZ EVL 📝HW:CLS\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 💻Lab:CLS Quiz Retakes: EDA + EVL 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 📝HW:DATA\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n💻Lab:DATA☑️PC4 QUIZ CLS 😵‍💫 TA help  7:00-8:00\n\n\nF\nJan 16\n📖 readings\nMOD\n👩🏻‍🏫TREE1 👩🏻‍🏫TREE2 QUIZ DATA 📝HW:TREE\n\n\n\nOver the weekend, complete an article review",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -142,7 +142,7 @@
     "href": "course_information/schedule.html#week-3-jan-19---23",
     "title": "Machine Learning",
     "section": "Week 3 (Jan 19 - 23)",
-    "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 19\n📓TREE standards\nMOD\n👩🏻‍🏫KNN ☑️PC5 💻Lab:TREE Quiz Retakes:  CLS + DATA 😵‍💫 TA help  7:00-8:00\n\n\nT\nJan 20\n📖 readings\nMOD\n👩🏻‍🏫LIN1 👩🏻‍🏫LIN2 QUIZ TREE 📝HW:LIN\n\n\nW\nJan 21\n📓LIN standards\nMOD\n👩🏻‍🏫SVM ☑️PC6 💻Lab:MOD  Part 1 😵‍💫 TA help  7:00-8:00\n\n\nTh\nJan 22\n📖 readings\nENS\n👩🏻‍🏫ENS1 👩🏻‍🏫ENS2 QUIZ LIN 📝HW:ENS\n\n\nF\nJan 23\n📓ENS standards\nENS\n👩🏻‍🏫ENS3 ☑️PC7 💻Lab:MOD Part 2 QUIZ  RETAKES  TREE+LIN\n\n\n\nOver the weekend, complete an article review",
+    "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 19\n📓TREE standards\nMOD\n👩🏻‍🏫KNN ☑️PC5 💻Lab:TREE 😵‍💫 TA help  7:00-8:00\n\n\nT\nJan 20\n📖 readings\nMOD\n👩🏻‍🏫LIN1 👩🏻‍🏫LIN2 📝HW:LIN 🍽️ QUIZ TREE Quiz Retakes:  CLS + DATA\n\n\nW\nJan 21\n📓LIN standards\nMOD\n👩🏻‍🏫SVM ☑️PC6 💻Lab:MOD  Part 1 😵‍💫 TA help  7:00-8:00\n\n\nTh\nJan 22\n📖 readings\nENS\n👩🏻‍🏫ENS1 👩🏻‍🏫ENS2 QUIZ LIN 📝HW:ENS\n\n\nF\nJan 23\n📓ENS standards\nENS\n👩🏻‍🏫ENS3 ☑️PC7 💻Lab:MOD Part 2 QUIZ  RETAKES  TREE+LIN\n\n\n\nOver the weekend, complete an article review",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -859,6 +859,13 @@
       "Materials",
       "Project"
     ]
+  },
+  {
+    "objectID": "04-DATA/rr-DATA.html",
+    "href": "04-DATA/rr-DATA.html",
+    "title": "DATA readings",
+    "section": "",
+    "text": "DATA readings\nThe following excerpts are from a data wrangling in Python resource. When reading keep an eye out for some of the methods used (some of which you’ve likely seen already), and general ideas of how to begin working with data (it’s okay if you don’t understand every single example). We’ll cover more specific applications in class.\nWorking with a Pandas DataFrame describes how to look at and access features and entries inside a pandas DataFrame.\nReading in data via read_csv aalks through different ways to grab data. We’ll mainly pull csvs from a url (often via git repo), so skim this one.\nData exploring walks through some of the basics of EDA (some of this may look familiar to code from previous PAs).\nData summarization walks through how to do some summarization and transformations common in data cleaning.\nAdditional Pandas content\nCheatsheets: numpy, pandas, reshaping, text data"
   },
   {
     "objectID": "labs.html",
