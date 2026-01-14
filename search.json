@@ -993,6 +993,17 @@
     ]
   },
   {
+    "objectID": "labs.html#lab-data",
+    "href": "labs.html#lab-data",
+    "title": "Machine Learning",
+    "section": "Lab: DATA",
+    "text": "Lab: DATA\nIn this lab, we will perform various data cleaning techniques and transformations on a rental housing dataset. The last task in this lab requires you to go out and view analyses that other coders have published using this dataset, bringing back at least one interesting code snippet you saw. Click to view Colab Notebook",
+    "crumbs": [
+      "Materials",
+      "Labs"
+    ]
+  },
+  {
     "objectID": "02-EVL/std-EVL.html",
     "href": "02-EVL/std-EVL.html",
     "title": "Machine Learning",
