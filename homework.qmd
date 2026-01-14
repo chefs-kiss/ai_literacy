@@ -11,3 +11,6 @@ This homework goes over model selection in our 5-step ML workflow, as well as ev
 
 ### [HW: CLS](/03-CLS/hw-CLS.qmd) 
 This homework breaks down the calculations used in clustering algorithms.
+
+### [HW: DATA](/04-DATA/hw-DATA.qmd) 
+This homework walks through the data cleaning steps and thought process using AirBnB data.
