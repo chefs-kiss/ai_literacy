@@ -21,157 +21,383 @@
     "text": "Accountable algorithms describes principles for investigating algorithms and holding them accountable. \nAlgorithm guidance expands off of the accountable algorithms article to show some real-world examples. This is a bit long, so skim as needed. Pay attention to the real-world examples."
   },
   {
-    "objectID": "homework.html",
-    "href": "homework.html",
+    "objectID": "04-DATA/std-DATA.html",
+    "href": "04-DATA/std-DATA.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Homeworks are due at the start of the next class.\n\nHW: EDA\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\nHW: EVL\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.\n\n\nHW: CLS\nThis homework breaks down the calculations used in clustering algorithms.\n\n\nHW: DATA\nThis homework walks through the data cleaning steps and thought process using AirBnB data.",
+    "text": "The following standards will be assessed on the DATA quiz:"
+  },
+  {
+    "objectID": "04-DATA/std-DATA.html#data-prep",
+    "href": "04-DATA/std-DATA.html#data-prep",
+    "title": "Machine Learning",
+    "section": "DATA-PREP",
+    "text": "DATA-PREP\nYou should be able to:\n\nIdentify which kind of features require preparation\nOffer appropriate methods for preparing those features\nExplain the steps necessary to implement the methods selected"
+  },
+  {
+    "objectID": "04-DATA/std-DATA.html#flow2",
+    "href": "04-DATA/std-DATA.html#flow2",
+    "title": "Machine Learning",
+    "section": "FLOW2",
+    "text": "FLOW2\nYou should be able to:\n\nDescribe the five steps of the ML workflow\nGive examples of tasks you can do for each step"
+  },
+  {
+    "objectID": "04-DATA/std-DATA.html#study-tips",
+    "href": "04-DATA/std-DATA.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Overview\nYou may choose to work on any machine learning project of your choice. This could be similar to the types of regression, classification, or clustering that we will cover in class, or could be on machine learning related to text (things like sentiment analysis, or text generation), or could be on machine learning related to images (things like image recognition, or image generation), or another area of machine learning altogether.\nYou must complete this project individually.\n\n\nRequirements\nThe first requirement for the project is that you have created a workflow plan for each section of the ML workflow process, and have code that implements that plan. You will want to create a colab workbook, and include this plan at the beginning of your code notebook.\nYour plan should include the following:\n\nWhat will be your goal in working on this project?\nWhat will be your source for data for the project? If this requires you to gather data, how will you go about this?\nWhat data cleaning, conversion, or preparation will you need to do to prepare your data set?\nWhat kinds of exploratory data analysis will you do?\nWhich machine learning algorithms will you use to train models? Why are you choosing these algorithms?\nHow will you attempt to optimize your models?\nHow will you analyze the accuracy of your models?\n\nYour workflow should have some form of data pre-processing, some kind of exploratory data analysis, training and testing of machine learning algorithms (including some parameter tuning), and evaluating the performance of your models. It is very important that your plan is complete and very detailed, in order to show a thorough understanding of the process of training a model using machine learning, in case you don’t have time to fully complete your project.\nThe second requirement for the project is that it use one of the following datasets. These datasets cover a variety of topics and have enough records to build substantial models. If you wish, you may choose your own data set (both the UCI repo or data.world are good places to start) that is not on this list, but you’ll need to check with your instructor first (look for data &gt;5k records with both numeric and categorial features)\n\nCardiotocography\nHuman Activity Recognition Using Smartphones\nLetter Recognition\nTurkiye Student Evaluation\nBank Marketing Data Set\nContraceptive Method Choice Data Set\nCrimes in Chicago\nDefault of Credit Card Clients Data Set\nOnline Shoppers Purchasing Intention Dataset\nSynthetic Financial Datasets for Fraud Detection (fake data set, but should still provide useful practice)\nRice Variety Recognition\nMice Protein Expression\n\n\n\nProject Check-ins\nThere are nine progress checks during the semester, each worth 4 points (see the schedule). To receive full credit for a progress check, you must submit work before the next lecture’s afternoon session.\n\nPC0\nRead over the project, taking a look at deadlines and deliverables. Then start to look at datasets you’re interested in. You can certainly use the ones given, but it is a requirement to find an outside datasource and post on the Forum under “Places to find additional data sources”\n\n\nPC1\nIdentify three data sets that you’re interested in. Include a link, a two sentence description, and the reasoning behind selection for each dataset. Post on the Forum under “Three datasets of interest” \n\n\nPC2\nCreate a Colab workbook and copy-paste the workflow plan above into a text box. Identify the dataset you’d like to use for your project, and fill out the project goal (first question). You may have to do some background research on your topic. Then fill out the next three questions.\nNext, make sure your data is accessible on a git repo somewhere so you can get started on the next PC. Depending on your project, this might be as simple as locating a git repo that has your data set, or it might require you to upload the dataset to your personal git repo.\nSubmit the link to your colab workbook to the Moodle submission.\n\n\nPC3\nPerform some exploratory data analysis using your workbook. Discuss the results, and what this tells you about your data, as well as your expectations for your results. This should include some data visualizations that go beyond a basic chart.\nSubmit a picture of a plot you made along with a quick relection to the Moodle submission\n\n\nPC4\nTime to do some more background research. By now, hopefully you have identified what the goal of the model you plan to build is. Your task is to see if something similar been done with this type of data. Do a brief write up of background information (one paragraph) making sure to link sources.\nYou should also continue to build out your workflow plan, adding more details as you learn new material in class.\n\n\nPC5\nPrepare your data set for training. This might include handling missing or categorical values, basic conversions, or more extensive conversions. Any choices that you make should be explained. Additionally, you may want to consider creating more visualizations using this pre-processed (or what we call “clean”) data.\n\n\nPC6\nFinish laying out your project workflow and begin building your presentation. Think about how to make the insights from your analysis, your model goal, or the background information engaging for a general audience. Use this checkpoint to explore what makes a story compelling and experiment with ways to bring that story to life in your presentation.\n\n\nPC7\nTrain models using machine learning algorithms. Although you should not use every algorithm that we’ve covered, you should use those that make sense for your data set. You should explain your choices, and perform parameter tuning in order to optimize their performance.\nAdd a slide to your presentation describing the algorithms and tuning you did, making sure to make it relatable for a general audience.\n\n\nPC8\nDiscussion of results. Compare the performance of your models, and discuss the results. Do you consider your results successful? Explain why or why not, and discuss how further improvements might be made.\nContinue working on your final presentation. You want a presentation that is digestible to a non-technical audidence and is interesting (visualizations, insights, models, data).\n\n\nPC9\nEvaluation of your plan. Discuss how closely you were able to follow your workflow. What unexpected issues did you encounter? What adjustments did you need to make? How would this affect planning a future machine learning project? Finalize your presentation, and submit your link along with a screenshot to Moodle.\n\n\n\nFinal Submission\nThe final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. Submissions are due the night before the final.\nA detailed grading rubric TBD\n\n\nSmall group presentations\n(12 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. Grading is based on the quality of your peer review during these rounds.\nThe peer review form is available here",
     "crumbs": [
       "Materials",
-      "Homework"
+      "Project"
     ]
   },
   {
-    "objectID": "articles.html",
-    "href": "articles.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "You will complete three (3) reviews of articles related to machine learning. Each review is worth 5 points.\nThese assignments are designed to help you:\nEach review should demonstrate that you have read and understood the article, and thoughtfully reflected on its content. Most importantly, I should be able to get to know you personally through your writing of the review.",
-    "crumbs": [
-      "Materials",
-      "Article Reviews"
-    ]
-  },
-  {
-    "objectID": "articles.html#finding-articles",
-    "href": "articles.html#finding-articles",
-    "title": "Machine Learning",
-    "section": "Finding Articles",
-    "text": "Finding Articles\nYou are encouraged to find articles from reputable sources. Some suggestions include:\n\nThe New York Times (free access through our library)\n\nThe Pudding has data-driven storytelling examples\nYouTube channels like 3Blue1Brown or Veritasium\n\nOther sources such as academic blogs, news outlets, Medium posts, or scientific publications\n\nTip: Pick articles that genuinely interest you. You will write better reflections if the topic captures your attention.",
-    "crumbs": [
-      "Materials",
-      "Article Reviews"
-    ]
-  },
-  {
-    "objectID": "articles.html#article-review-instructions",
-    "href": "articles.html#article-review-instructions",
-    "title": "Machine Learning",
-    "section": "Article Review Instructions",
-    "text": "Article Review Instructions\nFor each article, provide clear and complete answers to the following questions.\nWrite in your own words. I do not want to read summarized slop from LLMs (these will receive 0 points).\n\nArticle Information: title of the article, author(s), publication month and year, link to the article\nIn your own words, summarize what the article covers. Focus on the key points and main ideas.\nIdentify any surprising facts, unique approaches, or compelling examples mentioned in the article.\nDiscuss how the ideas or technologies presented could affect society. Consider both positive and negative implications.\nReflect on how the article’s ideas might influence your own life, studies, or career.\nWhat would you ask the author to clarify, expand upon, or explain further?\nWhat question could you pose to readers or viewers to spark discussion?\nReflect on the article as a whole. What did you like or dislike? What did you agree or disagree with? Did it change your perspective on machine learning in any way? Would you recommend this article?",
-    "crumbs": [
-      "Materials",
-      "Article Reviews"
-    ]
-  },
-  {
-    "objectID": "articles.html#submission-guidelines",
-    "href": "articles.html#submission-guidelines",
-    "title": "Machine Learning",
-    "section": "Submission Guidelines",
-    "text": "Submission Guidelines\n\nSubmit each review as pdf to Moodle\nEach review should be about a page or so in length.\nIt’s okay if your grammar is less than perfect.\n\nAll three are due before the final exam day, though it is encouraged to complete them early.",
-    "crumbs": [
-      "Materials",
-      "Article Reviews"
-    ]
-  },
-  {
-    "objectID": "articles.html#grading-criteria",
-    "href": "articles.html#grading-criteria",
-    "title": "Machine Learning",
-    "section": "Grading Criteria",
-    "text": "Grading Criteria\n\nCompleteness (2 pts)\nPersonal (1 pt)\nInsightful impact (1pt)\nClarity + organization (1pt)\nTotal: 5 pt",
-    "crumbs": [
-      "Materials",
-      "Article Reviews"
-    ]
-  },
-  {
-    "objectID": "articles.html#tips-for-success",
-    "href": "articles.html#tips-for-success",
-    "title": "Machine Learning",
-    "section": "Tips for Success",
-    "text": "Tips for Success\n\nReflect on how the article connects to your understanding of machine learning.\n\nThink critically about the societal and personal implications.\n\nUse your own words to demonstrate understanding.\n\nChoose a mix of technical and non-technical articles for variety.",
-    "crumbs": [
-      "Materials",
-      "Article Reviews"
-    ]
-  },
-  {
-    "objectID": "course_information/schedule.html",
-    "href": "course_information/schedule.html",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "Note: Days that are bolded will be held asynchronously. Student will work through the material at their own pace, and schedule a time to meet with their lab partner (if needed).",
+    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nWe will be using our Moodle page to submit assignments and host our class discussion forum\nClick here for the course syllabus or here for the course schedule\n\nArtwork: The Myth of Zhuangzi by Yeachin Tsai",
     "crumbs": [
       "Course Information",
-      "Schedule"
+      "Home"
     ]
   },
   {
-    "objectID": "course_information/schedule.html#week-1-jan-5---9",
-    "href": "course_information/schedule.html#week-1-jan-5---9",
-    "title": "Machine Learning",
-    "section": "Week 1 (Jan 5 - 9)",
-    "text": "Week 1 (Jan 5 - 9)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 5\n📖 syllabus\nINTRO\n👩🏻‍🏫 INTRO ☑️PC0 🍽️ 💻Lab: Intro\n\n\nT\nJan 6\n📖 readings\nEDA\n👩🏻‍🏫EDA1 👩🏻‍🏫EDA2 🍽️ QUIZ INTRO 📝HW:EDA\n\n\nW\nJan 7\n📓EDA standards\nEDA\n👩🏻‍🏫EDA3 ☑️PC1 🍽️ 💻Lab:EDA 😵‍💫 TA help  7:30-8:30\n\n\nTh\nJan 8\n📖 readings\nEVL\n👩🏻‍🏫EVL1 👩🏻‍🏫EVL2 🍽️ QUIZ EDA 📝HW:EVL\n\n\nF\nJan 9\n📓EVL standards\nEVL\n👩🏻‍🏫EVL3 ☑️PC2 💻Lab:EVL 😵‍💫 TA help  2:00-3:00\n\n\nSu\nJan 11\n\n\n📰  article  review 😵‍💫 TA help  8:00-9:00",
-    "crumbs": [
-      "Course Information",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "course_information/schedule.html#week-2-jan-12---16",
-    "href": "course_information/schedule.html#week-2-jan-12---16",
-    "title": "Machine Learning",
-    "section": "Week 2 (Jan 12 - 16)",
-    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS3 QUIZ EVL 📝HW:CLS\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 💻Lab:CLS Quiz Retakes: EDA + EVL 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 📝HW:DATA\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n💻Lab:DATA☑️PC4 QUIZ CLS 😵‍💫 TA help  7:00-8:00\n\n\nF\nJan 16\n📖 readings\nMOD\n👩🏻‍🏫TREE1 👩🏻‍🏫TREE2 QUIZ DATA 📝HW:TREE\n\n\n\nOver the weekend, complete an article review",
-    "crumbs": [
-      "Course Information",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "course_information/schedule.html#week-3-jan-19---23",
-    "href": "course_information/schedule.html#week-3-jan-19---23",
-    "title": "Machine Learning",
-    "section": "Week 3 (Jan 19 - 23)",
-    "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 19\n📓TREE standards\nMOD\n👩🏻‍🏫KNN ☑️PC5 💻Lab:TREE 😵‍💫 TA help  7:00-8:00\n\n\nT\nJan 20\n📖 readings\nMOD\n👩🏻‍🏫LIN1 👩🏻‍🏫LIN2 📝HW:LIN 🍽️ QUIZ TREE Quiz Retakes:  CLS + DATA\n\n\nW\nJan 21\n📓LIN standards\nMOD\n👩🏻‍🏫SVM ☑️PC6 💻Lab:MOD  Part 1 😵‍💫 TA help  7:00-8:00\n\n\nTh\nJan 22\n📖 readings\nENS\n👩🏻‍🏫ENS1 👩🏻‍🏫ENS2 QUIZ LIN 📝HW:ENS\n\n\nF\nJan 23\n📓ENS standards\nENS\n👩🏻‍🏫ENS3 ☑️PC7 💻Lab:MOD Part 2 QUIZ  RETAKES  TREE+LIN\n\n\n\nOver the weekend, complete an article review",
-    "crumbs": [
-      "Course Information",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "course_information/schedule.html#week-4-jan-26---30",
-    "href": "course_information/schedule.html#week-4-jan-26---30",
-    "title": "Machine Learning",
-    "section": "Week 4 (Jan 26 - 30)",
-    "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 26\n📖 readings\nNN\n👩🏻‍🏫NN1 👩🏻‍🏫NN2 QUIZ ENS 📝 HW:NN\n\n\nT\nJan 27\n📓NN standards\nNN\n👩🏻‍🏫NN3 ☑️PC8 💻Lab:NN 😵‍💫 TA help  8:00-9:00\n\n\nW\nJan 28\n📖 readings\nDL\n👩🏻‍🏫DL1 👩🏻‍🏫DL2 QUIZ NN\n\n\nTh\nJan 29\n📓DL standards\nDL\nLast Day! QUIZ DL ☑️PC9 Quiz Retakes ENS+NN+DL\n\n\nF\nJan 30\nsubmitfinalsite\nFinal\nPresentation Day! ☑️PREZ Quiz Retakes ANY",
-    "crumbs": [
-      "Course Information",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "01-EDA/rr-EDA.html",
-    "href": "01-EDA/rr-EDA.html",
-    "title": "EDA readings",
+    "objectID": "course_information/syllabus.html",
+    "href": "course_information/syllabus.html",
+    "title": "Syllabus",
     "section": "",
-    "text": "Stats distributions describes how by only knowing statistical properties we may be making inaccurate assumptions of what our data actually looks like visually. \nImplications behind visualizations (excusing the explicit language) has loads of examples of how biases can creep into our data insights. This article shows how we can initially interpret visualizations, and perhaps how to start questioning if the visualization is telling the story we think it is. \nUsing LLMs to storyboard goes through the process of how a data-driven story is created at The Pudding, but using an LLM. This article is a great way to understand how data-driven stories are put together, and how good (or not so good) LLMs are at replicating tasks associated with the design and implementation process. \nggplot vs plotnine compares the graphing power of R’s ggplot to Python’s plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib’s capabilities. Only read if you have a background using R.\nStatistics for ML walks through basic definitions of statistical measures, charts, and distributions.\n\n\n\n\nThe following cheatsheets may be helpful for your reference: data storytelling, data visualizations, matplotlib, plotly, seaborn."
+    "text": "CSCI 200B Interim 2026 Special Topics: Machine Learning Morning Sessions: 10:40-12:40 in RNS 203 Afternoon Sessions: 1-3 in RNS 203\n\n\nMission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and available online, and is also hosted on this site. You can download your own pdf or access via your browser here\n\n\n\nIt has become increasingly common to use machine learning algorithms to analyze data, draw conclusions, and build models, without direct human instruction. These algorithms have been used in a wide variety of applications, including Netflix recommendations, predicting healthcare outcomes, criminal justice, and many more. In this course, we’ll explore several common machine learning algorithms, learning how they work, and applying them to real datasets. We will cover the strengths and limitations of machine learning algorithms. We will also explore real-world applications of machine learning, and discuss the ethical and societal consequences of the use of these algorithms.\n\n\n\nThrough the lens of machine learning, we will:\n\ndevelop and interpret applications of algorithms to domain use-cases\ndevelop working software that satisfies coding best practices\nwork effectively, both individually and in teams\ncommunicate information effectively to both technical and non-technical audiences\n\n\n\n\nThe schedule for this course is available by navigating to Course Information &gt; Schedule on the navigation window to the left. This page is likely to be updated throughout the semester, and will be announced in class if it is.\n\n\n\nI expect you to take an active role in class each day, participating positively, wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit your class dean as they are a great resource."
   },
   {
-    "objectID": "01-EDA/rr-EDA.html#related-articles",
-    "href": "01-EDA/rr-EDA.html#related-articles",
-    "title": "EDA readings",
+    "objectID": "course_information/syllabus.html#general-information",
+    "href": "course_information/syllabus.html#general-information",
+    "title": "Syllabus",
     "section": "",
-    "text": "Stats distributions describes how by only knowing statistical properties we may be making inaccurate assumptions of what our data actually looks like visually. \nImplications behind visualizations (excusing the explicit language) has loads of examples of how biases can creep into our data insights. This article shows how we can initially interpret visualizations, and perhaps how to start questioning if the visualization is telling the story we think it is. \nUsing LLMs to storyboard goes through the process of how a data-driven story is created at The Pudding, but using an LLM. This article is a great way to understand how data-driven stories are put together, and how good (or not so good) LLMs are at replicating tasks associated with the design and implementation process. \nggplot vs plotnine compares the graphing power of R’s ggplot to Python’s plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib’s capabilities. Only read if you have a background using R.\nStatistics for ML walks through basic definitions of statistical measures, charts, and distributions."
+    "text": "Mission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and available online, and is also hosted on this site. You can download your own pdf or access via your browser here"
   },
   {
-    "objectID": "01-EDA/rr-EDA.html#cheat-sheets",
-    "href": "01-EDA/rr-EDA.html#cheat-sheets",
-    "title": "EDA readings",
+    "objectID": "course_information/syllabus.html#course-description",
+    "href": "course_information/syllabus.html#course-description",
+    "title": "Syllabus",
     "section": "",
-    "text": "The following cheatsheets may be helpful for your reference: data storytelling, data visualizations, matplotlib, plotly, seaborn."
+    "text": "It has become increasingly common to use machine learning algorithms to analyze data, draw conclusions, and build models, without direct human instruction. These algorithms have been used in a wide variety of applications, including Netflix recommendations, predicting healthcare outcomes, criminal justice, and many more. In this course, we’ll explore several common machine learning algorithms, learning how they work, and applying them to real datasets. We will cover the strengths and limitations of machine learning algorithms. We will also explore real-world applications of machine learning, and discuss the ethical and societal consequences of the use of these algorithms."
+  },
+  {
+    "objectID": "course_information/syllabus.html#course-goals",
+    "href": "course_information/syllabus.html#course-goals",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Through the lens of machine learning, we will:\n\ndevelop and interpret applications of algorithms to domain use-cases\ndevelop working software that satisfies coding best practices\nwork effectively, both individually and in teams\ncommunicate information effectively to both technical and non-technical audiences"
+  },
+  {
+    "objectID": "course_information/syllabus.html#course-schedule",
+    "href": "course_information/syllabus.html#course-schedule",
+    "title": "Syllabus",
+    "section": "",
+    "text": "The schedule for this course is available by navigating to Course Information &gt; Schedule on the navigation window to the left. This page is likely to be updated throughout the semester, and will be announced in class if it is."
+  },
+  {
+    "objectID": "course_information/syllabus.html#active-learning-and-engagement",
+    "href": "course_information/syllabus.html#active-learning-and-engagement",
+    "title": "Syllabus",
+    "section": "",
+    "text": "I expect you to take an active role in class each day, participating positively, wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit your class dean as they are a great resource."
+  },
+  {
+    "objectID": "course_information/syllabus.html#readings",
+    "href": "course_information/syllabus.html#readings",
+    "title": "Syllabus",
+    "section": "Readings",
+    "text": "Readings\n(optional): Each module has selected readings related to the content covered in class, consisting of textbook passages from Introduction to Statistical Learning (ISL-P), as well as articles on ethics and/or domain use-cases. In a typical semester-long course, these readings would be required. In our four-week course, these readings are optional. If you find that you have questions on a particular topic, check out the readings to find related information."
+  },
+  {
+    "objectID": "course_information/syllabus.html#article-reviews",
+    "href": "course_information/syllabus.html#article-reviews",
+    "title": "Syllabus",
+    "section": "Article Reviews",
+    "text": "Article Reviews\n(5pt * 3 → 15 pt): In place of readings, you will be required to find three (3) articles related to machine learning, and complete a review on each. The article reviews are due before the final exam, though it is recommended to finish them as early as possible. Read more about article reviews here."
+  },
+  {
+    "objectID": "course_information/syllabus.html#homework-assignments",
+    "href": "course_information/syllabus.html#homework-assignments",
+    "title": "Syllabus",
+    "section": "Homework Assignments",
+    "text": "Homework Assignments\n(5pt * 8 → 40 pt): We will have a homework assignment for each module that we cover, which will be due at the start of class of the following class. These homework assignments consist of exercises to complete by hand (rather than programming), to reinforce your understanding of the concepts. Collaboration on homework is encouraged, though you are responsible for understanding the computations as you will be assessed on similar questions during your quizzes.  Late work: Due to the short turn-around on turning homework in and taking the module quiz, no late work will be accepted."
+  },
+  {
+    "objectID": "course_information/syllabus.html#lab-assignments",
+    "href": "course_information/syllabus.html#lab-assignments",
+    "title": "Syllabus",
+    "section": "Lab Assignments",
+    "text": "Lab Assignments\n(5pt * 9 → 45 pt): We will have labs associated with every module and you are encouraged to work on labs with one other person. Only one partner needs to submit the lab for the group. Labs are due before we take the corresponding quiz. These assignments consist of programming exercises to practice applying the techniques we cover. Typically, these assignments will be completed by filling in missing code into Jupyter notebooks using Google Colab, and then submitting your completed notebook. Each exercise will be graded all-or-nothing, with no partial credit. Late work: Due to the short turn-around on turning labs in and taking the module quiz, no late work will be accepted."
+  },
+  {
+    "objectID": "course_information/syllabus.html#semester-project",
+    "href": "course_information/syllabus.html#semester-project",
+    "title": "Syllabus",
+    "section": "Semester Project",
+    "text": "Semester Project\n(80 pts): Over the entirty of this course, you will complete a personal project where you apply the concepts covered in the course to a topic of your choice. You can find more in-depth information regarding the project on the project page\nThe project will be divided into the following components:\n\nProgress Checks (4pt * 9 → 36 pt): There are nine progress checks during the semester, each worth 4 points (see the schedule). To receive full credit for a progress check, you must check in with your instructor before leaving class on the day of the check.\nFinal Submission (30 pts): The final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. Submissions are due the night before finals. A detailed grading rubric will be available on the project page.\nSmall group presentations (9 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. Grading is based on the quality of your peer review during these rounds. The peer review form will be available on the project page.\nReflection (5 pts): Complete the reflection form up on the project page. This form asks you what went well, what could be improved upon, ect.\n\nLate Work: No late work will be accepted."
+  },
+  {
+    "objectID": "course_information/syllabus.html#standards-based-quizzes",
+    "href": "course_information/syllabus.html#standards-based-quizzes",
+    "title": "Syllabus",
+    "section": "Standards based Quizzes",
+    "text": "Standards based Quizzes\n(8pt * 9 → 72 pt): Each module will have a quiz that will be assessed using standards-based grading. Each quiz will contain two (2) questions called standards. There will be a study guide for each quiz that indicates which standards are being assessed. The full list of standards is in the section ML Core Standards found on this page.\nYou will be given three attempts to pass each standard. The first attempt will be during the module quiz as indicated in the course schedule. The second attempt will be during the retake day associated with each module (see schedule). All final attempts for standards will take place during our final exam time after presentations.\nThe standards are graded on an 8-point scale and binned into four categories:\n\nP proficient (8 pt)\nR small revision needed\nN not satisfactory (4 pt)\nI incomplete (0 pt)\n\nRevisions must be handed in before your next quiz. Standards with an R have a fully correct solution handed in will be bumped up to a P. Otherwise it will get bumped down to an N.\nAny student with N or I for three or more standards at the end of the course will be ineligible for a final grade greater than a B- in the course."
+  },
+  {
+    "objectID": "course_information/syllabus.html#extra-credit",
+    "href": "course_information/syllabus.html#extra-credit",
+    "title": "Syllabus",
+    "section": "Extra Credit",
+    "text": "Extra Credit\nSome projects have additional questions you can answer for extra credit."
+  },
+  {
+    "objectID": "course_information/syllabus.html#final-exam",
+    "href": "course_information/syllabus.html#final-exam",
+    "title": "Syllabus",
+    "section": "Final Exam",
+    "text": "Final Exam\nThe final exam is during the assigned period:\nFriday, Jan 30 from 10:40 - 3:00 P.M.\nAny final attempt on standards will take place during the second half of our final time. If you successfully passed each standard, you do not have to attend the second half of our final exam.\n\nFinal Grade Scale\n97 ≤ A+ ≤ 100 87 ≤ B+ ≤ 90 77 ≤ C+ ≤ 80 67 ≤ D+ ≤ 70  93 ≤ A ≤ 97 83 ≤ B ≤ 87 73 ≤ C ≤ 77 63 ≤ D ≤ 67  90 ≤ A- ≤ 93 80 ≤ B- ≤ 83 70 ≤ C- ≤ 73 60 ≤ D- ≤ 63 \nExplanations of each letter grade range can be found at https://catalog.stolaf.edu/academic-regulations-procedures/grades/"
+  },
+  {
+    "objectID": "course_information/syllabus.html#syllabus-changes",
+    "href": "course_information/syllabus.html#syllabus-changes",
+    "title": "Syllabus",
+    "section": "Syllabus Changes",
+    "text": "Syllabus Changes\nAll course information provided in this syllabus is subject to change and/or elimination. Changes will only be made when the instructor feels they are in the best interest of the class. It is the responsibility of every student to attend class, check e-mail, and communicate with the instructor to be informed and understand these changes.\nMost importantly HAVE FUN – I am really looking forward to this semester!"
+  },
+  {
+    "objectID": "course_information/syllabus.html#workflow",
+    "href": "course_information/syllabus.html#workflow",
+    "title": "Syllabus",
+    "section": "Workflow",
+    "text": "Workflow\n\ndefinition and examples of a broad variety of machine learning tasks:\n\nsupervised learning (classification, regression)\nunsupervised learning (clustering);\n\nability to identify, construct, and critique ML workflows\n\nStandards include: FLOW, FLOW2, FLOW-LIN, ALG-CLS"
+  },
+  {
+    "objectID": "course_information/syllabus.html#eda",
+    "href": "course_information/syllabus.html#eda",
+    "title": "Syllabus",
+    "section": "EDA",
+    "text": "EDA\n\nunderstanding of statistical measures, distributions, and tests\nexploration of data to guide workflow design and model selection\n\nStandards include: EDA-STAT"
+  },
+  {
+    "objectID": "course_information/syllabus.html#data",
+    "href": "course_information/syllabus.html#data",
+    "title": "Syllabus",
+    "section": "Data",
+    "text": "Data\n\ndata preprocessing (importance and pitfalls)\nhandling missing values (imputing, flag-as-missing, implications)\nencoding categorical variables and real-valued data\nnormalization and standardization.\n\nStandards include: DATA-PREP"
+  },
+  {
+    "objectID": "course_information/syllabus.html#selection",
+    "href": "course_information/syllabus.html#selection",
+    "title": "Syllabus",
+    "section": "Selection",
+    "text": "Selection\n\nimportance of understanding what your model is actually doing, where its pitfalls or shortcomings are, and the implications of its decisions\nno free lunch (no one learner can solve all problems)\nrepresentational design decisions have consequences\nsources of error and undecidability in machine learning\n\nStandards include: FLOW-LIN, MOD-SEL"
+  },
+  {
+    "objectID": "course_information/syllabus.html#algorithms",
+    "href": "course_information/syllabus.html#algorithms",
+    "title": "Syllabus",
+    "section": "Algorithms",
+    "text": "Algorithms\n\nfundamentals of understanding how common ML algorithms work (including but not limited to):\n\nclustering\ntree-based\nregression-based\nensemble\nneural nets\ndeep learning\n\nability to explain algorithms and their associated terms to a non-technical audience (including but not limited to):\n\nobjective function\ngradient descent\nregularization\nentropy\n\n\nStandards: ALG-CLS, ALG-TREE, ALG-LIN, ALG-ESB, ALG-NN, ALG-DL"
+  },
+  {
+    "objectID": "course_information/syllabus.html#training",
+    "href": "course_information/syllabus.html#training",
+    "title": "Syllabus",
+    "section": "Training",
+    "text": "Training\n\nseparation of train, validation, and test sets\ntuning the parameters of a machine learning model with a validation set\ncross validation\noverfitting problem / controlling solution complexity (regularization, pruning–intuition only)\nthe bias(underfitting) - variance (overfitting) tradeoff Standards: TRAIN, TRAIN-TREE"
+  },
+  {
+    "objectID": "course_information/syllabus.html#evaluation",
+    "href": "course_information/syllabus.html#evaluation",
+    "title": "Syllabus",
+    "section": "Evaluation",
+    "text": "Evaluation\nperformance metrics for classifiers; estimation of test performance on held-out data; other metrics for classification (e.g., error, precision, recall); performance metrics for regressors; confusion matrix;\nStandards: EVAL, EVAL-CLS"
+  },
+  {
+    "objectID": "course_information/syllabus.html#ethics",
+    "href": "course_information/syllabus.html#ethics",
+    "title": "Syllabus",
+    "section": "Ethics",
+    "text": "Ethics\n\nfocus on real data, scenarios, and case studies\nbias present in datasets, algorithms, evaluation\nprivacy\nfairness\nethical matrix"
+  },
+  {
+    "objectID": "course_information/syllabus.html#inclusivity-and-community",
+    "href": "course_information/syllabus.html#inclusivity-and-community",
+    "title": "Syllabus",
+    "section": "Inclusivity and Community",
+    "text": "Inclusivity and Community\nIn keeping with St. Olaf College’s mission statement, this class strives to be an inclusive and antiracist learning community, respecting and promoting those of differing backgrounds and beliefs. As a community, we will be to be respectful to all citizens in this class, regardless of race, ethnicity, religion, gender, or sexual orientation. This course affirms people of all gender expressions and gender identities. If you prefer to be called a different name or pronoun than what is on the class roster, please let me know."
+  },
+  {
+    "objectID": "course_information/syllabus.html#illness-and-community-standards",
+    "href": "course_information/syllabus.html#illness-and-community-standards",
+    "title": "Syllabus",
+    "section": "Illness and Community Standards",
+    "text": "Illness and Community Standards\nOut of respect for our learning community, if you are experiencing any symptoms of an illness, do not come to class or my office. Please contact me before class time to let me know of your absence."
+  },
+  {
+    "objectID": "course_information/syllabus.html#cell-phone-policy-and-classroom-atmosphere",
+    "href": "course_information/syllabus.html#cell-phone-policy-and-classroom-atmosphere",
+    "title": "Syllabus",
+    "section": "Cell Phone Policy and Classroom Atmosphere",
+    "text": "Cell Phone Policy and Classroom Atmosphere\nYou are expected to contribute to a positive classroom atmosphere, which includes arriving on time, not being disruptive, being respectful, actively involving yourself in class, and silencing and putting away cell phones. There may come a time where we use technology in class – during this time you can use a laptop, tablet, or your phone if you do not have the other options available to you. At any other times, however, I do not want to see your phone out. I’ll ask you to put them away if they show up."
+  },
+  {
+    "objectID": "course_information/syllabus.html#mental-and-physical-health",
+    "href": "course_information/syllabus.html#mental-and-physical-health",
+    "title": "Syllabus",
+    "section": "Mental and Physical Health",
+    "text": "Mental and Physical Health\nI greatly value your experience in this class, and it is my duty to facilitate a safe, caring, and productive learning environment. I recognize that you may experience a range of emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your learning. If you are experiencing such issues, please do not hesitate to see me– I am here to listen. We can also discuss what further resources might be available to you."
+  },
+  {
+    "objectID": "course_information/syllabus.html#academic-accommodations",
+    "href": "course_information/syllabus.html#academic-accommodations",
+    "title": "Syllabus",
+    "section": "Academic Accommodations",
+    "text": "Academic Accommodations\nI am committed to supporting the learning of all students in my class. If you have already registered with Disability and Access (DAC) and have your letter of accommodations, please meet with me as soon as possible to discuss, plan, and implement your accommodations in the course. If you have or think you have a disability (learning, sensory, physical, chronic health, mental health or attentional), please contact Disability and Access staff at 507-786-3288 or by visiting https://wp.stolaf.edu/academic-support/dac."
+  },
+  {
+    "objectID": "course_information/syllabus.html#multilingual-students",
+    "href": "course_information/syllabus.html#multilingual-students",
+    "title": "Syllabus",
+    "section": "Multilingual Students",
+    "text": "Multilingual Students\nI am committed to making course content accessible to all students. If English is not your first language and this causes you concern about the course, please speak with me. Students who would like extra support with writing or speaking in English can also contact the language specialist in CAAS."
+  },
+  {
+    "objectID": "course_information/syllabus.html#managing-stress-anxiety-and-other-issues",
+    "href": "course_information/syllabus.html#managing-stress-anxiety-and-other-issues",
+    "title": "Syllabus",
+    "section": "Managing stress, anxiety, and other issues",
+    "text": "Managing stress, anxiety, and other issues\nI greatly value your experience in this class, and it is my duty to facilitate a safe, caring, and productive learning environment. I recognize that you may experience a range of emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your learning. If you are experiencing such issues, please do not hesitate to come see me – I am here to listen. We can also discuss what further resources might be available to you."
+  },
+  {
+    "objectID": "course_information/syllabus.html#plagiarism-academic-integrity",
+    "href": "course_information/syllabus.html#plagiarism-academic-integrity",
+    "title": "Syllabus",
+    "section": "Plagiarism & Academic Integrity",
+    "text": "Plagiarism & Academic Integrity\nPlagiarism, the unacknowledged appropriation of another person’s words or ideas, is a serious academic offense. It is imperative that you hand in work that is your own, and that cites or gives credit to others whenever you draw from their work. This includes citing prompts when using genAI tools or an internet search. Please see St.Olaf’s statements on academic integrity and plagiarism at: https://wp.stolaf.edu/thebook/academic/integrity/. See also the description of St.Olaf’s honor system at: https://wp.stolaf.edu/honorcouncil/."
+  },
+  {
+    "objectID": "course_information/syllabus.html#communication-expectations",
+    "href": "course_information/syllabus.html#communication-expectations",
+    "title": "Syllabus",
+    "section": "Communication Expectations:",
+    "text": "Communication Expectations:\n\nInstructor/Student Expectations: I check my email frequently, and attempt to respond to questions within 24 hours. It should not be expected that I check my email after 9 PM, on Saturdays, or regularly during breaks.\nE-mail Etiquette: If you have multiple questions, fewer emails with more information per email is preferred. Please include the following when sending an email: course number with section number, a description of your question(s) within the subject line, a greeting and your instructors preferred name (mine is Kim), and a sign-off using your preferred name (this is what you want others to refer to you in class by). Add screenshots of your work for clarity."
+  },
+  {
+    "objectID": "course_information/syllabus.html#the-st.-olaf-honor-system",
+    "href": "course_information/syllabus.html#the-st.-olaf-honor-system",
+    "title": "Syllabus",
+    "section": "The St. Olaf Honor System",
+    "text": "The St. Olaf Honor System\nThe St. Olaf Honor System has been in place at St. Olaf College since 1911. All tests, quizzes, and examinations of any kind are taken under the St. Olaf Honor System. Each student is responsible for adhering to all principles of the Honor System regardless of the individual circumstances associated with their assessment environment."
+  },
+  {
+    "objectID": "course_information/syllabus.html#computer-science-program-attendance-policy-jterm-2026",
+    "href": "course_information/syllabus.html#computer-science-program-attendance-policy-jterm-2026",
+    "title": "Syllabus",
+    "section": "Computer Science Program Attendance Policy Jterm 2026:",
+    "text": "Computer Science Program Attendance Policy Jterm 2026:\nAttending class is essential for learning the content of the course, as well as practicing communication and collaboration. Missing class hinders your ability to achieve these important learning outcomes. That said, you understandably may need to occasionally miss class due to illness or a scheduling conflict. In these situations, I do not want to judge which absences should count as “excused” or “unexcused.” So, all absences will be treated equally, since they all result in missing important class time. Additionally, arriving late disrupts not only your own learning but also your classmates’ ability to engage fully in class activities. Any tardiness over 5 minutes (subject to instructor adjustment) will also be counted as an absence. During Jterm, each session (morning and afternoon) will have attendance taken, so missing an entire day of class equates to two absences.\nTo reflect the importance of attendance in this course: (1) If you have accrued two absences without contacting me in advance, I’ll notify your academic advisor and the Dean’s Office by filing an Early Alert Form to make sure you’re getting the support you need. (2) If you have accrued four absences (whether or not you contacted me in advance), you must meet with me to discuss your standing in the course and what you need to do to get back on track for successfully completing the class. (3) If you have accrued nine absences (whether or not you contacted me in advance), you’ll automatically fail the class. Nine absences means missing nearly a quarter of all class sessions, indicating that you have not legitimately completed a student-centered course that requires class engagement. If you do need to miss class, I strongly encourage you to check in with another student on what you missed, and attend office hours to discuss any questions that you have."
+  },
+  {
+    "objectID": "01-EDA/std-EDA.html",
+    "href": "01-EDA/std-EDA.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "The following standards will be assessed on the EDA quiz:"
+  },
+  {
+    "objectID": "01-EDA/std-EDA.html#flow",
+    "href": "01-EDA/std-EDA.html#flow",
+    "title": "Machine Learning",
+    "section": "FLOW",
+    "text": "FLOW\nYou should be able to:\n\nDefine learning approaches (supervised vs. unsupervised learning) and learning tasks (regression, classification, and clustering).\nInterpret a dataset summary table.\nDescribe a model’s goal and explain who might benefit from the model.\nDescribe the five steps ML workflow and give a few examples of tasks for each step"
+  },
+  {
+    "objectID": "01-EDA/std-EDA.html#eda-stat",
+    "href": "01-EDA/std-EDA.html#eda-stat",
+    "title": "Machine Learning",
+    "section": "EDA-STAT",
+    "text": "EDA-STAT\nYou should be able to:\n\nUnderstand and describe statistical measures, distributions, and tests\nRead and interpret charts, including identifying key features (skew, balance, shape) and chart types (histogram, boxplot, scatterplot)\nIdentify different feature types (numeric, discrete, continuous, ordinal, categorical, binary, or none).\nExplain what factors to consider when deciding whether a feature type is appropriate to include in a machine learning model."
+  },
+  {
+    "objectID": "01-EDA/std-EDA.html#study-tips",
+    "href": "01-EDA/std-EDA.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html",
+    "href": "03-CLS/std-CLS.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "The following standards will be assessed on the CLS quiz:"
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#alg-cls",
+    "href": "03-CLS/std-CLS.html#alg-cls",
+    "title": "Machine Learning",
+    "section": "ALG-CLS",
+    "text": "ALG-CLS\nYou should be able to:\n\nDefine the unsupervised learning approach and identify it’s associated algorithms\nExplain these algorithms and their associated terms to a non-technical audience\nIdentify when to use various unsupervised algorithms\nDefine intra vs inter cluster distances and it’s relevance to the k-means clustering algorithm"
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#evl-cls",
+    "href": "03-CLS/std-CLS.html#evl-cls",
+    "title": "Machine Learning",
+    "section": "EVL-CLS",
+    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nIdentify good choices for cluster size \\(k\\)"
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#study-tips",
+    "href": "03-CLS/std-CLS.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#formulas-given",
+    "href": "03-CLS/std-CLS.html#formulas-given",
+    "title": "Machine Learning",
+    "section": "Formulas given",
+    "text": "Formulas given\n\\(\\text{Silhouette coefficient} = \\frac{b-a}{max(a,b)}\\) \\(\\text{Euclidean distance} = \\sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\\)"
+  },
+  {
+    "objectID": "03-CLS/hw-CLS.html",
+    "href": "03-CLS/hw-CLS.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "For the following calculations, you can reuse the functions you build in your in-class workbooks."
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html",
+    "href": "03-CLS/rr-CLS.html",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4\n\n\n\n\n\nDecision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html#islp-selected-readings",
+    "href": "03-CLS/rr-CLS.html#islp-selected-readings",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4"
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html#related-articles",
+    "href": "03-CLS/rr-CLS.html#related-articles",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Decision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
   },
   {
     "objectID": "01-EDA/stats_resource.html#setup",
@@ -503,354 +729,156 @@
     "text": "Thank You!\nQuestions?\nRemember:\n\nStart with exploration\nQuantify uncertainty\nUse appropriate methods\nVisualize your results"
   },
   {
-    "objectID": "03-CLS/rr-CLS.html",
-    "href": "03-CLS/rr-CLS.html",
-    "title": "CLS readings",
+    "objectID": "01-EDA/rr-EDA.html",
+    "href": "01-EDA/rr-EDA.html",
+    "title": "EDA readings",
     "section": "",
-    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4\n\n\n\n\n\nDecision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
+    "text": "Stats distributions describes how by only knowing statistical properties we may be making inaccurate assumptions of what our data actually looks like visually. \nImplications behind visualizations (excusing the explicit language) has loads of examples of how biases can creep into our data insights. This article shows how we can initially interpret visualizations, and perhaps how to start questioning if the visualization is telling the story we think it is. \nUsing LLMs to storyboard goes through the process of how a data-driven story is created at The Pudding, but using an LLM. This article is a great way to understand how data-driven stories are put together, and how good (or not so good) LLMs are at replicating tasks associated with the design and implementation process. \nggplot vs plotnine compares the graphing power of R’s ggplot to Python’s plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib’s capabilities. Only read if you have a background using R.\nStatistics for ML walks through basic definitions of statistical measures, charts, and distributions.\n\n\n\n\nThe following cheatsheets may be helpful for your reference: data storytelling, data visualizations, matplotlib, plotly, seaborn."
   },
   {
-    "objectID": "03-CLS/rr-CLS.html#islp-selected-readings",
-    "href": "03-CLS/rr-CLS.html#islp-selected-readings",
-    "title": "CLS readings",
+    "objectID": "01-EDA/rr-EDA.html#related-articles",
+    "href": "01-EDA/rr-EDA.html#related-articles",
+    "title": "EDA readings",
     "section": "",
-    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4"
+    "text": "Stats distributions describes how by only knowing statistical properties we may be making inaccurate assumptions of what our data actually looks like visually. \nImplications behind visualizations (excusing the explicit language) has loads of examples of how biases can creep into our data insights. This article shows how we can initially interpret visualizations, and perhaps how to start questioning if the visualization is telling the story we think it is. \nUsing LLMs to storyboard goes through the process of how a data-driven story is created at The Pudding, but using an LLM. This article is a great way to understand how data-driven stories are put together, and how good (or not so good) LLMs are at replicating tasks associated with the design and implementation process. \nggplot vs plotnine compares the graphing power of R’s ggplot to Python’s plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib’s capabilities. Only read if you have a background using R.\nStatistics for ML walks through basic definitions of statistical measures, charts, and distributions."
   },
   {
-    "objectID": "03-CLS/rr-CLS.html#related-articles",
-    "href": "03-CLS/rr-CLS.html#related-articles",
-    "title": "CLS readings",
+    "objectID": "01-EDA/rr-EDA.html#cheat-sheets",
+    "href": "01-EDA/rr-EDA.html#cheat-sheets",
+    "title": "EDA readings",
     "section": "",
-    "text": "Decision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
+    "text": "The following cheatsheets may be helpful for your reference: data storytelling, data visualizations, matplotlib, plotly, seaborn."
   },
   {
-    "objectID": "03-CLS/hw-CLS.html",
-    "href": "03-CLS/hw-CLS.html",
+    "objectID": "course_information/schedule.html",
+    "href": "course_information/schedule.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "For the following calculations, you can reuse the functions you build in your in-class workbooks."
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html",
-    "href": "03-CLS/std-CLS.html",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "The following standards will be assessed on the CLS quiz:"
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#alg-cls",
-    "href": "03-CLS/std-CLS.html#alg-cls",
-    "title": "Machine Learning",
-    "section": "ALG-CLS",
-    "text": "ALG-CLS\nYou should be able to:\n\nDefine the unsupervised learning approach and identify it’s associated algorithms\nExplain these algorithms and their associated terms to a non-technical audience\nIdentify when to use various unsupervised algorithms\nDefine intra vs inter cluster distances and it’s relevance to the k-means clustering algorithm"
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#evl-cls",
-    "href": "03-CLS/std-CLS.html#evl-cls",
-    "title": "Machine Learning",
-    "section": "EVL-CLS",
-    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nIdentify good choices for cluster size \\(k\\)"
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#study-tips",
-    "href": "03-CLS/std-CLS.html#study-tips",
-    "title": "Machine Learning",
-    "section": "Study Tips",
-    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#formulas-given",
-    "href": "03-CLS/std-CLS.html#formulas-given",
-    "title": "Machine Learning",
-    "section": "Formulas given",
-    "text": "Formulas given\n\\(\\text{Silhouette coefficient} = \\frac{b-a}{max(a,b)}\\) \\(\\text{Euclidean distance} = \\sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\\)"
-  },
-  {
-    "objectID": "01-EDA/std-EDA.html",
-    "href": "01-EDA/std-EDA.html",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "The following standards will be assessed on the EDA quiz:"
-  },
-  {
-    "objectID": "01-EDA/std-EDA.html#flow",
-    "href": "01-EDA/std-EDA.html#flow",
-    "title": "Machine Learning",
-    "section": "FLOW",
-    "text": "FLOW\nYou should be able to:\n\nDefine learning approaches (supervised vs. unsupervised learning) and learning tasks (regression, classification, and clustering).\nInterpret a dataset summary table.\nDescribe a model’s goal and explain who might benefit from the model.\nDescribe the five steps ML workflow and give a few examples of tasks for each step"
-  },
-  {
-    "objectID": "01-EDA/std-EDA.html#eda-stat",
-    "href": "01-EDA/std-EDA.html#eda-stat",
-    "title": "Machine Learning",
-    "section": "EDA-STAT",
-    "text": "EDA-STAT\nYou should be able to:\n\nUnderstand and describe statistical measures, distributions, and tests\nRead and interpret charts, including identifying key features (skew, balance, shape) and chart types (histogram, boxplot, scatterplot)\nIdentify different feature types (numeric, discrete, continuous, ordinal, categorical, binary, or none).\nExplain what factors to consider when deciding whether a feature type is appropriate to include in a machine learning model."
-  },
-  {
-    "objectID": "01-EDA/std-EDA.html#study-tips",
-    "href": "01-EDA/std-EDA.html#study-tips",
-    "title": "Machine Learning",
-    "section": "Study Tips",
-    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
-  },
-  {
-    "objectID": "course_information/syllabus.html",
-    "href": "course_information/syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "CSCI 200B Interim 2026 Special Topics: Machine Learning Morning Sessions: 10:40-12:40 in RNS 203 Afternoon Sessions: 1-3 in RNS 203\n\n\nMission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and available online, and is also hosted on this site. You can download your own pdf or access via your browser here\n\n\n\nIt has become increasingly common to use machine learning algorithms to analyze data, draw conclusions, and build models, without direct human instruction. These algorithms have been used in a wide variety of applications, including Netflix recommendations, predicting healthcare outcomes, criminal justice, and many more. In this course, we’ll explore several common machine learning algorithms, learning how they work, and applying them to real datasets. We will cover the strengths and limitations of machine learning algorithms. We will also explore real-world applications of machine learning, and discuss the ethical and societal consequences of the use of these algorithms.\n\n\n\nThrough the lens of machine learning, we will:\n\ndevelop and interpret applications of algorithms to domain use-cases\ndevelop working software that satisfies coding best practices\nwork effectively, both individually and in teams\ncommunicate information effectively to both technical and non-technical audiences\n\n\n\n\nThe schedule for this course is available by navigating to Course Information &gt; Schedule on the navigation window to the left. This page is likely to be updated throughout the semester, and will be announced in class if it is.\n\n\n\nI expect you to take an active role in class each day, participating positively, wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit your class dean as they are a great resource."
-  },
-  {
-    "objectID": "course_information/syllabus.html#general-information",
-    "href": "course_information/syllabus.html#general-information",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Mission: This is a welcoming, inclusive, encouraging, and failure-tolerant class.  Instructor: Kim Mandery  E-mail: mander1@stolaf.edu  Office: RMS 407\nTextbook: Introduction to Statistical Learning with Python (ISL-P). This book is free and available online, and is also hosted on this site. You can download your own pdf or access via your browser here"
-  },
-  {
-    "objectID": "course_information/syllabus.html#course-description",
-    "href": "course_information/syllabus.html#course-description",
-    "title": "Syllabus",
-    "section": "",
-    "text": "It has become increasingly common to use machine learning algorithms to analyze data, draw conclusions, and build models, without direct human instruction. These algorithms have been used in a wide variety of applications, including Netflix recommendations, predicting healthcare outcomes, criminal justice, and many more. In this course, we’ll explore several common machine learning algorithms, learning how they work, and applying them to real datasets. We will cover the strengths and limitations of machine learning algorithms. We will also explore real-world applications of machine learning, and discuss the ethical and societal consequences of the use of these algorithms."
-  },
-  {
-    "objectID": "course_information/syllabus.html#course-goals",
-    "href": "course_information/syllabus.html#course-goals",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Through the lens of machine learning, we will:\n\ndevelop and interpret applications of algorithms to domain use-cases\ndevelop working software that satisfies coding best practices\nwork effectively, both individually and in teams\ncommunicate information effectively to both technical and non-technical audiences"
-  },
-  {
-    "objectID": "course_information/syllabus.html#course-schedule",
-    "href": "course_information/syllabus.html#course-schedule",
-    "title": "Syllabus",
-    "section": "",
-    "text": "The schedule for this course is available by navigating to Course Information &gt; Schedule on the navigation window to the left. This page is likely to be updated throughout the semester, and will be announced in class if it is."
-  },
-  {
-    "objectID": "course_information/syllabus.html#active-learning-and-engagement",
-    "href": "course_information/syllabus.html#active-learning-and-engagement",
-    "title": "Syllabus",
-    "section": "",
-    "text": "I expect you to take an active role in class each day, participating positively, wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit your class dean as they are a great resource."
-  },
-  {
-    "objectID": "course_information/syllabus.html#readings",
-    "href": "course_information/syllabus.html#readings",
-    "title": "Syllabus",
-    "section": "Readings",
-    "text": "Readings\n(optional): Each module has selected readings related to the content covered in class, consisting of textbook passages from Introduction to Statistical Learning (ISL-P), as well as articles on ethics and/or domain use-cases. In a typical semester-long course, these readings would be required. In our four-week course, these readings are optional. If you find that you have questions on a particular topic, check out the readings to find related information."
-  },
-  {
-    "objectID": "course_information/syllabus.html#article-reviews",
-    "href": "course_information/syllabus.html#article-reviews",
-    "title": "Syllabus",
-    "section": "Article Reviews",
-    "text": "Article Reviews\n(5pt * 3 → 15 pt): In place of readings, you will be required to find three (3) articles related to machine learning, and complete a review on each. The article reviews are due before the final exam, though it is recommended to finish them as early as possible. Read more about article reviews here."
-  },
-  {
-    "objectID": "course_information/syllabus.html#homework-assignments",
-    "href": "course_information/syllabus.html#homework-assignments",
-    "title": "Syllabus",
-    "section": "Homework Assignments",
-    "text": "Homework Assignments\n(5pt * 8 → 40 pt): We will have a homework assignment for each module that we cover, which will be due at the start of class of the following class. These homework assignments consist of exercises to complete by hand (rather than programming), to reinforce your understanding of the concepts. Collaboration on homework is encouraged, though you are responsible for understanding the computations as you will be assessed on similar questions during your quizzes.  Late work: Due to the short turn-around on turning homework in and taking the module quiz, no late work will be accepted."
-  },
-  {
-    "objectID": "course_information/syllabus.html#lab-assignments",
-    "href": "course_information/syllabus.html#lab-assignments",
-    "title": "Syllabus",
-    "section": "Lab Assignments",
-    "text": "Lab Assignments\n(5pt * 9 → 45 pt): We will have labs associated with every module and you are encouraged to work on labs with one other person. Only one partner needs to submit the lab for the group. Labs are due before we take the corresponding quiz. These assignments consist of programming exercises to practice applying the techniques we cover. Typically, these assignments will be completed by filling in missing code into Jupyter notebooks using Google Colab, and then submitting your completed notebook. Each exercise will be graded all-or-nothing, with no partial credit. Late work: Due to the short turn-around on turning labs in and taking the module quiz, no late work will be accepted."
-  },
-  {
-    "objectID": "course_information/syllabus.html#semester-project",
-    "href": "course_information/syllabus.html#semester-project",
-    "title": "Syllabus",
-    "section": "Semester Project",
-    "text": "Semester Project\n(80 pts): Over the entirty of this course, you will complete a personal project where you apply the concepts covered in the course to a topic of your choice. You can find more in-depth information regarding the project on the project page\nThe project will be divided into the following components:\n\nProgress Checks (4pt * 9 → 36 pt): There are nine progress checks during the semester, each worth 4 points (see the schedule). To receive full credit for a progress check, you must check in with your instructor before leaving class on the day of the check.\nFinal Submission (30 pts): The final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. Submissions are due the night before finals. A detailed grading rubric will be available on the project page.\nSmall group presentations (9 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. Grading is based on the quality of your peer review during these rounds. The peer review form will be available on the project page.\nReflection (5 pts): Complete the reflection form up on the project page. This form asks you what went well, what could be improved upon, ect.\n\nLate Work: No late work will be accepted."
-  },
-  {
-    "objectID": "course_information/syllabus.html#standards-based-quizzes",
-    "href": "course_information/syllabus.html#standards-based-quizzes",
-    "title": "Syllabus",
-    "section": "Standards based Quizzes",
-    "text": "Standards based Quizzes\n(8pt * 9 → 72 pt): Each module will have a quiz that will be assessed using standards-based grading. Each quiz will contain two (2) questions called standards. There will be a study guide for each quiz that indicates which standards are being assessed. The full list of standards is in the section ML Core Standards found on this page.\nYou will be given three attempts to pass each standard. The first attempt will be during the module quiz as indicated in the course schedule. The second attempt will be during the retake day associated with each module (see schedule). All final attempts for standards will take place during our final exam time after presentations.\nThe standards are graded on an 8-point scale and binned into four categories:\n\nP proficient (8 pt)\nR small revision needed\nN not satisfactory (4 pt)\nI incomplete (0 pt)\n\nRevisions must be handed in before your next quiz. Standards with an R have a fully correct solution handed in will be bumped up to a P. Otherwise it will get bumped down to an N.\nAny student with N or I for three or more standards at the end of the course will be ineligible for a final grade greater than a B- in the course."
-  },
-  {
-    "objectID": "course_information/syllabus.html#extra-credit",
-    "href": "course_information/syllabus.html#extra-credit",
-    "title": "Syllabus",
-    "section": "Extra Credit",
-    "text": "Extra Credit\nSome projects have additional questions you can answer for extra credit."
-  },
-  {
-    "objectID": "course_information/syllabus.html#final-exam",
-    "href": "course_information/syllabus.html#final-exam",
-    "title": "Syllabus",
-    "section": "Final Exam",
-    "text": "Final Exam\nThe final exam is during the assigned period:\nFriday, Jan 30 from 10:40 - 3:00 P.M.\nAny final attempt on standards will take place during the second half of our final time. If you successfully passed each standard, you do not have to attend the second half of our final exam.\n\nFinal Grade Scale\n97 ≤ A+ ≤ 100 87 ≤ B+ ≤ 90 77 ≤ C+ ≤ 80 67 ≤ D+ ≤ 70  93 ≤ A ≤ 97 83 ≤ B ≤ 87 73 ≤ C ≤ 77 63 ≤ D ≤ 67  90 ≤ A- ≤ 93 80 ≤ B- ≤ 83 70 ≤ C- ≤ 73 60 ≤ D- ≤ 63 \nExplanations of each letter grade range can be found at https://catalog.stolaf.edu/academic-regulations-procedures/grades/"
-  },
-  {
-    "objectID": "course_information/syllabus.html#syllabus-changes",
-    "href": "course_information/syllabus.html#syllabus-changes",
-    "title": "Syllabus",
-    "section": "Syllabus Changes",
-    "text": "Syllabus Changes\nAll course information provided in this syllabus is subject to change and/or elimination. Changes will only be made when the instructor feels they are in the best interest of the class. It is the responsibility of every student to attend class, check e-mail, and communicate with the instructor to be informed and understand these changes.\nMost importantly HAVE FUN – I am really looking forward to this semester!"
-  },
-  {
-    "objectID": "course_information/syllabus.html#workflow",
-    "href": "course_information/syllabus.html#workflow",
-    "title": "Syllabus",
-    "section": "Workflow",
-    "text": "Workflow\n\ndefinition and examples of a broad variety of machine learning tasks:\n\nsupervised learning (classification, regression)\nunsupervised learning (clustering);\n\nability to identify, construct, and critique ML workflows\n\nStandards include: FLOW, FLOW2, FLOW-LIN, ALG-CLS"
-  },
-  {
-    "objectID": "course_information/syllabus.html#eda",
-    "href": "course_information/syllabus.html#eda",
-    "title": "Syllabus",
-    "section": "EDA",
-    "text": "EDA\n\nunderstanding of statistical measures, distributions, and tests\nexploration of data to guide workflow design and model selection\n\nStandards include: EDA-STAT"
-  },
-  {
-    "objectID": "course_information/syllabus.html#data",
-    "href": "course_information/syllabus.html#data",
-    "title": "Syllabus",
-    "section": "Data",
-    "text": "Data\n\ndata preprocessing (importance and pitfalls)\nhandling missing values (imputing, flag-as-missing, implications)\nencoding categorical variables and real-valued data\nnormalization and standardization.\n\nStandards include: DATA-PREP"
-  },
-  {
-    "objectID": "course_information/syllabus.html#selection",
-    "href": "course_information/syllabus.html#selection",
-    "title": "Syllabus",
-    "section": "Selection",
-    "text": "Selection\n\nimportance of understanding what your model is actually doing, where its pitfalls or shortcomings are, and the implications of its decisions\nno free lunch (no one learner can solve all problems)\nrepresentational design decisions have consequences\nsources of error and undecidability in machine learning\n\nStandards include: FLOW-LIN, MOD-SEL"
-  },
-  {
-    "objectID": "course_information/syllabus.html#algorithms",
-    "href": "course_information/syllabus.html#algorithms",
-    "title": "Syllabus",
-    "section": "Algorithms",
-    "text": "Algorithms\n\nfundamentals of understanding how common ML algorithms work (including but not limited to):\n\nclustering\ntree-based\nregression-based\nensemble\nneural nets\ndeep learning\n\nability to explain algorithms and their associated terms to a non-technical audience (including but not limited to):\n\nobjective function\ngradient descent\nregularization\nentropy\n\n\nStandards: ALG-CLS, ALG-TREE, ALG-LIN, ALG-ESB, ALG-NN, ALG-DL"
-  },
-  {
-    "objectID": "course_information/syllabus.html#training",
-    "href": "course_information/syllabus.html#training",
-    "title": "Syllabus",
-    "section": "Training",
-    "text": "Training\n\nseparation of train, validation, and test sets\ntuning the parameters of a machine learning model with a validation set\ncross validation\noverfitting problem / controlling solution complexity (regularization, pruning–intuition only)\nthe bias(underfitting) - variance (overfitting) tradeoff Standards: TRAIN, TRAIN-TREE"
-  },
-  {
-    "objectID": "course_information/syllabus.html#evaluation",
-    "href": "course_information/syllabus.html#evaluation",
-    "title": "Syllabus",
-    "section": "Evaluation",
-    "text": "Evaluation\nperformance metrics for classifiers; estimation of test performance on held-out data; other metrics for classification (e.g., error, precision, recall); performance metrics for regressors; confusion matrix;\nStandards: EVAL, EVAL-CLS"
-  },
-  {
-    "objectID": "course_information/syllabus.html#ethics",
-    "href": "course_information/syllabus.html#ethics",
-    "title": "Syllabus",
-    "section": "Ethics",
-    "text": "Ethics\n\nfocus on real data, scenarios, and case studies\nbias present in datasets, algorithms, evaluation\nprivacy\nfairness\nethical matrix"
-  },
-  {
-    "objectID": "course_information/syllabus.html#inclusivity-and-community",
-    "href": "course_information/syllabus.html#inclusivity-and-community",
-    "title": "Syllabus",
-    "section": "Inclusivity and Community",
-    "text": "Inclusivity and Community\nIn keeping with St. Olaf College’s mission statement, this class strives to be an inclusive and antiracist learning community, respecting and promoting those of differing backgrounds and beliefs. As a community, we will be to be respectful to all citizens in this class, regardless of race, ethnicity, religion, gender, or sexual orientation. This course affirms people of all gender expressions and gender identities. If you prefer to be called a different name or pronoun than what is on the class roster, please let me know."
-  },
-  {
-    "objectID": "course_information/syllabus.html#illness-and-community-standards",
-    "href": "course_information/syllabus.html#illness-and-community-standards",
-    "title": "Syllabus",
-    "section": "Illness and Community Standards",
-    "text": "Illness and Community Standards\nOut of respect for our learning community, if you are experiencing any symptoms of an illness, do not come to class or my office. Please contact me before class time to let me know of your absence."
-  },
-  {
-    "objectID": "course_information/syllabus.html#cell-phone-policy-and-classroom-atmosphere",
-    "href": "course_information/syllabus.html#cell-phone-policy-and-classroom-atmosphere",
-    "title": "Syllabus",
-    "section": "Cell Phone Policy and Classroom Atmosphere",
-    "text": "Cell Phone Policy and Classroom Atmosphere\nYou are expected to contribute to a positive classroom atmosphere, which includes arriving on time, not being disruptive, being respectful, actively involving yourself in class, and silencing and putting away cell phones. There may come a time where we use technology in class – during this time you can use a laptop, tablet, or your phone if you do not have the other options available to you. At any other times, however, I do not want to see your phone out. I’ll ask you to put them away if they show up."
-  },
-  {
-    "objectID": "course_information/syllabus.html#mental-and-physical-health",
-    "href": "course_information/syllabus.html#mental-and-physical-health",
-    "title": "Syllabus",
-    "section": "Mental and Physical Health",
-    "text": "Mental and Physical Health\nI greatly value your experience in this class, and it is my duty to facilitate a safe, caring, and productive learning environment. I recognize that you may experience a range of emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your learning. If you are experiencing such issues, please do not hesitate to see me– I am here to listen. We can also discuss what further resources might be available to you."
-  },
-  {
-    "objectID": "course_information/syllabus.html#academic-accommodations",
-    "href": "course_information/syllabus.html#academic-accommodations",
-    "title": "Syllabus",
-    "section": "Academic Accommodations",
-    "text": "Academic Accommodations\nI am committed to supporting the learning of all students in my class. If you have already registered with Disability and Access (DAC) and have your letter of accommodations, please meet with me as soon as possible to discuss, plan, and implement your accommodations in the course. If you have or think you have a disability (learning, sensory, physical, chronic health, mental health or attentional), please contact Disability and Access staff at 507-786-3288 or by visiting https://wp.stolaf.edu/academic-support/dac."
-  },
-  {
-    "objectID": "course_information/syllabus.html#multilingual-students",
-    "href": "course_information/syllabus.html#multilingual-students",
-    "title": "Syllabus",
-    "section": "Multilingual Students",
-    "text": "Multilingual Students\nI am committed to making course content accessible to all students. If English is not your first language and this causes you concern about the course, please speak with me. Students who would like extra support with writing or speaking in English can also contact the language specialist in CAAS."
-  },
-  {
-    "objectID": "course_information/syllabus.html#managing-stress-anxiety-and-other-issues",
-    "href": "course_information/syllabus.html#managing-stress-anxiety-and-other-issues",
-    "title": "Syllabus",
-    "section": "Managing stress, anxiety, and other issues",
-    "text": "Managing stress, anxiety, and other issues\nI greatly value your experience in this class, and it is my duty to facilitate a safe, caring, and productive learning environment. I recognize that you may experience a range of emotional, physical, and/or psychological issues, both in and out of the classroom, that may distract you from your learning. If you are experiencing such issues, please do not hesitate to come see me – I am here to listen. We can also discuss what further resources might be available to you."
-  },
-  {
-    "objectID": "course_information/syllabus.html#plagiarism-academic-integrity",
-    "href": "course_information/syllabus.html#plagiarism-academic-integrity",
-    "title": "Syllabus",
-    "section": "Plagiarism & Academic Integrity",
-    "text": "Plagiarism & Academic Integrity\nPlagiarism, the unacknowledged appropriation of another person’s words or ideas, is a serious academic offense. It is imperative that you hand in work that is your own, and that cites or gives credit to others whenever you draw from their work. This includes citing prompts when using genAI tools or an internet search. Please see St.Olaf’s statements on academic integrity and plagiarism at: https://wp.stolaf.edu/thebook/academic/integrity/. See also the description of St.Olaf’s honor system at: https://wp.stolaf.edu/honorcouncil/."
-  },
-  {
-    "objectID": "course_information/syllabus.html#communication-expectations",
-    "href": "course_information/syllabus.html#communication-expectations",
-    "title": "Syllabus",
-    "section": "Communication Expectations:",
-    "text": "Communication Expectations:\n\nInstructor/Student Expectations: I check my email frequently, and attempt to respond to questions within 24 hours. It should not be expected that I check my email after 9 PM, on Saturdays, or regularly during breaks.\nE-mail Etiquette: If you have multiple questions, fewer emails with more information per email is preferred. Please include the following when sending an email: course number with section number, a description of your question(s) within the subject line, a greeting and your instructors preferred name (mine is Kim), and a sign-off using your preferred name (this is what you want others to refer to you in class by). Add screenshots of your work for clarity."
-  },
-  {
-    "objectID": "course_information/syllabus.html#the-st.-olaf-honor-system",
-    "href": "course_information/syllabus.html#the-st.-olaf-honor-system",
-    "title": "Syllabus",
-    "section": "The St. Olaf Honor System",
-    "text": "The St. Olaf Honor System\nThe St. Olaf Honor System has been in place at St. Olaf College since 1911. All tests, quizzes, and examinations of any kind are taken under the St. Olaf Honor System. Each student is responsible for adhering to all principles of the Honor System regardless of the individual circumstances associated with their assessment environment."
-  },
-  {
-    "objectID": "course_information/syllabus.html#computer-science-program-attendance-policy-jterm-2026",
-    "href": "course_information/syllabus.html#computer-science-program-attendance-policy-jterm-2026",
-    "title": "Syllabus",
-    "section": "Computer Science Program Attendance Policy Jterm 2026:",
-    "text": "Computer Science Program Attendance Policy Jterm 2026:\nAttending class is essential for learning the content of the course, as well as practicing communication and collaboration. Missing class hinders your ability to achieve these important learning outcomes. That said, you understandably may need to occasionally miss class due to illness or a scheduling conflict. In these situations, I do not want to judge which absences should count as “excused” or “unexcused.” So, all absences will be treated equally, since they all result in missing important class time. Additionally, arriving late disrupts not only your own learning but also your classmates’ ability to engage fully in class activities. Any tardiness over 5 minutes (subject to instructor adjustment) will also be counted as an absence. During Jterm, each session (morning and afternoon) will have attendance taken, so missing an entire day of class equates to two absences.\nTo reflect the importance of attendance in this course: (1) If you have accrued two absences without contacting me in advance, I’ll notify your academic advisor and the Dean’s Office by filing an Early Alert Form to make sure you’re getting the support you need. (2) If you have accrued four absences (whether or not you contacted me in advance), you must meet with me to discuss your standing in the course and what you need to do to get back on track for successfully completing the class. (3) If you have accrued nine absences (whether or not you contacted me in advance), you’ll automatically fail the class. Nine absences means missing nearly a quarter of all class sessions, indicating that you have not legitimately completed a student-centered course that requires class engagement. If you do need to miss class, I strongly encourage you to check in with another student on what you missed, and attend office hours to discuss any questions that you have."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nWe will be using our Moodle page to submit assignments and host our class discussion forum\nClick here for the course syllabus or here for the course schedule\n\nArtwork: The Myth of Zhuangzi by Yeachin Tsai",
+    "text": "Note: Days that are bolded will be held asynchronously. Student will work through the material at their own pace, and schedule a time to meet with their lab partner (if needed).",
     "crumbs": [
       "Course Information",
-      "Home"
+      "Schedule"
     ]
   },
   {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Overview",
+    "objectID": "course_information/schedule.html#week-1-jan-5---9",
+    "href": "course_information/schedule.html#week-1-jan-5---9",
+    "title": "Machine Learning",
+    "section": "Week 1 (Jan 5 - 9)",
+    "text": "Week 1 (Jan 5 - 9)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 5\n📖 syllabus\nINTRO\n👩🏻‍🏫 INTRO ☑️PC0 🍽️ 💻Lab: Intro\n\n\nT\nJan 6\n📖 readings\nEDA\n👩🏻‍🏫EDA1 👩🏻‍🏫EDA2 🍽️ QUIZ INTRO 📝HW:EDA\n\n\nW\nJan 7\n📓EDA standards\nEDA\n👩🏻‍🏫EDA3 ☑️PC1 🍽️ 💻Lab:EDA 😵‍💫 TA help  7:30-8:30\n\n\nTh\nJan 8\n📖 readings\nEVL\n👩🏻‍🏫EVL1 👩🏻‍🏫EVL2 🍽️ QUIZ EDA 📝HW:EVL\n\n\nF\nJan 9\n📓EVL standards\nEVL\n👩🏻‍🏫EVL3 ☑️PC2 💻Lab:EVL 😵‍💫 TA help  2:00-3:00\n\n\nSu\nJan 11\n\n\n📰  article  review 😵‍💫 TA help  8:00-9:00",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-2-jan-12---16",
+    "href": "course_information/schedule.html#week-2-jan-12---16",
+    "title": "Machine Learning",
+    "section": "Week 2 (Jan 12 - 16)",
+    "text": "Week 2 (Jan 12 - 16)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 12\n📖 readings\nCLS\n👩🏻‍🏫CLS1 👩🏻‍🏫CLS3 QUIZ EVL 📝HW:CLS\n\n\nT\nJan 13\n📓CLS standards\nCLS\n👩🏻‍🏫CLS3 ☑️PC3 💻Lab:CLS Quiz Retakes: EDA + EVL 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 14\n📖 readings\nDATA\n👩🏻‍🏫DATA1 👩🏻‍🏫DATA2 📝HW:DATA\n\n\nTh\nJan 15\n📓DATA standards\nDATA\n💻Lab:DATA☑️PC4 QUIZ CLS 😵‍💫 TA help  7:00-8:00\n\n\nF\nJan 16\n📖 readings\nMOD\n👩🏻‍🏫TREE1 👩🏻‍🏫TREE2 QUIZ DATA 📝HW:TREE\n\n\n\nOver the weekend, complete an article review",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-3-jan-19---23",
+    "href": "course_information/schedule.html#week-3-jan-19---23",
+    "title": "Machine Learning",
+    "section": "Week 3 (Jan 19 - 23)",
+    "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 19\n📓TREE standards\nMOD\n👩🏻‍🏫KNN ☑️PC5 💻Lab:TREE 😵‍💫 TA help  7:00-8:00\n\n\nT\nJan 20\n📖 readings\nMOD\n👩🏻‍🏫LIN1 👩🏻‍🏫LIN2 📝HW:LIN 🍽️ QUIZ TREE Quiz Retakes:  CLS + DATA\n\n\nW\nJan 21\n📓LIN standards\nMOD\n👩🏻‍🏫SVM ☑️PC6 💻Lab:MOD  Part 1 😵‍💫 TA help  7:00-8:00\n\n\nTh\nJan 22\n📖 readings\nENS\n👩🏻‍🏫ENS1 👩🏻‍🏫ENS2 QUIZ LIN 📝HW:ENS\n\n\nF\nJan 23\n📓ENS standards\nENS\n👩🏻‍🏫ENS3 ☑️PC7 💻Lab:MOD Part 2 QUIZ  RETAKES  TREE+LIN\n\n\n\nOver the weekend, complete an article review",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course_information/schedule.html#week-4-jan-26---30",
+    "href": "course_information/schedule.html#week-4-jan-26---30",
+    "title": "Machine Learning",
+    "section": "Week 4 (Jan 26 - 30)",
+    "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 26\n📖 readings\nNN\n👩🏻‍🏫NN1 👩🏻‍🏫NN2 QUIZ ENS 📝 HW:NN\n\n\nT\nJan 27\n📓NN standards\nNN\n👩🏻‍🏫NN3 ☑️PC8 💻Lab:NN 😵‍💫 TA help  8:00-9:00\n\n\nW\nJan 28\n📖 readings\nDL\n👩🏻‍🏫DL1 👩🏻‍🏫DL2 QUIZ NN\n\n\nTh\nJan 29\n📓DL standards\nDL\nLast Day! QUIZ DL ☑️PC9 Quiz Retakes ENS+NN+DL\n\n\nF\nJan 30\nsubmitfinalsite\nFinal\nPresentation Day! ☑️PREZ Quiz Retakes ANY",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Machine Learning",
     "section": "",
-    "text": "Overview\nYou may choose to work on any machine learning project of your choice. This could be similar to the types of regression, classification, or clustering that we will cover in class, or could be on machine learning related to text (things like sentiment analysis, or text generation), or could be on machine learning related to images (things like image recognition, or image generation), or another area of machine learning altogether.\nYou must complete this project individually.\n\n\nRequirements\nThe first requirement for the project is that you have created a workflow plan for each section of the ML workflow process, and have code that implements that plan. You will want to create a colab workbook, and include this plan at the beginning of your code notebook.\nYour plan should include the following:\n\nWhat will be your goal in working on this project?\nWhat will be your source for data for the project? If this requires you to gather data, how will you go about this?\nWhat data cleaning, conversion, or preparation will you need to do to prepare your data set?\nWhat kinds of exploratory data analysis will you do?\nWhich machine learning algorithms will you use to train models? Why are you choosing these algorithms?\nHow will you attempt to optimize your models?\nHow will you analyze the accuracy of your models?\n\nYour workflow should have some form of data pre-processing, some kind of exploratory data analysis, training and testing of machine learning algorithms (including some parameter tuning), and evaluating the performance of your models. It is very important that your plan is complete and very detailed, in order to show a thorough understanding of the process of training a model using machine learning, in case you don’t have time to fully complete your project.\nThe second requirement for the project is that it use one of the following datasets. These datasets cover a variety of topics and have enough records to build substantial models. If you wish, you may choose your own data set (both the UCI repo or data.world are good places to start) that is not on this list, but you’ll need to check with your instructor first (look for data &gt;5k records with both numeric and categorial features)\n\nCardiotocography\nHuman Activity Recognition Using Smartphones\nLetter Recognition\nTurkiye Student Evaluation\nBank Marketing Data Set\nContraceptive Method Choice Data Set\nCrimes in Chicago\nDefault of Credit Card Clients Data Set\nOnline Shoppers Purchasing Intention Dataset\nSynthetic Financial Datasets for Fraud Detection (fake data set, but should still provide useful practice)\nRice Variety Recognition\nMice Protein Expression\n\n\n\nProject Check-ins\nThere are nine progress checks during the semester, each worth 4 points (see the schedule). To receive full credit for a progress check, you must submit work before the next lecture’s afternoon session.\n\nPC0\nRead over the project, taking a look at deadlines and deliverables. Then start to look at datasets you’re interested in. You can certainly use the ones given, but it is a requirement to find an outside datasource and post on the Forum under “Places to find additional data sources”\n\n\nPC1\nIdentify three data sets that you’re interested in. Include a link, a two sentence description, and the reasoning behind selection for each dataset. Post on the Forum under “Three datasets of interest” \n\n\nPC2\nCreate a Colab workbook and copy-paste the workflow plan above into a text box. Identify the dataset you’d like to use for your project, and fill out the project goal (first question). You may have to do some background research on your topic. Then fill out the next three questions.\nNext, make sure your data is accessible on a git repo somewhere so you can get started on the next PC. Depending on your project, this might be as simple as locating a git repo that has your data set, or it might require you to upload the dataset to your personal git repo.\nSubmit the link to your colab workbook to the Moodle submission.\n\n\nPC3\nPerform some exploratory data analysis using your workbook. Discuss the results, and what this tells you about your data, as well as your expectations for your results. This should include some data visualizations that go beyond a basic chart.\nSubmit a picture of a plot you made along with a quick relection to the Moodle submission\n\n\nPC4\nTime to do some more background research. By now, hopefully you have identified what the goal of the model you plan to build is. Your task is to see if something similar been done with this type of data. Do a brief write up of background information (one paragraph) making sure to link sources.\nYou should also continue to build out your workflow plan, adding more details as you learn new material in class.\n\n\nPC5\nPrepare your data set for training. This might include handling missing or categorical values, basic conversions, or more extensive conversions. Any choices that you make should be explained. Additionally, you may want to consider creating more visualizations using this pre-processed (or what we call “clean”) data.\n\n\nPC6\nFinish laying out your project workflow and begin building your presentation. Think about how to make the insights from your analysis, your model goal, or the background information engaging for a general audience. Use this checkpoint to explore what makes a story compelling and experiment with ways to bring that story to life in your presentation.\n\n\nPC7\nTrain models using machine learning algorithms. Although you should not use every algorithm that we’ve covered, you should use those that make sense for your data set. You should explain your choices, and perform parameter tuning in order to optimize their performance.\nAdd a slide to your presentation describing the algorithms and tuning you did, making sure to make it relatable for a general audience.\n\n\nPC8\nDiscussion of results. Compare the performance of your models, and discuss the results. Do you consider your results successful? Explain why or why not, and discuss how further improvements might be made.\nContinue working on your final presentation. You want a presentation that is digestible to a non-technical audidence and is interesting (visualizations, insights, models, data).\n\n\nPC9\nEvaluation of your plan. Discuss how closely you were able to follow your workflow. What unexpected issues did you encounter? What adjustments did you need to make? How would this affect planning a future machine learning project? Finalize your presentation, and submit your link along with a screenshot to Moodle.\n\n\n\nFinal Submission\nThe final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. Submissions are due the night before the final.\nA detailed grading rubric TBD\n\n\nSmall group presentations\n(12 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. Grading is based on the quality of your peer review during these rounds.\nThe peer review form is available here",
+    "text": "You will complete three (3) reviews of articles related to machine learning. Each review is worth 5 points.\nThese assignments are designed to help you:\nEach review should demonstrate that you have read and understood the article, and thoughtfully reflected on its content. Most importantly, I should be able to get to know you personally through your writing of the review.",
     "crumbs": [
       "Materials",
-      "Project"
+      "Article Reviews"
+    ]
+  },
+  {
+    "objectID": "articles.html#finding-articles",
+    "href": "articles.html#finding-articles",
+    "title": "Machine Learning",
+    "section": "Finding Articles",
+    "text": "Finding Articles\nYou are encouraged to find articles from reputable sources. Some suggestions include:\n\nThe New York Times (free access through our library)\n\nThe Pudding has data-driven storytelling examples\nYouTube channels like 3Blue1Brown or Veritasium\n\nOther sources such as academic blogs, news outlets, Medium posts, or scientific publications\n\nTip: Pick articles that genuinely interest you. You will write better reflections if the topic captures your attention.",
+    "crumbs": [
+      "Materials",
+      "Article Reviews"
+    ]
+  },
+  {
+    "objectID": "articles.html#article-review-instructions",
+    "href": "articles.html#article-review-instructions",
+    "title": "Machine Learning",
+    "section": "Article Review Instructions",
+    "text": "Article Review Instructions\nFor each article, provide clear and complete answers to the following questions.\nWrite in your own words. I do not want to read summarized slop from LLMs (these will receive 0 points).\n\nArticle Information: title of the article, author(s), publication month and year, link to the article\nIn your own words, summarize what the article covers. Focus on the key points and main ideas.\nIdentify any surprising facts, unique approaches, or compelling examples mentioned in the article.\nDiscuss how the ideas or technologies presented could affect society. Consider both positive and negative implications.\nReflect on how the article’s ideas might influence your own life, studies, or career.\nWhat would you ask the author to clarify, expand upon, or explain further?\nWhat question could you pose to readers or viewers to spark discussion?\nReflect on the article as a whole. What did you like or dislike? What did you agree or disagree with? Did it change your perspective on machine learning in any way? Would you recommend this article?",
+    "crumbs": [
+      "Materials",
+      "Article Reviews"
+    ]
+  },
+  {
+    "objectID": "articles.html#submission-guidelines",
+    "href": "articles.html#submission-guidelines",
+    "title": "Machine Learning",
+    "section": "Submission Guidelines",
+    "text": "Submission Guidelines\n\nSubmit each review as pdf to Moodle\nEach review should be about a page or so in length.\nIt’s okay if your grammar is less than perfect.\n\nAll three are due before the final exam day, though it is encouraged to complete them early.",
+    "crumbs": [
+      "Materials",
+      "Article Reviews"
+    ]
+  },
+  {
+    "objectID": "articles.html#grading-criteria",
+    "href": "articles.html#grading-criteria",
+    "title": "Machine Learning",
+    "section": "Grading Criteria",
+    "text": "Grading Criteria\n\nCompleteness (2 pts)\nPersonal (1 pt)\nInsightful impact (1pt)\nClarity + organization (1pt)\nTotal: 5 pt",
+    "crumbs": [
+      "Materials",
+      "Article Reviews"
+    ]
+  },
+  {
+    "objectID": "articles.html#tips-for-success",
+    "href": "articles.html#tips-for-success",
+    "title": "Machine Learning",
+    "section": "Tips for Success",
+    "text": "Tips for Success\n\nReflect on how the article connects to your understanding of machine learning.\n\nThink critically about the societal and personal implications.\n\nUse your own words to demonstrate understanding.\n\nChoose a mix of technical and non-technical articles for variety.",
+    "crumbs": [
+      "Materials",
+      "Article Reviews"
+    ]
+  },
+  {
+    "objectID": "homework.html",
+    "href": "homework.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "Homeworks are due at the start of the next class.\n\nHW: EDA\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\nHW: EVL\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.\n\n\nHW: CLS\nThis homework breaks down the calculations used in clustering algorithms.\n\n\nHW: DATA\nThis homework walks through the data cleaning steps and thought process using AirBnB data.",
+    "crumbs": [
+      "Materials",
+      "Homework"
     ]
   },
   {
