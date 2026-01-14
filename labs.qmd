@@ -29,3 +29,9 @@ In this lab, we will be working with image data and exploring how decisions made
 results for our clustering models. There are a selection of open-ended questions (give your best guess on these)
 along with a few questions that require you to implement your own clustering functions.
 [Click to view Colab Notebook](https://colab.research.google.com/drive/1zxjJBzxeiUDcKLoKXxMzQ-9GyLkKPbN3#scrollTo=jwg7qCK6uMR2)
+
+## Lab: DATA
+In this lab, we will perform various data cleaning techniques and transformations on a rental housing dataset. The last task 
+in this lab requires you to go out and view analyses that other coders have published using this dataset, bringing back
+at least one interesting code snippet you saw.
+[Click to view Colab Notebook](https://colab.research.google.com/drive/1RcoCwDhKZc9PB6TBDkw8y_tbylS4MG9I#scrollTo=XuTSMNcdtebo)
