@@ -37,5 +37,5 @@ at least one interesting code snippet you saw.
 [Click to view Colab Notebook](https://colab.research.google.com/drive/1RcoCwDhKZc9PB6TBDkw8y_tbylS4MG9I#scrollTo=XuTSMNcdtebo)
 
 ## Lab: TREE
-In this lab, we will train a tree-based model from scratch that can use the measurements of a tumor to diagnosis it as benign or malignant.
+In this lab, we will train a tree-based model that can use the measurements of a tumor to diagnosis it as benign or malignant.
 [Click to view Colab Notebook](https://colab.research.google.com/drive/1qyKdMMa_3Ba8GVYbntAwd_own76WFXe8?usp=sharing)
