@@ -1015,7 +1015,7 @@
     "href": "labs.html#lab-tree",
     "title": "Machine Learning",
     "section": "Lab: TREE",
-    "text": "Lab: TREE\nIn this lab, we will train a tree-based model from scratch that can use the measurements of a tumor to diagnosis it as benign or malignant. Click to view Colab Notebook",
+    "text": "Lab: TREE\nIn this lab, we will train a tree-based model that can use the measurements of a tumor to diagnosis it as benign or malignant. Click to view Colab Notebook",
     "crumbs": [
       "Materials",
       "Labs"
