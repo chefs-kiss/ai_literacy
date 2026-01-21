@@ -77,13 +77,6 @@
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
   },
   {
-    "objectID": "05-TREE/std-TREE.html#formulas-given",
-    "href": "05-TREE/std-TREE.html#formulas-given",
-    "title": "Machine Learning",
-    "section": "Formulas given",
-    "text": "Formulas given\n\\(\\text{Silhouette coefficient} = \\frac{b-a}{max(a,b)}\\) \\(\\text{Euclidean distance} = \\sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\\)"
-  },
-  {
     "objectID": "homework.html",
     "href": "homework.html",
     "title": "Machine Learning",
@@ -640,14 +633,14 @@
     "href": "06-LIN/std-LIN.html#alg-lin",
     "title": "Machine Learning",
     "section": "ALG-LIN",
-    "text": "ALG-LIN\nYou should be able to:"
+    "text": "ALG-LIN\nYou should be able to:\n\nExplain the process of the linear regression algorithm\nDefine the following terms: objective function, cost function, gradient descent, learning rate\nInterpret gradients and give suggestions for possible model improvement"
   },
   {
     "objectID": "06-LIN/std-LIN.html#flow-lin",
     "href": "06-LIN/std-LIN.html#flow-lin",
     "title": "Machine Learning",
     "section": "FLOW-LIN",
-    "text": "FLOW-LIN\nYou should be able to:"
+    "text": "FLOW-LIN\nYou should be able to:\n\nAnalyze and critique a given five-step workflow using linear models"
   },
   {
     "objectID": "06-LIN/std-LIN.html#study-tips",
@@ -655,13 +648,6 @@
     "title": "Machine Learning",
     "section": "Study Tips",
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
-  },
-  {
-    "objectID": "06-LIN/std-LIN.html#formulas-given",
-    "href": "06-LIN/std-LIN.html#formulas-given",
-    "title": "Machine Learning",
-    "section": "Formulas given",
-    "text": "Formulas given\n\\(\\text{Silhouette coefficient} = \\frac{b-a}{max(a,b)}\\) \\(\\text{Euclidean distance} = \\sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\\)"
   },
   {
     "objectID": "06-LIN/rr-LIN.html",

@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -226,7 +197,6 @@ window.Quarto = {
   <li><a href="#alg-tree" id="toc-alg-tree" class="nav-link active" data-scroll-target="#alg-tree">ALG-TREE</a></li>
   <li><a href="#train-tree" id="toc-train-tree" class="nav-link" data-scroll-target="#train-tree">TRAIN-TREE</a></li>
   <li><a href="#study-tips" id="toc-study-tips" class="nav-link" data-scroll-target="#study-tips">Study Tips</a></li>
-  <li><a href="#formulas-given" id="toc-formulas-given" class="nav-link" data-scroll-target="#formulas-given">Formulas given</a></li>
   </ul>
 </nav>
     </div>
@@ -261,10 +231,6 @@ window.Quarto = {
 Quiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.</p>
 <p>The primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.<br>
 Quizzes are also a valuable opportunity to receive feedback on your reasoning skills.</p>
-</section>
-<section id="formulas-given" class="level2">
-<h2 class="anchored" data-anchor-id="formulas-given">Formulas given</h2>
-<p><span class="math inline">\(\text{Silhouette coefficient} = \frac{b-a}{max(a,b)}\)</span> <span class="math inline">\(\text{Euclidean distance} = \sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\)</span></p>
 
 
 </section>
