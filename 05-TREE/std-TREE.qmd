@@ -26,10 +26,7 @@ The primary goal of each quiz is to give you an opportunity to apply concepts wi
 Quizzes are also a valuable opportunity to receive feedback on your reasoning skills.  
 
 
-## Formulas given
 
-$\text{Silhouette coefficient} = \frac{b-a}{max(a,b)}$
-$\text{Euclidean distance} = \sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}$
 
 
 

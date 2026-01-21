@@ -4,13 +4,15 @@ The following standards will be assessed on the LIN quiz:
 
 You should be able to:
 
-- 
+- Explain the process of the linear regression algorithm
+- Define the following terms: objective function, cost function, gradient descent, learning rate
+- Interpret gradients and give suggestions for possible model improvement
 
 ## FLOW-LIN
 
 You should be able to:
 
-- 
+- Analyze and critique a given five-step workflow using linear models
 
 ## Study Tips
 
@@ -22,10 +24,7 @@ The primary goal of each quiz is to give you an opportunity to apply concepts wi
 Quizzes are also a valuable opportunity to receive feedback on your reasoning skills.  
 
 
-## Formulas given
 
-$\text{Silhouette coefficient} = \frac{b-a}{max(a,b)}$
-$\text{Euclidean distance} = \sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}$
 
 
 
