@@ -77,6 +77,13 @@
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
   },
   {
+    "objectID": "05-TREE/std-TREE.html#formulas-given",
+    "href": "05-TREE/std-TREE.html#formulas-given",
+    "title": "Machine Learning",
+    "section": "Formulas Given",
+    "text": "Formulas Given\nEntropy: \\(-p*log_2(p) - (1-p)log_2(1-p)\\)  Gini impurity: \\(2*p*(1-p)\\) \nImpurity\\(_{\\text{total}}:   2*P(target=yes)*P(target=no)\\) \nImpurity\\(_{Question}:   P(\\text{Q=yes})*\\text{Impurity}(\\text{Q=yes})*P(\\text{Q=no})*\\text{Impurity}(\\text{Q=no})\\)"
+  },
+  {
     "objectID": "homework.html",
     "href": "homework.html",
     "title": "Machine Learning",
