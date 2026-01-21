@@ -4,13 +4,17 @@ The following standards will be assessed on the TREE quiz:
 
 You should be able to:
 
-- 
+- Describe how the decision tree algorithm works 
+- Define what the terms entropy, gini, uncertainty, decision boundary, region means in the context of this algorithm
+- Draw and interpret the output of a decision tree and graph its associated regions
 
 ## TRAIN-TREE
 
 You should be able to:
 
-- 
+- Explain overfitting and underfitting in the context of this algorithm
+- Interpret results from a decision tree model
+- Give suggestions for improving the decision tree model
 
 ## Study Tips
 
