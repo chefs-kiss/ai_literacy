@@ -23,7 +23,13 @@ You should be able to use appropriate terminology and apply the concepts covered
 The primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.  
 Quizzes are also a valuable opportunity to receive feedback on your reasoning skills.  
 
-
+## Formulas Given
+$\text{MAE}: \frac{1}{n}\Sigma |y_{obs} - y_{pred}|$<br>
+$\text{MSE}: \frac{1}{n}\Sigma (y_{obs} - y_{pred})^2$<br>
+$\text{RMSE}: \sqrt{\text{MSE}}$<br>
+$y_{pred}=\beta_1 x_1+\beta_0$<br><br>
+$\nabla C(x,y) = (\frac{\delta C}{\delta y}(x,y), \frac{\delta C}{\delta x}(x,y)$<br>
+$(\beta_0*, \beta_1* ) = (\beta_0, \beta_1) + l \times(-\nabla C(\beta_0, \beta_1))$
 
 
 
