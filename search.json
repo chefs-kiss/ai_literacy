@@ -481,6 +481,13 @@
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
   },
   {
+    "objectID": "06-LIN/std-LIN.html#formulas-given",
+    "href": "06-LIN/std-LIN.html#formulas-given",
+    "title": "Machine Learning",
+    "section": "Formulas Given",
+    "text": "Formulas Given\n\\(\\text{MAE}: \\frac{1}{n}\\Sigma |y_{obs} - y_{pred}|\\) \\(\\text{MSE}: \\frac{1}{n}\\Sigma (y_{obs} - y_{pred})^2\\) \\(\\text{RMSE}: \\sqrt{\\text{MSE}}\\) \\(y_{pred}=\\beta_1 x_1+\\beta_0\\) \\(\\nabla C(x,y) = (\\frac{\\delta C}{\\delta y}(x,y), \\frac{\\delta C}{\\delta x}(x,y)\\) \\((\\beta_0*, \\beta_1* ) = (\\beta_0, \\beta_1) + l \\times(-\\nabla C(\\beta_0, \\beta_1))\\)"
+  },
+  {
     "objectID": "03-CLS/rr-CLS.html",
     "href": "03-CLS/rr-CLS.html",
     "title": "CLS readings",

@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -197,6 +226,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#alg-lin" id="toc-alg-lin" class="nav-link active" data-scroll-target="#alg-lin">ALG-LIN</a></li>
   <li><a href="#flow-lin" id="toc-flow-lin" class="nav-link" data-scroll-target="#flow-lin">FLOW-LIN</a></li>
   <li><a href="#study-tips" id="toc-study-tips" class="nav-link" data-scroll-target="#study-tips">Study Tips</a></li>
+  <li><a href="#formulas-given" id="toc-formulas-given" class="nav-link" data-scroll-target="#formulas-given">Formulas Given</a></li>
   </ul>
 </nav>
     </div>
@@ -229,6 +259,10 @@ ul.task-list li input[type="checkbox"] {
 Quiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.</p>
 <p>The primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.<br>
 Quizzes are also a valuable opportunity to receive feedback on your reasoning skills.</p>
+</section>
+<section id="formulas-given" class="level2">
+<h2 class="anchored" data-anchor-id="formulas-given">Formulas Given</h2>
+<p><span class="math inline">\(\text{MAE}: \frac{1}{n}\Sigma |y_{obs} - y_{pred}|\)</span><br> <span class="math inline">\(\text{MSE}: \frac{1}{n}\Sigma (y_{obs} - y_{pred})^2\)</span><br> <span class="math inline">\(\text{RMSE}: \sqrt{\text{MSE}}\)</span><br> <span class="math inline">\(y_{pred}=\beta_1 x_1+\beta_0\)</span><br><br> <span class="math inline">\(\nabla C(x,y) = (\frac{\delta C}{\delta y}(x,y), \frac{\delta C}{\delta x}(x,y)\)</span><br> <span class="math inline">\((\beta_0*, \beta_1* ) = (\beta_0, \beta_1) + l \times(-\nabla C(\beta_0, \beta_1))\)</span></p>
 
 
 </section>
