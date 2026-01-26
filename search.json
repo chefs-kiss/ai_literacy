@@ -1103,6 +1103,34 @@
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
   },
   {
+    "objectID": "08-ESB/std-ESB.html",
+    "href": "08-ESB/std-ESB.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "The following standards will be assessed on the ESB quiz:"
+  },
+  {
+    "objectID": "08-ESB/std-ESB.html#alg-esb",
+    "href": "08-ESB/std-ESB.html#alg-esb",
+    "title": "Machine Learning",
+    "section": "ALG-ESB",
+    "text": "ALG-ESB\nYou should be able to:\n\nDescribe terms like ensemble, voting, stacking, bagging, and boosting\nGive examples of algorithms for each ensemble type\nDiscuss pros and cons of each ensemble type"
+  },
+  {
+    "objectID": "08-ESB/std-ESB.html#mod-sel",
+    "href": "08-ESB/std-ESB.html#mod-sel",
+    "title": "Machine Learning",
+    "section": "MOD-SEL",
+    "text": "MOD-SEL\nYou should be able to:\n\nIdentify appropriate algorithms for a given real-world scenarios\nDiscuss tradeoffs of particular algorithms (interpretable, scalable, handling of missing data)\nConsider how decisions made in the modeling process may have ethical consequences"
+  },
+  {
+    "objectID": "08-ESB/std-ESB.html#study-tips",
+    "href": "08-ESB/std-ESB.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
     "objectID": "02-EVL/std-EVL.html",
     "href": "02-EVL/std-EVL.html",
     "title": "Machine Learning",
