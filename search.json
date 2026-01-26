@@ -265,7 +265,7 @@
     "href": "course_information/schedule.html#week-3-jan-19---23",
     "title": "Machine Learning",
     "section": "Week 3 (Jan 19 - 23)",
-    "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 19\n\nNo Class\n☑️PC5\n\n\nT\nJan 20\n📓TREE standards\nTREE\n👩🏻‍🏫LIN1 👩🏻‍🏫LIN2 📝HW:LIN 🍽️💻Lab:TREE 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 21\n📖 readings\nLIN\n👩🏻‍🏫KNN👩🏻‍🏫SVM 🍽️ QUIZ TREE QUIZ  RETAKES  CLS + DATA\n\n\nTh\nJan 22\n📖 readings\nESB\n👩🏻‍🏫ESB1 👩🏻‍🏫ESB2 📝HW:ENS 🍽️ QUIZ LIN☑️PC6\n\n\nF\nJan 23\n📓LIN standards\nESB\n💻Lab:MOD  Part 1\n\n\n\nOver the weekend, complete an article review",
+    "text": "Week 3 (Jan 19 - 23)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 19\n\nNo Class\n☑️PC5\n\n\nT\nJan 20\n📓TREE standards\nTREE\n👩🏻‍🏫LIN1 👩🏻‍🏫LIN2 📝HW:LIN 🍽️💻Lab:TREE 😵‍💫 TA help  7:00-8:00\n\n\nW\nJan 21\n📖 readings\nLIN\n👩🏻‍🏫KNN👩🏻‍🏫SVM 🍽️ QUIZ TREE QUIZ  RETAKES  CLS + DATA\n\n\nTh\nJan 22\n\nESB\n👩🏻‍🏫ESB1 👩🏻‍🏫ESB2 📝HW:ENS 🍽️ QUIZ LIN☑️PC6\n\n\nF\nJan 23\n📓LIN standards\nESB\n💻Lab:MOD  Part 1\n\n\n\nOver the weekend, complete an article review",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -276,7 +276,7 @@
     "href": "course_information/schedule.html#week-4-jan-26---30",
     "title": "Machine Learning",
     "section": "Week 4 (Jan 26 - 30)",
-    "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 26\n📖 readings\nNN\n👩🏻‍🏫ESB3 MODWS ☑️PC7 ☑️PC8 🍽️ 💻Lab:MOD Part 2\n\n\nT\nJan 27\n📓ESB standards\nNN\n👩🏻‍🏫NN1 👩🏻‍🏫NN2📝 HW:NN 🍽️ QUIZ ENS QUIZ  RETAKES  TREE+LIN\n\n\nW\nJan 28\n📖 readings\nDL\n👩🏻‍🏫NN3 ☑️PC9🍽️ 💻Lab:NN 😵‍💫 TA help  8:00-9:00\n\n\nTh\nJan 29\n📓NN + DL standards\nDL\nLast Day! 👩🏻‍🏫DL1 👩🏻‍🏫DL2 🍽️ QUIZ NN+DL QUIZ  RETAKES  ENS+NN+DL\n\n\nF\nJan 30\nsubmitpresentation\nFinal\nPresentation Day! ☑️PREZ 🍽️ Quiz Retakes ANY",
+    "text": "Week 4 (Jan 26 - 30)\n\n\n\ndow\ndate\nprepare\ntopic\nagenda\n\n\n\n\nM\nJan 26\n\nESB\n👩🏻‍🏫ESB3 MODWS ☑️PC7 ☑️PC8 🍽️ 💻Lab:MOD Part 2\n\n\nT\nJan 27\n📓ESB standards\nNN\n👩🏻‍🏫NN1 👩🏻‍🏫NN2📝 HW:NN 🍽️ QUIZ ENS QUIZ  RETAKES  TREE+LIN\n\n\nW\nJan 28\n📖 readings\nDL\n👩🏻‍🏫NN3 ☑️PC9🍽️ 💻Lab:NN 😵‍💫 TA help  8:00-9:00\n\n\nTh\nJan 29\n📓NN + DL standards\nDL\nLast Day! 👩🏻‍🏫DL1 👩🏻‍🏫DL2 🍽️ QUIZ NN+DL QUIZ  RETAKES  ENS+NN+DL\n\n\nF\nJan 30\nsubmitpresentation\nFinal\nPresentation Day! ☑️PREZ 🍽️ Quiz Retakes ANY",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -1129,6 +1129,20 @@
     "title": "Machine Learning",
     "section": "Study Tips",
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
+    "objectID": "08-ESB/rr-ESB.html",
+    "href": "08-ESB/rr-ESB.html",
+    "title": "MODELS readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\n\n\nNaive Bayes (NB) section 2.2.3 is used in text classification, spam detection, and good on large datasets. The “naive” part is because it assumes features are independent (unrelated) from each other when in actuality this rarely happens. Applies probabilities to features (usually words) that can indicate the thing you’re looking for.\nk Nearest Neighbors (KNN)section 2.2.3 and section 3.5 is used in pattern recognition, recommender systems, when there are non-linear boundaries, but not great on large datasets. We call this a “lazy” learner because it doesn’t learn or create a model until it’s asked to make a prediction on new data.\nLogistic regression section 4.3. Used in binary classification to output probabilities between 0 and 1, needs linear boundaries. Uses another function to “squish” these outputted probabilities towards 0 or 1 (usually the sigmoid function).\nSupport Vector Machine (SVM) section 9.1-9.3 is used in a ton of ways, good because it can deal with linear and non-linear boundaries. Uses what is called the “kernel” trick to essentially project data into a higher dimension so that it can have an easier time separating groups out. Sort of how it’s easier to see a person if you are facing them head-on vs looking down at them from a bird’s eye view.\nPrincipal Component Analysis (PCA) section 12.2 can simplify data by finding the most important directions (or features) that capture the most information. (Bad example) Kind of like how if someone were to dig around in your trash, they would find information out about you (what food you like, how often you clean, items you frequently use).\n\nYou can read more about ensemble models in section 8.2 from our TREE readings"
+  },
+  {
+    "objectID": "08-ESB/rr-ESB.html#islp-selected-readings",
+    "href": "08-ESB/rr-ESB.html#islp-selected-readings",
+    "title": "MODELS readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\n\n\nNaive Bayes (NB) section 2.2.3 is used in text classification, spam detection, and good on large datasets. The “naive” part is because it assumes features are independent (unrelated) from each other when in actuality this rarely happens. Applies probabilities to features (usually words) that can indicate the thing you’re looking for.\nk Nearest Neighbors (KNN)section 2.2.3 and section 3.5 is used in pattern recognition, recommender systems, when there are non-linear boundaries, but not great on large datasets. We call this a “lazy” learner because it doesn’t learn or create a model until it’s asked to make a prediction on new data.\nLogistic regression section 4.3. Used in binary classification to output probabilities between 0 and 1, needs linear boundaries. Uses another function to “squish” these outputted probabilities towards 0 or 1 (usually the sigmoid function).\nSupport Vector Machine (SVM) section 9.1-9.3 is used in a ton of ways, good because it can deal with linear and non-linear boundaries. Uses what is called the “kernel” trick to essentially project data into a higher dimension so that it can have an easier time separating groups out. Sort of how it’s easier to see a person if you are facing them head-on vs looking down at them from a bird’s eye view.\nPrincipal Component Analysis (PCA) section 12.2 can simplify data by finding the most important directions (or features) that capture the most information. (Bad example) Kind of like how if someone were to dig around in your trash, they would find information out about you (what food you like, how often you clean, items you frequently use).\n\nYou can read more about ensemble models in section 8.2 from our TREE readings"
   },
   {
     "objectID": "02-EVL/std-EVL.html",
