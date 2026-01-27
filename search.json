@@ -1033,7 +1033,7 @@
     "href": "homework.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Homeworks are due at the start of the next class.\n\nHW: EDA\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\nHW: EVL\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.\n\n\nHW: CLS\nThis homework breaks down the calculations used in clustering algorithms.\n\n\nHW: DATA\nThis homework walks through the data cleaning steps and thought process using AirBnB data.\n\n\nHW: TREE\nThis homework walks through the data cleaning steps and thought process using AirBnB data.",
+    "text": "Homeworks are due at the start of the next class.\n\nHW: EDA\nThis homework goes over looking at summary tables for a dataset, explaining statistical terms to non-tech folks, exploring statistics, and interpretting statistical tests.\n\n\nHW: EVL\nThis homework goes over model selection in our 5-step ML workflow, as well as evaluation metrics for both classification and regression.\n\n\nHW: CLS\nThis homework breaks down the calculations used in clustering algorithms.\n\n\nHW: DATA\nThis homework walks through the data cleaning steps and thought process using AirBnB data.\n\n\nHW: TREE\n\n\nHW: LIN\n\n\nHW: ESB+MOD\n\n\nHW: NN",
     "crumbs": [
       "Materials",
       "Homework"
