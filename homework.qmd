@@ -16,4 +16,9 @@ This homework breaks down the calculations used in clustering algorithms.
 This homework walks through the data cleaning steps and thought process using AirBnB data.
 
 ### [HW: TREE](/05-TREE/hw-TREE.qmd) 
-This homework walks through the data cleaning steps and thought process using AirBnB data.
+
+### [HW: LIN](/06-LIN/hw-LIN.qmd) 
+
+### [HW: ESB+MOD](/08-ESB/hw-ESB.qmd) 
+
+### [HW: NN](/09-NN/hw-NN.qmd) 
