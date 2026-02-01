@@ -1,3 +1,3 @@
-# Welcome to Machine Learning!
+# AI Literacy at St Olaf
 
-Drop spot for the Interim 2026 course website. Here you can find materials, the schedule, and our class discussions.
+Drop spot for the independent study on AI Literacy in Education
